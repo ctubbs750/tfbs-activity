@@ -1,0 +1,185 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                   count
+----------------------------------  -------
+activity_unibind_sites                    2
+all                                       1
+pwmscan_main_bed2fasta                    2
+pwmscan_main_calc_probabilities           2
+pwmscan_main_compile_pwmscan              1
+pwmscan_main_compress_sites               2
+pwmscan_main_process_probabilities        2
+pwmscan_main_scan_genome                  2
+total                                    14
+
+Select jobs to execute...
+
+[Sat Dec  9 19:41:46 2023]
+rule activity_unibind_sites:
+    input: ../resources/data/unibind/damo_hg38_all_TFBS
+    output: ../results/unibind/unibind/MA0007.3/MA0007.3-unibind_sites.tsv
+    jobid: 23
+    reason: Missing output files: ../results/unibind/unibind/MA0007.3/MA0007.3-unibind_sites.tsv; Code has changed since last execution; Params have changed since last execution
+    wildcards: PROFILE=MA0007.3
+    resources: tmpdir=/tmp
+
+Activating conda environment: tfbs-activity
+
+[Sat Dec  9 19:41:46 2023]
+Job 7: 
+        c99 mode
+        
+Reason: Updated input files: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/resources/software/PWMScan/matrix_prob.c (cached), https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/resources/software/PWMScan/matrix_scan.c (cached)
+
+
+[Sat Dec  9 19:41:46 2023]
+rule activity_unibind_sites:
+    input: ../resources/data/unibind/damo_hg38_all_TFBS
+    output: ../results/unibind/unibind/MA0139.1/MA0139.1-unibind_sites.tsv
+    jobid: 22
+    reason: Missing output files: ../results/unibind/unibind/MA0139.1/MA0139.1-unibind_sites.tsv; Code has changed since last execution; Params have changed since last execution
+    wildcards: PROFILE=MA0139.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: tfbs-activity
+[Sat Dec  9 19:41:47 2023]
+Finished job 7.
+1 of 14 steps (7%) done
+Select jobs to execute...
+
+[Sat Dec  9 19:41:47 2023]
+Job 16: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: ../results/jaspar/MA0007.3/MA0007.3-pvals.raw; Input files updated by another job: ../resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec  9 19:41:47 2023]
+Job 6: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: ../results/jaspar/MA0139.1/MA0139.1-pvals.raw; Input files updated by another job: ../resources/software/PWMScan/matrix_prob
+
+[Sat Dec  9 19:41:47 2023]
+Finished job 16.
+2 of 14 steps (14%) done
+Select jobs to execute...
+
+[Sat Dec  9 19:41:47 2023]
+Job 15: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: ../results/jaspar/MA0007.3/MA0007.3-pvals.raw
+
+[Sat Dec  9 19:41:47 2023]
+Finished job 6.
+3 of 14 steps (21%) done
+Select jobs to execute...
+
+[Sat Dec  9 19:41:47 2023]
+Job 5: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-pvals.raw
+
+[Sat Dec  9 19:41:48 2023]
+Finished job 15.
+4 of 14 steps (29%) done
+Removing temporary output ../results/jaspar/MA0007.3/MA0007.3-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec  9 19:41:48 2023]
+Job 12: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: ../results/jaspar/MA0007.3/MA0007.3-sites.bed; Input files updated by another job: ../resources/software/PWMScan/matrix_scan, ../results/jaspar/MA0007.3/MA0007.3-coeff.txt
+
+[Sat Dec  9 19:41:48 2023]
+Finished job 5.
+5 of 14 steps (36%) done
+Removing temporary output ../results/jaspar/MA0139.1/MA0139.1-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec  9 19:41:48 2023]
+Job 2: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: ../results/jaspar/MA0139.1/MA0139.1-sites.bed; Input files updated by another job: ../resources/software/PWMScan/matrix_scan, ../results/jaspar/MA0139.1/MA0139.1-coeff.txt
+
+[Sat Dec  9 19:44:12 2023]
+Finished job 2.
+6 of 14 steps (43%) done
+Select jobs to execute...
+
+[Sat Dec  9 19:44:12 2023]
+Job 10: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: ../results/jaspar/MA0139.1/MA0139.1-sites.fa; Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Sat Dec  9 19:44:13 2023]
+Finished job 12.
+7 of 14 steps (50%) done
+Select jobs to execute...
+
+[Sat Dec  9 19:44:13 2023]
+Job 17: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: ../results/jaspar/MA0007.3/MA0007.3-sites.fa; Input files updated by another job: ../results/jaspar/MA0007.3/MA0007.3-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Sat Dec  9 19:44:38 2023]
+Finished job 17.
+8 of 14 steps (57%) done
+Select jobs to execute...
+
+[Sat Dec  9 19:44:38 2023]
+Job 11: 
+        - d
+        
+Reason: Input files updated by another job: ../results/jaspar/MA0007.3/MA0007.3-sites.fa, ../results/jaspar/MA0007.3/MA0007.3-sites.bed
+
+[Sat Dec  9 19:44:40 2023]
+Finished job 10.
+9 of 14 steps (64%) done
+Select jobs to execute...
+
+[Sat Dec  9 19:44:40 2023]
+Job 1: 
+        - d
+        
+Reason: Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-sites.bed, ../results/jaspar/MA0139.1/MA0139.1-sites.fa
+
+[Sat Dec  9 19:44:45 2023]
+Finished job 11.
+10 of 14 steps (71%) done
+[Sat Dec  9 19:44:49 2023]
+Finished job 1.
+11 of 14 steps (79%) done
+[Sat Dec  9 19:45:59 2023]
+Finished job 22.
+12 of 14 steps (86%) done
+[Sat Dec  9 19:45:59 2023]
+Finished job 23.
+13 of 14 steps (93%) done
+Select jobs to execute...
+
+[Sat Dec  9 19:45:59 2023]
+localrule all:
+    input: ../results/jaspar/MA0139.1/MA0139.1-sites.bed.gz, ../results/jaspar/MA0007.3/MA0007.3-sites.bed.gz, ../results/jaspar/MA0139.1/MA0139.1-sites.fa.gz, ../results/jaspar/MA0007.3/MA0007.3-sites.fa.gz, ../resources/data/unibind/damo_hg38_all_TFBS/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.bed, ../results/unibind/unibind/MA0139.1/MA0139.1-unibind_sites.tsv, ../results/unibind/unibind/MA0007.3/MA0007.3-unibind_sites.tsv
+    jobid: 0
+    reason: Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-sites.fa.gz, ../results/jaspar/MA0139.1/MA0139.1-sites.bed.gz, ../results/jaspar/MA0007.3/MA0007.3-sites.fa.gz, ../results/unibind/unibind/MA0139.1/MA0139.1-unibind_sites.tsv, ../results/jaspar/MA0007.3/MA0007.3-sites.bed.gz, ../results/unibind/unibind/MA0007.3/MA0007.3-unibind_sites.tsv
+    resources: tmpdir=/tmp
+
+[Sat Dec  9 19:45:59 2023]
+Finished job 0.
+14 of 14 steps (100%) done
+Complete log: .snakemake/log/2023-12-09T194125.104477.snakemake.log
