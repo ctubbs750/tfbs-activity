@@ -4,11 +4,24 @@ from re import findall
 from subprocess import run, PIPE
 from numpy import log10
 from Bio.Seq import Seq
-from pandas import DataFrame, Series, read_csv
+from pandas import DataFrame, Series, read_csv, merge
 from Bio import motifs
 from Bio.motifs.matrix import PositionSpecificScoringMatrix
 from scipy.stats.mstats import winsorize
 from statsmodels.stats.proportion import proportion_confint
+
+# Snakemake
+SITES = snakemake.input[0] # type: ignore
+PWM = snakemake.input[1] # type: ignore
+MODE = snakemake.params.mode # type: ignore
+OUTPUT = snakemake.output[0] # type: ignore
+# INPUT = snakemake.input[0]  # type: ignore
+# HG38_GENES = snakemake.input[1]  # type: ignore
+# GENO_MATRIX = snakemake.input[2]  # type: ignore
+# # GENO_SAMPLES = snakemake.input[2]  # type: ignore
+# # GENE_LINKS = snakemake.input[3]  # type: ignore
+# SHORT_OUTPUT = snakemake.output[0]  # type: ignore
+# VARIANT_CLASS = snakemake.params.vc  # type: ignore
 
 ###
 # Functions
@@ -137,3 +150,35 @@ def proportion_ci(counts: Series, totals: Series) -> tuple:
 def winsorize_array(array: Series, l_limit: int, r_limit: int) -> Series:
     """Winsorizes input array"""
     return winsorize(array, limits=(l_limit, r_limit))
+
+# def merge_percentiles(activity_filepath: str, pval_filepath:str) -> None:
+#     """Merges activity map with percentages"""
+#     # Read inputs
+#     activity = read_csv(activity_filepath, header=None, sep="\t", names=["score", "nactive", "ntotal", "activity"])
+#     pvals = read_csv(pval_filepath, header=None, sep=" ", names=["score", "pval", "percentage"])
+#     # Merge and save
+#     activity = merge(activity, pvals, on="score", how="left")
+#     activity.to_csv(OUTPUT, sep="\t", index=False, header=False)
+
+def main():
+    if MODE == "score_unibind":
+        # Read in sites data and pwm
+        sites = read_damo(SITES)
+        pssm = setup_pssm(PWM)
+        # Score motif sequence and write out
+        sites["s"] = sites.apply(
+            lambda row: score_sequence(row.seq, pssm), axis=1
+        )
+        sites["s"] = [i[1] for i in sites["s"]]
+        sites.to_csv(OUTPUT, sep="\t", index=False, header=False)
+    # elif MODE == "merge_percentiles":
+    #     merge_percentiles()
+    else:
+        exit()
+        
+# ------------- #
+# Main          #
+# ------------- #
+
+if __name__ == "__main__":
+    main()

@@ -1,7 +1,7 @@
 """Main ruleset for creating allfiles"""
 
 
-configfile: "../config/config.yaml"
+configfile: "config/config.yaml"
 
 
 # Define modules
@@ -38,5 +38,5 @@ rule all:
     input:
         rules.pwmscan_all.input,
         rules.unibind_all.input,
-        #rules.activity_all.input,
+        rules.activity_all.input,
     default_target: True
