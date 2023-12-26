@@ -1,0 +1,39 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                       count
+----------------------  -------
+all                           1
+unibind_failed_targets        1
+unibind_fetch_lengths         1
+unibind_filter_targets        1
+total                         4
+
+Select jobs to execute...
+
+[Sun Dec 24 12:30:01 2023]
+Job 7: 
+        Test each matrix ID for membership in JASPAR database.
+        
+Reason: Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+[Sun Dec 24 12:33:43 2023]
+Finished job 7.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Sun Dec 24 12:33:43 2023]
+Job 2: 
+        Filter profiles not in JASPAR.
+        
+Reason: Missing output files: resources/data/unibind/filter_targets.txt; Input files updated by another job: resources/data/unibind/failed_targets.txt
+
+RuleException in rule unibind_filter_targets in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/unibind.smk, line 118:
+AttributeError: 'InputFiles' object has no attribute 'targets', when formatting the following:
+
+        cat {input.targets} | grep -v -f {input.failed} > {output}
+        

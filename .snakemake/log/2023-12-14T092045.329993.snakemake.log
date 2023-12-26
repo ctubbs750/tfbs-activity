@@ -1,0 +1,10 @@
+Failed to clean up metadata for the following files because the metadata was not present.
+If this is expected, there is nothing to do.
+Otherwise, the reason might be file system latency or still running jobs.
+Consider running metadata cleanup again.
+Files:
+/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/results/pwmscan/MA0002.2
+/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/results/pwmscan/MA0003.4
+/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/results/pwmscan/MA0004.1
+/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/results/pwmscan/MA0006.1
+/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/results/pwmscan/MA0007.3

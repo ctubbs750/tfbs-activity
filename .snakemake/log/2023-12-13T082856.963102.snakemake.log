@@ -1,0 +1,201 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                   count
+----------------------------------  -------
+all                                       1
+pwmscan_main_bed2fasta                    5
+pwmscan_main_calc_probabilities           5
+pwmscan_main_calculate_pwm                5
+pwmscan_main_compile_pwmscan              1
+pwmscan_main_compress_sites               5
+pwmscan_main_download_jaspar              4
+pwmscan_main_process_probabilities        5
+pwmscan_main_scan_genome                  5
+total                                    36
+
+Select jobs to execute...
+
+[Wed Dec 13 08:29:03 2023]
+Job 12: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0003.4.jaspar
+
+
+[Wed Dec 13 08:29:03 2023]
+Job 26: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0006.1.jaspar
+
+
+[Wed Dec 13 08:29:03 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0007.3.jaspar
+    output: results/pwmscan/MA0007.3/MA0007.3-pwm.txt
+    jobid: 32
+    reason: Missing output files: results/pwmscan/MA0007.3/MA0007.3-pwm.txt
+    wildcards: PROFILE=MA0007.3
+    resources: tmpdir=/tmp
+
+[Wed Dec 13 08:29:03 2023]
+Job 7: 
+        c99 mode
+        
+Reason: Updated input files: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/resources/software/PWMScan/matrix_prob.c (cached), https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/resources/software/PWMScan/matrix_scan.c (cached)
+
+
+[Wed Dec 13 08:29:03 2023]
+Job 4: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0002.2.jaspar
+
+
+[Wed Dec 13 08:29:03 2023]
+Job 19: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0004.1.jaspar
+
+[Wed Dec 13 08:29:03 2023]
+Finished job 7.
+1 of 36 steps (3%) done
+[Wed Dec 13 08:29:04 2023]
+Finished job 12.
+2 of 36 steps (6%) done
+Select jobs to execute...
+
+[Wed Dec 13 08:29:04 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0003.4.jaspar
+    output: results/pwmscan/MA0003.4/MA0003.4-pwm.txt
+    jobid: 11
+    reason: Missing output files: results/pwmscan/MA0003.4/MA0003.4-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0003.4.jaspar
+    wildcards: PROFILE=MA0003.4
+    resources: tmpdir=/tmp
+
+[Wed Dec 13 08:29:04 2023]
+Finished job 26.
+3 of 36 steps (8%) done
+Select jobs to execute...
+
+[Wed Dec 13 08:29:04 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0006.1.jaspar
+    output: results/pwmscan/MA0006.1/MA0006.1-pwm.txt
+    jobid: 25
+    reason: Missing output files: results/pwmscan/MA0006.1/MA0006.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0006.1.jaspar
+    wildcards: PROFILE=MA0006.1
+    resources: tmpdir=/tmp
+
+[Wed Dec 13 08:29:04 2023]
+Finished job 4.
+4 of 36 steps (11%) done
+Select jobs to execute...
+
+[Wed Dec 13 08:29:04 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0002.2.jaspar
+    output: results/pwmscan/MA0002.2/MA0002.2-pwm.txt
+    jobid: 3
+    reason: Missing output files: results/pwmscan/MA0002.2/MA0002.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0002.2.jaspar
+    wildcards: PROFILE=MA0002.2
+    resources: tmpdir=/tmp
+
+[Wed Dec 13 08:29:04 2023]
+Finished job 19.
+5 of 36 steps (14%) done
+Select jobs to execute...
+
+[Wed Dec 13 08:29:04 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0004.1.jaspar
+    output: results/pwmscan/MA0004.1/MA0004.1-pwm.txt
+    jobid: 18
+    reason: Missing output files: results/pwmscan/MA0004.1/MA0004.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0004.1.jaspar
+    wildcards: PROFILE=MA0004.1
+    resources: tmpdir=/tmp
+
+[Wed Dec 13 08:29:12 2023]
+Error in rule pwmscan_main_calculate_pwm:
+    jobid: 32
+    input: resources/data/jaspar/MA0007.3.jaspar
+    output: results/pwmscan/MA0007.3/MA0007.3-pwm.txt
+    conda-env: genome
+
+RuleException:
+WorkflowError in file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk, line 73:
+Failed to open source file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+HTTPError: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+  File "https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk", line 73, in __rule_calculate_pwm
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 218, in retry_call
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 31, in __retry_internal
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Wed Dec 13 08:29:13 2023]
+Error in rule pwmscan_main_calculate_pwm:
+    jobid: 11
+    input: resources/data/jaspar/MA0003.4.jaspar
+    output: results/pwmscan/MA0003.4/MA0003.4-pwm.txt
+    conda-env: genome
+
+RuleException:
+WorkflowError in file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk, line 73:
+Failed to open source file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+HTTPError: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+  File "https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk", line 73, in __rule_calculate_pwm
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 218, in retry_call
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 31, in __retry_internal
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Wed Dec 13 08:29:13 2023]
+Error in rule pwmscan_main_calculate_pwm:
+    jobid: 25
+    input: resources/data/jaspar/MA0006.1.jaspar
+    output: results/pwmscan/MA0006.1/MA0006.1-pwm.txt
+    conda-env: genome
+
+RuleException:
+WorkflowError in file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk, line 73:
+Failed to open source file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+HTTPError: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+  File "https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk", line 73, in __rule_calculate_pwm
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 218, in retry_call
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 31, in __retry_internal
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Wed Dec 13 08:29:13 2023]
+Error in rule pwmscan_main_calculate_pwm:
+    jobid: 3
+    input: resources/data/jaspar/MA0002.2.jaspar
+    output: results/pwmscan/MA0002.2/MA0002.2-pwm.txt
+    conda-env: genome
+
+RuleException:
+WorkflowError in file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk, line 73:
+Failed to open source file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+HTTPError: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+  File "https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk", line 73, in __rule_calculate_pwm
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 218, in retry_call
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 31, in __retry_internal
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Wed Dec 13 08:29:13 2023]
+Error in rule pwmscan_main_calculate_pwm:
+    jobid: 18
+    input: resources/data/jaspar/MA0004.1.jaspar
+    output: results/pwmscan/MA0004.1/MA0004.1-pwm.txt
+    conda-env: genome
+
+RuleException:
+WorkflowError in file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk, line 73:
+Failed to open source file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+HTTPError: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/scripts/pwm.py
+  File "https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk", line 73, in __rule_calculate_pwm
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 218, in retry_call
+  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 31, in __retry_internal
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-13T082856.963102.snakemake.log

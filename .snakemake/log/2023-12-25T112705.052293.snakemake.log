@@ -1,0 +1,248 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                     count
+------------------------------------  -------
+activity_activity_stats                     5
+activity_intersect_motifs                   5
+activity_map_activity                       5
+activity_profile_filesets                   5
+activity_score_unibind                      5
+activity_unibind_sites                      5
+all                                         1
+tfbscan_PWMScan_compile_pwmscan             1
+tfbscan_scan_bed2fasta                      5
+tfbscan_scan_calculate_probabilities        5
+tfbscan_scan_calculate_pwm                  5
+tfbscan_scan_compress_sites                 5
+tfbscan_scan_download_jaspar                5
+tfbscan_scan_process_probabilities          5
+tfbscan_scan_scan_genome                    5
+total                                      67
+
+Select jobs to execute...
+
+[Mon Dec 25 11:27:15 2023]
+Job 10: 
+        Compiles PWMScan. Note c99 flag.
+        Installs into resources/software by default.
+        
+Reason: Updated input files: https://raw.githubusercontent.com/ctubbs750/PWMScan/main/resources/software/PWMScan/matrix_prob.c (cached), https://raw.githubusercontent.com/ctubbs750/PWMScan/main/resources/software/PWMScan/matrix_scan.c (cached)
+
+
+[Mon Dec 25 11:27:15 2023]
+Job 58: 
+        Outputs a list of bed files covering a given TF
+        
+Reason: Missing output files: results/activity/MA0006.1/MA0006.1-fileset.tsv; Set of input files has changed since last execution; Code has changed since last execution
+
+
+[Mon Dec 25 11:27:15 2023]
+Job 16: 
+        Outputs a list of bed files covering a given TF
+        
+Reason: Missing output files: results/activity/MA0007.3/MA0007.3-fileset.tsv; Set of input files has changed since last execution; Code has changed since last execution
+
+
+[Mon Dec 25 11:27:15 2023]
+Job 32: 
+        Outputs a list of bed files covering a given TF
+        
+Reason: Missing output files: results/activity/MA0603.1/MA0603.1-fileset.tsv; Set of input files has changed since last execution; Code has changed since last execution
+
+
+[Mon Dec 25 11:27:16 2023]
+Job 71: 
+        Outputs a list of bed files covering a given TF
+        
+Reason: Missing output files: results/activity/MA0259.1/MA0259.1-fileset.tsv; Set of input files has changed since last execution; Code has changed since last execution
+
+
+[Mon Dec 25 11:27:16 2023]
+Job 45: 
+        Outputs a list of bed files covering a given TF
+        
+Reason: Missing output files: results/activity/MA0004.1/MA0004.1-fileset.tsv; Set of input files has changed since last execution; Code has changed since last execution
+
+[Mon Dec 25 11:27:16 2023]
+Finished job 58.
+1 of 67 steps (1%) done
+[Mon Dec 25 11:27:16 2023]
+Finished job 16.
+2 of 67 steps (3%) done
+[Mon Dec 25 11:27:16 2023]
+Finished job 32.
+3 of 67 steps (4%) done
+Select jobs to execute...
+
+[Mon Dec 25 11:27:16 2023]
+Job 15: 
+        Combines UniBind predictions into single sites file.
+        1. vawk seen removes duplicate seqs across celltypes
+        2. vawk split pulls out the matching sequence
+        3. Sort by genomic coordinate
+        
+Reason: Missing output files: results/activity/MA0007.3/MA0007.3-unibind.tsv; Input files updated by another job: results/activity/MA0007.3/MA0007.3-fileset.tsv
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+
+[Mon Dec 25 11:27:16 2023]
+Job 57: 
+        Combines UniBind predictions into single sites file.
+        1. vawk seen removes duplicate seqs across celltypes
+        2. vawk split pulls out the matching sequence
+        3. Sort by genomic coordinate
+        
+Reason: Missing output files: results/activity/MA0006.1/MA0006.1-unibind.tsv; Input files updated by another job: results/activity/MA0006.1/MA0006.1-fileset.tsv
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+[Mon Dec 25 11:27:16 2023]
+Job 31: 
+        Combines UniBind predictions into single sites file.
+        1. vawk seen removes duplicate seqs across celltypes
+        2. vawk split pulls out the matching sequence
+        3. Sort by genomic coordinate
+        
+Reason: Missing output files: results/activity/MA0603.1/MA0603.1-unibind.tsv; Input files updated by another job: results/activity/MA0603.1/MA0603.1-fileset.tsv
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+[Mon Dec 25 11:27:16 2023]
+Finished job 71.
+4 of 67 steps (6%) done
+[Mon Dec 25 11:27:16 2023]
+Finished job 45.
+5 of 67 steps (7%) done
+Select jobs to execute...
+
+[Mon Dec 25 11:27:16 2023]
+Job 70: 
+        Combines UniBind predictions into single sites file.
+        1. vawk seen removes duplicate seqs across celltypes
+        2. vawk split pulls out the matching sequence
+        3. Sort by genomic coordinate
+        
+Reason: Missing output files: results/activity/MA0259.1/MA0259.1-unibind.tsv; Input files updated by another job: results/activity/MA0259.1/MA0259.1-fileset.tsv
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+[Mon Dec 25 11:27:16 2023]
+Job 44: 
+        Combines UniBind predictions into single sites file.
+        1. vawk seen removes duplicate seqs across celltypes
+        2. vawk split pulls out the matching sequence
+        3. Sort by genomic coordinate
+        
+Reason: Missing output files: results/activity/MA0004.1/MA0004.1-unibind.tsv; Input files updated by another job: results/activity/MA0004.1/MA0004.1-fileset.tsv
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+[Mon Dec 25 11:27:17 2023]
+Finished job 10.
+6 of 67 steps (9%) done
+
+[Mon Dec 25 11:27:17 2023]
+Job 7: 
+        Downloads motif matrix from the Jaspar database.
+        
+Reason: Code has changed since last execution
+
+[Mon Dec 25 11:27:18 2023]
+[Mon Dec 25 11:27:18 2023]
+[Mon Dec 25 11:27:18 2023]
+Error in rule activity_unibind_sites:
+    jobid: 15
+    input: results/activity/MA0007.3/MA0007.3-fileset.tsv
+    output: results/activity/MA0007.3/MA0007.3-unibind.tsv
+    log: workflow/logs/unibind_sites_MA0007.3.stdout, workflow/logs/unibind_sites_MA0007.3.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+    shell:
+        
+        cat "$(cat results/activity/MA0007.3/MA0007.3-fileset.tsv)" |
+        vawk '!a[$1, $2, $3]++' | 
+        vawk '{split($4, motif, "_"); print $1, $2, $3, motif[2], $6}' |
+        sort -k 1,1 -k2,2n > results/activity/MA0007.3/MA0007.3-unibind.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule activity_unibind_sites:
+    jobid: 70
+    input: results/activity/MA0259.1/MA0259.1-fileset.tsv
+    output: results/activity/MA0259.1/MA0259.1-unibind.tsv
+    log: workflow/logs/unibind_sites_MA0259.1.stdout, workflow/logs/unibind_sites_MA0259.1.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+    shell:
+        
+        cat "$(cat results/activity/MA0259.1/MA0259.1-fileset.tsv)" |
+        vawk '!a[$1, $2, $3]++' | 
+        vawk '{split($4, motif, "_"); print $1, $2, $3, motif[2], $6}' |
+        sort -k 1,1 -k2,2n > results/activity/MA0259.1/MA0259.1-unibind.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule activity_unibind_sites:
+    jobid: 57
+    input: results/activity/MA0006.1/MA0006.1-fileset.tsv
+    output: results/activity/MA0006.1/MA0006.1-unibind.tsv
+    log: workflow/logs/unibind_sites_MA0006.1.stdout, workflow/logs/unibind_sites_MA0006.1.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+    shell:
+        
+        cat "$(cat results/activity/MA0006.1/MA0006.1-fileset.tsv)" |
+        vawk '!a[$1, $2, $3]++' | 
+        vawk '{split($4, motif, "_"); print $1, $2, $3, motif[2], $6}' |
+        sort -k 1,1 -k2,2n > results/activity/MA0006.1/MA0006.1-unibind.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Dec 25 11:27:18 2023]
+[Mon Dec 25 11:27:18 2023]
+Error in rule activity_unibind_sites:
+    jobid: 44
+    input: results/activity/MA0004.1/MA0004.1-fileset.tsv
+    output: results/activity/MA0004.1/MA0004.1-unibind.tsv
+    log: workflow/logs/unibind_sites_MA0004.1.stdout, workflow/logs/unibind_sites_MA0004.1.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+    shell:
+        
+        cat "$(cat results/activity/MA0004.1/MA0004.1-fileset.tsv)" |
+        vawk '!a[$1, $2, $3]++' | 
+        vawk '{split($4, motif, "_"); print $1, $2, $3, motif[2], $6}' |
+        sort -k 1,1 -k2,2n > results/activity/MA0004.1/MA0004.1-unibind.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule activity_unibind_sites:
+    jobid: 31
+    input: results/activity/MA0603.1/MA0603.1-fileset.tsv
+    output: results/activity/MA0603.1/MA0603.1-unibind.tsv
+    log: workflow/logs/unibind_sites_MA0603.1.stdout, workflow/logs/unibind_sites_MA0603.1.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/9e211a826b4153ae8977fb2d94caf0a0_
+    shell:
+        
+        cat "$(cat results/activity/MA0603.1/MA0603.1-fileset.tsv)" |
+        vawk '!a[$1, $2, $3]++' | 
+        vawk '{split($4, motif, "_"); print $1, $2, $3, motif[2], $6}' |
+        sort -k 1,1 -k2,2n > results/activity/MA0603.1/MA0603.1-unibind.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job activity_unibind_sites since they might be corrupted:
+results/activity/MA0007.3/MA0007.3-unibind.tsv
+Removing output files of failed job activity_unibind_sites since they might be corrupted:
+results/activity/MA0259.1/MA0259.1-unibind.tsv
+Removing output files of failed job activity_unibind_sites since they might be corrupted:
+results/activity/MA0006.1/MA0006.1-unibind.tsv
+Removing output files of failed job activity_unibind_sites since they might be corrupted:
+results/activity/MA0004.1/MA0004.1-unibind.tsv
+Removing output files of failed job activity_unibind_sites since they might be corrupted:
+results/activity/MA0603.1/MA0603.1-unibind.tsv
+[Mon Dec 25 11:27:20 2023]
+Finished job 7.
+7 of 67 steps (10%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-25T112705.052293.snakemake.log

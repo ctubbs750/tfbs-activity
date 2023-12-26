@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+unibind_flatten_dir        1
+unibind_unique_pwms        1
+total                      3
+
+Select jobs to execute...
+
+[Wed Dec 13 08:08:02 2023]
+Job 2: 
+        - Flattens unpacked tarbell. Not great - for the moment just check for creation of first in OP.
+        Also removes all the empty dirs.
+        
+Reason: Missing output files: resources/data/unibind/damo_hg38_all_TFBS_unpacked
+DAG of jobs will be updated after completion.
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule unibind_flatten_dir in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/unibind.smk, line 51:
+Job 2  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+resources/data/unibind/damo_hg38_all_TFBS_unpacked
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-13T080801.109193.snakemake.log

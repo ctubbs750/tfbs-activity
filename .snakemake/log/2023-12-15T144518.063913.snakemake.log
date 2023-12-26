@@ -1,0 +1,972 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                   count
+----------------------------------  -------
+activity_activity_metadata                1
+activity_activity_metaplot                1
+activity_activity_stats                   7
+activity_combine_data                     1
+activity_combine_plots                    1
+activity_intersect_motifs                 7
+activity_map_activity                     7
+activity_plot                             7
+activity_score_unibind                    7
+all                                       1
+pwmscan_main_bed2fasta                    7
+pwmscan_main_calc_probabilities           7
+pwmscan_main_compile_pwmscan              1
+pwmscan_main_compress_sites               7
+pwmscan_main_process_probabilities        7
+pwmscan_main_scan_genome                  7
+total                                    76
+
+Select jobs to execute...
+
+[Fri Dec 15 14:46:04 2023]
+Job 7: 
+        c99 mode
+        
+Reason: Updated input files: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/resources/software/PWMScan/matrix_prob.c (cached), https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/resources/software/PWMScan/matrix_scan.c (cached)
+
+
+[Fri Dec 15 14:46:04 2023]
+rule activity_score_unibind:
+    input: results/activity/MA0006.1/MA0006.1-unibind.tsv, results/pwmscan/MA0006.1/MA0006.1-pwm.txt
+    output: results/activity/MA0006.1/MA0006.1-unibind_scored.tsv
+    jobid: 76
+    reason: Software environment definition has changed since last execution
+    wildcards: PROFILE=MA0006.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:46:04 2023]
+rule activity_score_unibind:
+    input: results/activity/MA0036.3/MA0036.3-unibind.tsv, results/pwmscan/MA0036.3/MA0036.3-pwm.txt
+    output: results/activity/MA0036.3/MA0036.3-unibind_scored.tsv
+    jobid: 91
+    reason: Software environment definition has changed since last execution
+    wildcards: PROFILE=MA0036.3
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:46:04 2023]
+rule activity_score_unibind:
+    input: results/activity/MA0007.3/MA0007.3-unibind.tsv, results/pwmscan/MA0007.3/MA0007.3-pwm.txt
+    output: results/activity/MA0007.3/MA0007.3-unibind_scored.tsv
+    jobid: 81
+    reason: Software environment definition has changed since last execution
+    wildcards: PROFILE=MA0007.3
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:46:04 2023]
+rule activity_score_unibind:
+    input: results/activity/MA0004.1/MA0004.1-unibind.tsv, results/pwmscan/MA0004.1/MA0004.1-pwm.txt
+    output: results/activity/MA0004.1/MA0004.1-unibind_scored.tsv
+    jobid: 71
+    reason: Software environment definition has changed since last execution
+    wildcards: PROFILE=MA0004.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:46:04 2023]
+rule activity_score_unibind:
+    input: results/activity/MA0002.2/MA0002.2-unibind.tsv, results/pwmscan/MA0002.2/MA0002.2-pwm.txt
+    output: results/activity/MA0002.2/MA0002.2-unibind_scored.tsv
+    jobid: 61
+    reason: Software environment definition has changed since last execution
+    wildcards: PROFILE=MA0002.2
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:46:04 2023]
+rule activity_score_unibind:
+    input: results/activity/MA0003.4/MA0003.4-unibind.tsv, results/pwmscan/MA0003.4/MA0003.4-pwm.txt
+    output: results/activity/MA0003.4/MA0003.4-unibind_scored.tsv
+    jobid: 66
+    reason: Software environment definition has changed since last execution
+    wildcards: PROFILE=MA0003.4
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:46:05 2023]
+rule activity_score_unibind:
+    input: results/activity/MA0139.1/MA0139.1-unibind.tsv, results/pwmscan/MA0139.1/MA0139.1-pwm.txt
+    output: results/activity/MA0139.1/MA0139.1-unibind_scored.tsv
+    jobid: 86
+    reason: Software environment definition has changed since last execution
+    wildcards: PROFILE=MA0139.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:46:05 2023]
+Finished job 7.
+1 of 76 steps (1%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:46:05 2023]
+Job 21: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0004.1/MA0004.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Fri Dec 15 14:46:05 2023]
+Job 35: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0007.3/MA0007.3-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+
+[Fri Dec 15 14:46:05 2023]
+Job 49: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0036.3/MA0036.3-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Fri Dec 15 14:46:05 2023]
+Job 42: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0139.1/MA0139.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Fri Dec 15 14:46:05 2023]
+Job 14: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0003.4/MA0003.4-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Fri Dec 15 14:46:06 2023]
+Job 6: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0002.2/MA0002.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Fri Dec 15 14:46:06 2023]
+Job 28: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0006.1/MA0006.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+[Fri Dec 15 14:46:06 2023]
+Finished job 21.
+2 of 76 steps (3%) done
+[Fri Dec 15 14:46:06 2023]
+Finished job 35.
+3 of 76 steps (4%) done
+[Fri Dec 15 14:46:06 2023]
+Finished job 49.
+4 of 76 steps (5%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:46:06 2023]
+Job 20: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0004.1/MA0004.1-pvals.raw
+
+
+[Fri Dec 15 14:46:06 2023]
+Job 34: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0007.3/MA0007.3-pvals.raw
+
+
+[Fri Dec 15 14:46:06 2023]
+Job 48: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0036.3/MA0036.3-pvals.raw
+
+[Fri Dec 15 14:46:07 2023]
+Finished job 42.
+5 of 76 steps (7%) done
+[Fri Dec 15 14:46:07 2023]
+Finished job 14.
+6 of 76 steps (8%) done
+[Fri Dec 15 14:46:07 2023]
+Finished job 6.
+7 of 76 steps (9%) done
+[Fri Dec 15 14:46:07 2023]
+Finished job 28.
+8 of 76 steps (11%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:46:07 2023]
+Job 27: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0006.1/MA0006.1-pvals.raw
+
+
+[Fri Dec 15 14:46:07 2023]
+Job 13: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0003.4/MA0003.4-pvals.raw
+
+
+[Fri Dec 15 14:46:07 2023]
+Job 41: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0139.1/MA0139.1-pvals.raw
+
+
+[Fri Dec 15 14:46:07 2023]
+Job 5: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0002.2/MA0002.2-pvals.raw
+
+[Fri Dec 15 14:46:07 2023]
+Finished job 34.
+9 of 76 steps (12%) done
+Removing temporary output results/pwmscan/MA0007.3/MA0007.3-pvals.raw.
+[Fri Dec 15 14:46:07 2023]
+Finished job 20.
+10 of 76 steps (13%) done
+Removing temporary output results/pwmscan/MA0004.1/MA0004.1-pvals.raw.
+[Fri Dec 15 14:46:08 2023]
+Finished job 48.
+11 of 76 steps (14%) done
+Removing temporary output results/pwmscan/MA0036.3/MA0036.3-pvals.raw.
+Select jobs to execute...
+
+[Fri Dec 15 14:46:08 2023]
+Job 45: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: results/pwmscan/MA0036.3/MA0036.3-sites.bed; Input files updated by another job: resources/software/PWMScan/matrix_scan, results/pwmscan/MA0036.3/MA0036.3-coeff.txt
+
+
+[Fri Dec 15 14:46:08 2023]
+Job 17: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: results/pwmscan/MA0004.1/MA0004.1-sites.bed; Input files updated by another job: resources/software/PWMScan/matrix_scan, results/pwmscan/MA0004.1/MA0004.1-coeff.txt
+
+
+[Fri Dec 15 14:46:08 2023]
+Job 31: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: results/pwmscan/MA0007.3/MA0007.3-sites.bed; Input files updated by another job: results/pwmscan/MA0007.3/MA0007.3-coeff.txt, resources/software/PWMScan/matrix_scan
+
+[Fri Dec 15 14:46:08 2023]
+Finished job 27.
+12 of 76 steps (16%) done
+Removing temporary output results/pwmscan/MA0006.1/MA0006.1-pvals.raw.
+[Fri Dec 15 14:46:08 2023]
+Finished job 13.
+13 of 76 steps (17%) done
+Removing temporary output results/pwmscan/MA0003.4/MA0003.4-pvals.raw.
+[Fri Dec 15 14:46:08 2023]
+Finished job 5.
+14 of 76 steps (18%) done
+Removing temporary output results/pwmscan/MA0002.2/MA0002.2-pvals.raw.
+[Fri Dec 15 14:46:08 2023]
+Finished job 41.
+15 of 76 steps (20%) done
+Removing temporary output results/pwmscan/MA0139.1/MA0139.1-pvals.raw.
+Select jobs to execute...
+
+[Fri Dec 15 14:46:08 2023]
+Job 10: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: results/pwmscan/MA0003.4/MA0003.4-sites.bed; Input files updated by another job: resources/software/PWMScan/matrix_scan, results/pwmscan/MA0003.4/MA0003.4-coeff.txt
+
+
+[Fri Dec 15 14:46:08 2023]
+Job 2: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: results/pwmscan/MA0002.2/MA0002.2-sites.bed; Input files updated by another job: results/pwmscan/MA0002.2/MA0002.2-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Fri Dec 15 14:46:09 2023]
+Job 38: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: results/pwmscan/MA0139.1/MA0139.1-sites.bed; Input files updated by another job: results/pwmscan/MA0139.1/MA0139.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Fri Dec 15 14:46:09 2023]
+Job 24: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: results/pwmscan/MA0006.1/MA0006.1-sites.bed; Input files updated by another job: resources/software/PWMScan/matrix_scan, results/pwmscan/MA0006.1/MA0006.1-coeff.txt
+
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+Activating conda environment: tfbs-activity
+[Fri Dec 15 14:47:09 2023]
+Finished job 76.
+16 of 76 steps (21%) done
+[Fri Dec 15 14:47:13 2023]
+Finished job 71.
+17 of 76 steps (22%) done
+[Fri Dec 15 14:47:22 2023]
+Finished job 66.
+18 of 76 steps (24%) done
+[Fri Dec 15 14:47:28 2023]
+Finished job 91.
+19 of 76 steps (25%) done
+[Fri Dec 15 14:47:31 2023]
+Finished job 61.
+20 of 76 steps (26%) done
+[Fri Dec 15 14:48:21 2023]
+Finished job 86.
+21 of 76 steps (28%) done
+[Fri Dec 15 14:48:30 2023]
+Finished job 81.
+22 of 76 steps (29%) done
+[Fri Dec 15 14:49:51 2023]
+Finished job 10.
+23 of 76 steps (30%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:49:51 2023]
+Job 15: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0003.4/MA0003.4-sites.fa; Input files updated by another job: results/pwmscan/MA0003.4/MA0003.4-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Fri Dec 15 14:49:53 2023]
+Finished job 31.
+24 of 76 steps (32%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:49:53 2023]
+Job 36: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0007.3/MA0007.3-sites.fa; Input files updated by another job: results/pwmscan/MA0007.3/MA0007.3-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Fri Dec 15 14:49:54 2023]
+Finished job 17.
+25 of 76 steps (33%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:49:54 2023]
+Job 22: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0004.1/MA0004.1-sites.fa; Input files updated by another job: results/pwmscan/MA0004.1/MA0004.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Fri Dec 15 14:49:54 2023]
+Finished job 24.
+26 of 76 steps (34%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:49:54 2023]
+Job 29: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0006.1/MA0006.1-sites.fa; Input files updated by another job: results/pwmscan/MA0006.1/MA0006.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Fri Dec 15 14:49:59 2023]
+Finished job 38.
+27 of 76 steps (36%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:49:59 2023]
+Job 43: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0139.1/MA0139.1-sites.fa; Input files updated by another job: results/pwmscan/MA0139.1/MA0139.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Fri Dec 15 14:50:23 2023]
+Finished job 2.
+28 of 76 steps (37%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:50:23 2023]
+Job 8: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0002.2/MA0002.2-sites.fa; Input files updated by another job: results/pwmscan/MA0002.2/MA0002.2-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Fri Dec 15 14:50:23 2023]
+Finished job 45.
+29 of 76 steps (38%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:50:23 2023]
+Job 50: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0036.3/MA0036.3-sites.fa; Input files updated by another job: results/pwmscan/MA0036.3/MA0036.3-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Fri Dec 15 14:51:29 2023]
+Finished job 36.
+30 of 76 steps (39%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:51:29 2023]
+Job 30: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA0007.3/MA0007.3-sites.fa, results/pwmscan/MA0007.3/MA0007.3-sites.bed
+
+[Fri Dec 15 14:51:41 2023]
+Finished job 30.
+31 of 76 steps (41%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:51:41 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA0007.3/MA0007.3-sites.bed.gz, results/activity/MA0007.3/MA0007.3-unibind_scored.tsv
+    output: results/activity/MA0007.3/MA0007.3-unibind_intersect.bed
+    jobid: 80
+    reason: Input files updated by another job: results/activity/MA0007.3/MA0007.3-unibind_scored.tsv, results/pwmscan/MA0007.3/MA0007.3-sites.bed.gz
+    wildcards: PROFILE=MA0007.3
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:51:50 2023]
+Finished job 80.
+32 of 76 steps (42%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:51:50 2023]
+rule activity_map_activity:
+    input: results/activity/MA0007.3/MA0007.3-unibind_intersect.bed
+    output: results/activity/MA0007.3/MA0007.3-map.tsv
+    jobid: 79
+    reason: Input files updated by another job: results/activity/MA0007.3/MA0007.3-unibind_intersect.bed
+    wildcards: PROFILE=MA0007.3
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:52:00 2023]
+Finished job 79.
+33 of 76 steps (43%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:52:00 2023]
+rule activity_activity_stats:
+    input: results/activity/MA0007.3/MA0007.3-map.tsv, results/pwmscan/MA0007.3/MA0007.3-pvals.txt
+    output: results/activity/MA0007.3/MA0007.3-map_statistics.tsv
+    jobid: 78
+    reason: Input files updated by another job: results/pwmscan/MA0007.3/MA0007.3-pvals.txt, results/activity/MA0007.3/MA0007.3-map.tsv
+    wildcards: PROFILE=MA0007.3
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:52:08 2023]
+Finished job 78.
+34 of 76 steps (45%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:52:08 2023]
+rule activity_plot:
+    input: results/activity/MA0007.3/MA0007.3-map_statistics.tsv
+    output: results/activity/MA0007.3/MA0007.3-activity.pdf
+    jobid: 98
+    reason: Input files updated by another job: results/activity/MA0007.3/MA0007.3-map_statistics.tsv
+    wildcards: PROFILE=MA0007.3
+    resources: tmpdir=/tmp
+
+Activating conda environment: conda_R
+[Fri Dec 15 14:52:09 2023]
+Finished job 43.
+35 of 76 steps (46%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:52:09 2023]
+Job 37: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA0139.1/MA0139.1-sites.bed, results/pwmscan/MA0139.1/MA0139.1-sites.fa
+
+[Fri Dec 15 14:52:36 2023]
+Finished job 98.
+36 of 76 steps (47%) done
+[Fri Dec 15 14:52:36 2023]
+Finished job 37.
+37 of 76 steps (49%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:52:36 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA0139.1/MA0139.1-sites.bed.gz, results/activity/MA0139.1/MA0139.1-unibind_scored.tsv
+    output: results/activity/MA0139.1/MA0139.1-unibind_intersect.bed
+    jobid: 85
+    reason: Input files updated by another job: results/activity/MA0139.1/MA0139.1-unibind_scored.tsv, results/pwmscan/MA0139.1/MA0139.1-sites.bed.gz
+    wildcards: PROFILE=MA0139.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:52:41 2023]
+Finished job 85.
+38 of 76 steps (50%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:52:41 2023]
+rule activity_map_activity:
+    input: results/activity/MA0139.1/MA0139.1-unibind_intersect.bed
+    output: results/activity/MA0139.1/MA0139.1-map.tsv
+    jobid: 84
+    reason: Input files updated by another job: results/activity/MA0139.1/MA0139.1-unibind_intersect.bed
+    wildcards: PROFILE=MA0139.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:52:51 2023]
+Finished job 84.
+39 of 76 steps (51%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:52:51 2023]
+rule activity_activity_stats:
+    input: results/activity/MA0139.1/MA0139.1-map.tsv, results/pwmscan/MA0139.1/MA0139.1-pvals.txt
+    output: results/activity/MA0139.1/MA0139.1-map_statistics.tsv
+    jobid: 83
+    reason: Input files updated by another job: results/pwmscan/MA0139.1/MA0139.1-pvals.txt, results/activity/MA0139.1/MA0139.1-map.tsv
+    wildcards: PROFILE=MA0139.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:52:52 2023]
+Finished job 83.
+40 of 76 steps (53%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:52:52 2023]
+rule activity_plot:
+    input: results/activity/MA0139.1/MA0139.1-map_statistics.tsv
+    output: results/activity/MA0139.1/MA0139.1-activity.pdf
+    jobid: 99
+    reason: Input files updated by another job: results/activity/MA0139.1/MA0139.1-map_statistics.tsv
+    wildcards: PROFILE=MA0139.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: conda_R
+[Fri Dec 15 14:53:04 2023]
+Finished job 99.
+41 of 76 steps (54%) done
+[Fri Dec 15 14:57:56 2023]
+Finished job 15.
+42 of 76 steps (55%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:57:56 2023]
+Job 9: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA0003.4/MA0003.4-sites.fa, results/pwmscan/MA0003.4/MA0003.4-sites.bed
+
+[Fri Dec 15 14:58:44 2023]
+Finished job 9.
+43 of 76 steps (57%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:58:44 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA0003.4/MA0003.4-sites.bed.gz, results/activity/MA0003.4/MA0003.4-unibind_scored.tsv
+    output: results/activity/MA0003.4/MA0003.4-unibind_intersect.bed
+    jobid: 65
+    reason: Input files updated by another job: results/pwmscan/MA0003.4/MA0003.4-sites.bed.gz, results/activity/MA0003.4/MA0003.4-unibind_scored.tsv
+    wildcards: PROFILE=MA0003.4
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:59:03 2023]
+Finished job 65.
+44 of 76 steps (58%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:59:03 2023]
+rule activity_map_activity:
+    input: results/activity/MA0003.4/MA0003.4-unibind_intersect.bed
+    output: results/activity/MA0003.4/MA0003.4-map.tsv
+    jobid: 64
+    reason: Input files updated by another job: results/activity/MA0003.4/MA0003.4-unibind_intersect.bed
+    wildcards: PROFILE=MA0003.4
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 14:59:59 2023]
+Finished job 64.
+45 of 76 steps (59%) done
+Select jobs to execute...
+
+[Fri Dec 15 14:59:59 2023]
+rule activity_activity_stats:
+    input: results/activity/MA0003.4/MA0003.4-map.tsv, results/pwmscan/MA0003.4/MA0003.4-pvals.txt
+    output: results/activity/MA0003.4/MA0003.4-map_statistics.tsv
+    jobid: 63
+    reason: Input files updated by another job: results/pwmscan/MA0003.4/MA0003.4-pvals.txt, results/activity/MA0003.4/MA0003.4-map.tsv
+    wildcards: PROFILE=MA0003.4
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:00:00 2023]
+Finished job 63.
+46 of 76 steps (61%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:00:00 2023]
+rule activity_plot:
+    input: results/activity/MA0003.4/MA0003.4-map_statistics.tsv
+    output: results/activity/MA0003.4/MA0003.4-activity.pdf
+    jobid: 95
+    reason: Input files updated by another job: results/activity/MA0003.4/MA0003.4-map_statistics.tsv
+    wildcards: PROFILE=MA0003.4
+    resources: tmpdir=/tmp
+
+Activating conda environment: conda_R
+[Fri Dec 15 15:00:12 2023]
+Finished job 95.
+47 of 76 steps (62%) done
+[Fri Dec 15 15:10:07 2023]
+Finished job 22.
+48 of 76 steps (63%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:10:07 2023]
+Job 16: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA0004.1/MA0004.1-sites.fa, results/pwmscan/MA0004.1/MA0004.1-sites.bed
+
+[Fri Dec 15 15:10:12 2023]
+Finished job 50.
+49 of 76 steps (64%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:10:12 2023]
+Job 44: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA0036.3/MA0036.3-sites.fa, results/pwmscan/MA0036.3/MA0036.3-sites.bed
+
+[Fri Dec 15 15:10:54 2023]
+Finished job 16.
+50 of 76 steps (66%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:10:54 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA0004.1/MA0004.1-sites.bed.gz, results/activity/MA0004.1/MA0004.1-unibind_scored.tsv
+    output: results/activity/MA0004.1/MA0004.1-unibind_intersect.bed
+    jobid: 70
+    reason: Input files updated by another job: results/activity/MA0004.1/MA0004.1-unibind_scored.tsv, results/pwmscan/MA0004.1/MA0004.1-sites.bed.gz
+    wildcards: PROFILE=MA0004.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:11:25 2023]
+Finished job 70.
+51 of 76 steps (67%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:11:25 2023]
+rule activity_map_activity:
+    input: results/activity/MA0004.1/MA0004.1-unibind_intersect.bed
+    output: results/activity/MA0004.1/MA0004.1-map.tsv
+    jobid: 69
+    reason: Input files updated by another job: results/activity/MA0004.1/MA0004.1-unibind_intersect.bed
+    wildcards: PROFILE=MA0004.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:12:04 2023]
+Finished job 29.
+52 of 76 steps (68%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:12:04 2023]
+Job 23: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA0006.1/MA0006.1-sites.bed, results/pwmscan/MA0006.1/MA0006.1-sites.fa
+
+[Fri Dec 15 15:12:07 2023]
+Finished job 8.
+53 of 76 steps (70%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:12:07 2023]
+Job 1: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA0002.2/MA0002.2-sites.bed, results/pwmscan/MA0002.2/MA0002.2-sites.fa
+
+[Fri Dec 15 15:12:16 2023]
+Finished job 44.
+54 of 76 steps (71%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:12:16 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA0036.3/MA0036.3-sites.bed.gz, results/activity/MA0036.3/MA0036.3-unibind_scored.tsv
+    output: results/activity/MA0036.3/MA0036.3-unibind_intersect.bed
+    jobid: 90
+    reason: Input files updated by another job: results/pwmscan/MA0036.3/MA0036.3-sites.bed.gz, results/activity/MA0036.3/MA0036.3-unibind_scored.tsv
+    wildcards: PROFILE=MA0036.3
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:12:50 2023]
+Finished job 90.
+55 of 76 steps (72%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:12:50 2023]
+rule activity_map_activity:
+    input: results/activity/MA0036.3/MA0036.3-unibind_intersect.bed
+    output: results/activity/MA0036.3/MA0036.3-map.tsv
+    jobid: 89
+    reason: Input files updated by another job: results/activity/MA0036.3/MA0036.3-unibind_intersect.bed
+    wildcards: PROFILE=MA0036.3
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:13:11 2023]
+Finished job 23.
+56 of 76 steps (74%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:13:11 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA0006.1/MA0006.1-sites.bed.gz, results/activity/MA0006.1/MA0006.1-unibind_scored.tsv
+    output: results/activity/MA0006.1/MA0006.1-unibind_intersect.bed
+    jobid: 75
+    reason: Input files updated by another job: results/activity/MA0006.1/MA0006.1-unibind_scored.tsv, results/pwmscan/MA0006.1/MA0006.1-sites.bed.gz
+    wildcards: PROFILE=MA0006.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:13:44 2023]
+Finished job 75.
+57 of 76 steps (75%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:13:44 2023]
+rule activity_map_activity:
+    input: results/activity/MA0006.1/MA0006.1-unibind_intersect.bed
+    output: results/activity/MA0006.1/MA0006.1-map.tsv
+    jobid: 74
+    reason: Input files updated by another job: results/activity/MA0006.1/MA0006.1-unibind_intersect.bed
+    wildcards: PROFILE=MA0006.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:14:06 2023]
+Finished job 69.
+58 of 76 steps (76%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:14:06 2023]
+rule activity_activity_stats:
+    input: results/activity/MA0004.1/MA0004.1-map.tsv, results/pwmscan/MA0004.1/MA0004.1-pvals.txt
+    output: results/activity/MA0004.1/MA0004.1-map_statistics.tsv
+    jobid: 68
+    reason: Input files updated by another job: results/activity/MA0004.1/MA0004.1-map.tsv, results/pwmscan/MA0004.1/MA0004.1-pvals.txt
+    wildcards: PROFILE=MA0004.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:14:07 2023]
+Finished job 68.
+59 of 76 steps (78%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:14:07 2023]
+rule activity_plot:
+    input: results/activity/MA0004.1/MA0004.1-map_statistics.tsv
+    output: results/activity/MA0004.1/MA0004.1-activity.pdf
+    jobid: 96
+    reason: Input files updated by another job: results/activity/MA0004.1/MA0004.1-map_statistics.tsv
+    wildcards: PROFILE=MA0004.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: conda_R
+[Fri Dec 15 15:14:12 2023]
+Finished job 96.
+60 of 76 steps (79%) done
+[Fri Dec 15 15:14:24 2023]
+Finished job 1.
+61 of 76 steps (80%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:14:24 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA0002.2/MA0002.2-sites.bed.gz, results/activity/MA0002.2/MA0002.2-unibind_scored.tsv
+    output: results/activity/MA0002.2/MA0002.2-unibind_intersect.bed
+    jobid: 60
+    reason: Input files updated by another job: results/pwmscan/MA0002.2/MA0002.2-sites.bed.gz, results/activity/MA0002.2/MA0002.2-unibind_scored.tsv
+    wildcards: PROFILE=MA0002.2
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:15:03 2023]
+Finished job 60.
+62 of 76 steps (82%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:15:03 2023]
+rule activity_map_activity:
+    input: results/activity/MA0002.2/MA0002.2-unibind_intersect.bed
+    output: results/activity/MA0002.2/MA0002.2-map.tsv
+    jobid: 59
+    reason: Input files updated by another job: results/activity/MA0002.2/MA0002.2-unibind_intersect.bed
+    wildcards: PROFILE=MA0002.2
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:15:19 2023]
+Finished job 89.
+63 of 76 steps (83%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:15:19 2023]
+rule activity_activity_stats:
+    input: results/activity/MA0036.3/MA0036.3-map.tsv, results/pwmscan/MA0036.3/MA0036.3-pvals.txt
+    output: results/activity/MA0036.3/MA0036.3-map_statistics.tsv
+    jobid: 88
+    reason: Input files updated by another job: results/pwmscan/MA0036.3/MA0036.3-pvals.txt, results/activity/MA0036.3/MA0036.3-map.tsv
+    wildcards: PROFILE=MA0036.3
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:15:19 2023]
+Finished job 88.
+64 of 76 steps (84%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:15:19 2023]
+rule activity_plot:
+    input: results/activity/MA0036.3/MA0036.3-map_statistics.tsv
+    output: results/activity/MA0036.3/MA0036.3-activity.pdf
+    jobid: 100
+    reason: Input files updated by another job: results/activity/MA0036.3/MA0036.3-map_statistics.tsv
+    wildcards: PROFILE=MA0036.3
+    resources: tmpdir=/tmp
+
+Activating conda environment: conda_R
+[Fri Dec 15 15:15:25 2023]
+Finished job 100.
+65 of 76 steps (86%) done
+[Fri Dec 15 15:16:38 2023]
+Finished job 74.
+66 of 76 steps (87%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:16:38 2023]
+rule activity_activity_stats:
+    input: results/activity/MA0006.1/MA0006.1-map.tsv, results/pwmscan/MA0006.1/MA0006.1-pvals.txt
+    output: results/activity/MA0006.1/MA0006.1-map_statistics.tsv
+    jobid: 73
+    reason: Input files updated by another job: results/pwmscan/MA0006.1/MA0006.1-pvals.txt, results/activity/MA0006.1/MA0006.1-map.tsv
+    wildcards: PROFILE=MA0006.1
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:16:39 2023]
+Finished job 73.
+67 of 76 steps (88%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:16:39 2023]
+rule activity_plot:
+    input: results/activity/MA0006.1/MA0006.1-map_statistics.tsv
+    output: results/activity/MA0006.1/MA0006.1-activity.pdf
+    jobid: 97
+    reason: Input files updated by another job: results/activity/MA0006.1/MA0006.1-map_statistics.tsv
+    wildcards: PROFILE=MA0006.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: conda_R
+[Fri Dec 15 15:16:44 2023]
+Finished job 97.
+68 of 76 steps (89%) done
+[Fri Dec 15 15:17:46 2023]
+Finished job 59.
+69 of 76 steps (91%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:17:46 2023]
+rule activity_activity_stats:
+    input: results/activity/MA0002.2/MA0002.2-map.tsv, results/pwmscan/MA0002.2/MA0002.2-pvals.txt
+    output: results/activity/MA0002.2/MA0002.2-map_statistics.tsv
+    jobid: 58
+    reason: Input files updated by another job: results/pwmscan/MA0002.2/MA0002.2-pvals.txt, results/activity/MA0002.2/MA0002.2-map.tsv
+    wildcards: PROFILE=MA0002.2
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:17:46 2023]
+Finished job 58.
+70 of 76 steps (92%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:17:46 2023]
+rule activity_combine_data:
+    input: results/activity/MA0002.2/MA0002.2-map_statistics.tsv, results/activity/MA0003.4/MA0003.4-map_statistics.tsv, results/activity/MA0004.1/MA0004.1-map_statistics.tsv, results/activity/MA0006.1/MA0006.1-map_statistics.tsv, results/activity/MA0007.3/MA0007.3-map_statistics.tsv, results/activity/MA0139.1/MA0139.1-map_statistics.tsv, results/activity/MA0036.3/MA0036.3-map_statistics.tsv
+    output: results/activity/activity_metadata.tsv
+    jobid: 57
+    reason: Input files updated by another job: results/activity/MA0007.3/MA0007.3-map_statistics.tsv, results/activity/MA0139.1/MA0139.1-map_statistics.tsv, results/activity/MA0036.3/MA0036.3-map_statistics.tsv, results/activity/MA0002.2/MA0002.2-map_statistics.tsv, results/activity/MA0004.1/MA0004.1-map_statistics.tsv, results/activity/MA0006.1/MA0006.1-map_statistics.tsv, results/activity/MA0003.4/MA0003.4-map_statistics.tsv
+    resources: tmpdir=/tmp
+
+
+[Fri Dec 15 15:17:47 2023]
+rule activity_plot:
+    input: results/activity/MA0002.2/MA0002.2-map_statistics.tsv
+    output: results/activity/MA0002.2/MA0002.2-activity.pdf
+    jobid: 94
+    reason: Input files updated by another job: results/activity/MA0002.2/MA0002.2-map_statistics.tsv
+    wildcards: PROFILE=MA0002.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: conda_R
+[Fri Dec 15 15:17:47 2023]
+Finished job 57.
+71 of 76 steps (93%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:17:47 2023]
+rule activity_activity_metadata:
+    input: results/activity/activity_metadata.tsv
+    output: results/activity/activity_metadata-summary.tsv
+    jobid: 56
+    reason: Input files updated by another job: results/activity/activity_metadata.tsv
+    resources: tmpdir=/tmp
+
+[Fri Dec 15 15:17:48 2023]
+Finished job 56.
+72 of 76 steps (95%) done
+Select jobs to execute...
+
+[Fri Dec 15 15:17:48 2023]
+Job 55: 
+        d
+        
+Reason: Missing output files: results/activity/activity_metaplot.pdf; Input files updated by another job: results/activity/activity_metadata.tsv, results/activity/activity_metadata-summary.tsv
+
+[Fri Dec 15 15:17:48 2023]
+Error in rule activity_activity_metaplot:
+    jobid: 55
+    input: results/activity/activity_metadata-summary.tsv, results/activity/activity_metadata.tsv
+    output: results/activity/activity_metaplot.pdf
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/activity.smk, line 158:
+Command 'set -euo pipefail;  Rscript --vanilla /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/.snakemake/scripts/tmpncpjgeo5.metaplot.R' returned non-zero exit status 127.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/activity.smk", line 158, in __rule_activity_metaplot
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Fri Dec 15 15:17:52 2023]
+Finished job 94.
+73 of 76 steps (96%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-15T144518.063913.snakemake.log

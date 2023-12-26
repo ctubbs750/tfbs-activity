@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                       count
+----------------------  -------
+all                           1
+unibind_unpack_unibind        1
+total                         2
+
+Select jobs to execute...
+
+[Wed Dec 13 06:55:39 2023]
+Job 1: 
+        - Unpacks UniBind tarbell
+        
+Reason: Missing output files: resources/data/unibind/damo_hg39_all_TFBS
+DAG of jobs will be updated after completion.
+
+[Wed Dec 13 07:01:09 2023]
+Error in rule unibind_unpack_unibind:
+    jobid: 1
+    input: resources/data/unibind/damo_hg39_all_TFBS.tar.gz
+    output: resources/data/unibind/damo_hg39_all_TFBS
+    shell:
+        
+        #tar -xzf resources/data/unibind/damo_hg39_all_TFBS.tar.gz -C resources/data/unibind
+        tar -xzf resources/data/unibind/damo_hg39_all_TFBS.tar.gz && mv damo_hg39_all_TFBS resources/data/unibind
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-13T065537.285203.snakemake.log

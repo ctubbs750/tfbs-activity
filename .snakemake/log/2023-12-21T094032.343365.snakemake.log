@@ -1,0 +1,1254 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                   count
+----------------------------------  -------
+activity_activity_metadata                1
+activity_activity_metaplot                1
+activity_activity_stats                 323
+activity_combine_data                     1
+activity_combine_plots                    1
+activity_intersect_motifs               323
+activity_map_activity                   323
+activity_plot                           323
+all                                       1
+pwmscan_main_bed2fasta                  323
+pwmscan_main_calc_probabilities         323
+pwmscan_main_compile_pwmscan              1
+pwmscan_main_compress_sites             323
+pwmscan_main_process_probabilities      323
+pwmscan_main_scan_genome                323
+total                                  2913
+
+Select jobs to execute...
+
+[Thu Dec 21 09:40:46 2023]
+Job 7: 
+        c99 mode
+        
+Reason: Updated input files: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/resources/software/PWMScan/matrix_prob.c (cached), https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/resources/software/PWMScan/matrix_scan.c (cached)
+
+[Thu Dec 21 09:40:47 2023]
+Finished job 7.
+1 of 2913 steps (0.0%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:40:47 2023]
+Job 170: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0051.1/MA0051.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 394: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0106.3/MA0106.3-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 408: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0112.3/MA0112.3-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 226: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0066.1/MA0066.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 282: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0080.5/MA0080.5-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 492: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0139.1/MA0139.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 163: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0050.2/MA0050.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 485: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0138.2/MA0138.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 499: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0140.2/MA0140.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 1990: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1418.1/MA1418.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 2046: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1527.1/MA1527.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 1668: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0861.1/MA0861.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:47 2023]
+Job 2228: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1643.1/MA1643.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 1976: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1149.1/MA1149.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 2130: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1575.1/MA1575.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 2116: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1573.1/MA1573.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 807: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0494.1/MA0494.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 1969: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1148.1/MA1148.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 1717: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1101.2/MA1101.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 1101: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0620.3/MA0620.3-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 1255: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0729.1/MA0729.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 2137: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1576.1/MA1576.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 2011: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1470.1/MA1470.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 1003: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0525.2/MA0525.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+[Thu Dec 21 09:40:48 2023]
+Finished job 170.
+2 of 2913 steps (0.1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 394.
+3 of 2913 steps (0.1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 226.
+4 of 2913 steps (0.1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 408.
+5 of 2913 steps (0.2%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 282.
+6 of 2913 steps (0.2%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 492.
+7 of 2913 steps (0.2%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 163.
+8 of 2913 steps (0.3%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 485.
+9 of 2913 steps (0.3%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 499.
+10 of 2913 steps (0.3%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 1990.
+11 of 2913 steps (0.4%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 2046.
+12 of 2913 steps (0.4%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 1668.
+13 of 2913 steps (0.4%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 1976.
+14 of 2913 steps (0.5%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 2228.
+15 of 2913 steps (1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 2130.
+16 of 2913 steps (1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 2116.
+17 of 2913 steps (1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 807.
+18 of 2913 steps (1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 1969.
+19 of 2913 steps (1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 1717.
+20 of 2913 steps (1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 1101.
+21 of 2913 steps (1%) done
+[Thu Dec 21 09:40:48 2023]
+Finished job 1255.
+22 of 2913 steps (1%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:40:48 2023]
+Job 162: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0050.2/MA0050.2-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 484: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0138.2/MA0138.2-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 498: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0140.2/MA0140.2-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 1667: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0861.1/MA0861.1-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 1975: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1149.1/MA1149.1-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 2129: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1575.1/MA1575.1-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 2115: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1573.1/MA1573.1-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 1989: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1418.1/MA1418.1-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 2227: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1643.1/MA1643.1-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 491: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0139.1/MA0139.1-pvals.raw
+
+
+[Thu Dec 21 09:40:48 2023]
+Job 2045: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1527.1/MA1527.1-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 806: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0494.1/MA0494.1-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 1968: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1148.1/MA1148.1-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 1716: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1101.2/MA1101.2-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 1100: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0620.3/MA0620.3-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 1254: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0729.1/MA0729.1-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 393: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0106.3/MA0106.3-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 169: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0051.1/MA0051.1-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 225: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0066.1/MA0066.1-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 407: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0112.3/MA0112.3-pvals.raw
+
+
+[Thu Dec 21 09:40:49 2023]
+Job 281: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0080.5/MA0080.5-pvals.raw
+
+[Thu Dec 21 09:40:49 2023]
+Finished job 2011.
+23 of 2913 steps (1%) done
+[Thu Dec 21 09:40:49 2023]
+Finished job 2137.
+24 of 2913 steps (1%) done
+[Thu Dec 21 09:40:49 2023]
+Finished job 1003.
+25 of 2913 steps (1%) done
+[Thu Dec 21 09:40:49 2023]
+Finished job 162.
+26 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0050.2/MA0050.2-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 484.
+27 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0138.2/MA0138.2-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 498.
+28 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0140.2/MA0140.2-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 1667.
+29 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0861.1/MA0861.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 1975.
+30 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA1149.1/MA1149.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 2129.
+31 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA1575.1/MA1575.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 2115.
+32 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA1573.1/MA1573.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 1989.
+33 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA1418.1/MA1418.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 2227.
+34 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA1643.1/MA1643.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 491.
+35 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0139.1/MA0139.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 2045.
+36 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA1527.1/MA1527.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 806.
+37 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0494.1/MA0494.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 1968.
+38 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA1148.1/MA1148.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 1716.
+39 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA1101.2/MA1101.2-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 1100.
+40 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0620.3/MA0620.3-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 1254.
+41 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0729.1/MA0729.1-pvals.raw.
+[Thu Dec 21 09:40:49 2023]
+Finished job 393.
+42 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0106.3/MA0106.3-pvals.raw.
+[Thu Dec 21 09:40:50 2023]
+Finished job 169.
+43 of 2913 steps (1%) done
+Removing temporary output results/pwmscan/MA0051.1/MA0051.1-pvals.raw.
+[Thu Dec 21 09:40:50 2023]
+Finished job 225.
+44 of 2913 steps (2%) done
+Removing temporary output results/pwmscan/MA0066.1/MA0066.1-pvals.raw.
+Select jobs to execute...
+
+[Thu Dec 21 09:40:50 2023]
+Job 2010: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1470.1/MA1470.1-pvals.raw
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 2136: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1576.1/MA1576.1-pvals.raw
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 1002: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0525.2/MA0525.2-pvals.raw
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 481: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0138.2/MA0138.2-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 159: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0050.2/MA0050.2-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 495: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0140.2/MA0140.2-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 390: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0106.3/MA0106.3-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 222: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: resources/software/PWMScan/matrix_scan, results/pwmscan/MA0066.1/MA0066.1-coeff.txt
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 166: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: resources/software/PWMScan/matrix_scan, results/pwmscan/MA0051.1/MA0051.1-coeff.txt
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 488: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0139.1/MA0139.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 803: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0494.1/MA0494.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 1965: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1148.1/MA1148.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 1097: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0620.3/MA0620.3-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 1713: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1101.2/MA1101.2-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 1251: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0729.1/MA0729.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 2224: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1643.1/MA1643.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 1664: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0861.1/MA0861.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 1972: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: resources/software/PWMScan/matrix_scan, results/pwmscan/MA1149.1/MA1149.1-coeff.txt
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 2126: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1575.1/MA1575.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 2112: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: resources/software/PWMScan/matrix_scan, results/pwmscan/MA1573.1/MA1573.1-coeff.txt
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 1986: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1418.1/MA1418.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:50 2023]
+Job 2042: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: results/pwmscan/MA1527.1/MA1527.1-sites.bed; Input files updated by another job: results/pwmscan/MA1527.1/MA1527.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+[Thu Dec 21 09:40:50 2023]
+Finished job 407.
+45 of 2913 steps (2%) done
+Removing temporary output results/pwmscan/MA0112.3/MA0112.3-pvals.raw.
+[Thu Dec 21 09:40:50 2023]
+Finished job 281.
+46 of 2913 steps (2%) done
+Removing temporary output results/pwmscan/MA0080.5/MA0080.5-pvals.raw.
+[Thu Dec 21 09:40:51 2023]
+Finished job 2010.
+47 of 2913 steps (2%) done
+Removing temporary output results/pwmscan/MA1470.1/MA1470.1-pvals.raw.
+[Thu Dec 21 09:40:51 2023]
+Finished job 2136.
+48 of 2913 steps (2%) done
+Removing temporary output results/pwmscan/MA1576.1/MA1576.1-pvals.raw.
+[Thu Dec 21 09:40:51 2023]
+Finished job 1002.
+49 of 2913 steps (2%) done
+Removing temporary output results/pwmscan/MA0525.2/MA0525.2-pvals.raw.
+Select jobs to execute...
+
+[Thu Dec 21 09:40:51 2023]
+Job 2007: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1470.1/MA1470.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:51 2023]
+Job 2133: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1576.1/MA1576.1-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:51 2023]
+Job 999: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0525.2/MA0525.2-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:51 2023]
+Job 404: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: results/pwmscan/MA0112.3/MA0112.3-sites.bed; Input files updated by another job: results/pwmscan/MA0112.3/MA0112.3-coeff.txt, resources/software/PWMScan/matrix_scan
+
+
+[Thu Dec 21 09:40:51 2023]
+Job 278: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0080.5/MA0080.5-coeff.txt, resources/software/PWMScan/matrix_scan
+
+Select jobs to execute...
+[Thu Dec 21 09:42:22 2023]
+Finished job 1713.
+50 of 2913 steps (2%) done
+
+[Thu Dec 21 09:42:22 2023]
+Job 1718: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1101.2/MA1101.2-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:22 2023]
+Finished job 1097.
+51 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:22 2023]
+Job 1102: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0620.3/MA0620.3-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:27 2023]
+Finished job 495.
+52 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:27 2023]
+Job 500: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0140.2/MA0140.2-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:29 2023]
+Finished job 2042.
+53 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:29 2023]
+Job 2047: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA1527.1/MA1527.1-sites.fa; Input files updated by another job: results/pwmscan/MA1527.1/MA1527.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:31 2023]
+Finished job 278.
+54 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:31 2023]
+Job 283: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0080.5/MA0080.5-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:32 2023]
+Finished job 2007.
+55 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:32 2023]
+Job 2012: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1470.1/MA1470.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:32 2023]
+Finished job 404.
+56 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:32 2023]
+Job 409: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0112.3/MA0112.3-sites.fa; Input files updated by another job: results/pwmscan/MA0112.3/MA0112.3-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:33 2023]
+Finished job 166.
+57 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:33 2023]
+Job 171: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0051.1/MA0051.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:35 2023]
+Finished job 2224.
+58 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:35 2023]
+Job 2229: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1643.1/MA1643.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:38 2023]
+Finished job 2112.
+59 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:38 2023]
+Job 2117: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1573.1/MA1573.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:40 2023]
+Finished job 1972.
+60 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:40 2023]
+Job 1977: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1149.1/MA1149.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:45 2023]
+Finished job 1664.
+61 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:45 2023]
+Job 1669: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0861.1/MA0861.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:49 2023]
+Finished job 1986.
+62 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:49 2023]
+Job 1991: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1418.1/MA1418.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:51 2023]
+Finished job 488.
+63 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:51 2023]
+Job 493: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0139.1/MA0139.1-sites.fa; Input files updated by another job: results/pwmscan/MA0139.1/MA0139.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:52 2023]
+Finished job 1251.
+64 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:52 2023]
+Job 1256: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA0729.1/MA0729.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:53 2023]
+Finished job 1965.
+65 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:53 2023]
+Job 1970: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Input files updated by another job: results/pwmscan/MA1148.1/MA1148.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:56 2023]
+Finished job 481.
+66 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:56 2023]
+Job 486: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0138.2/MA0138.2-sites.fa; Input files updated by another job: results/pwmscan/MA0138.2/MA0138.2-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:57 2023]
+Finished job 2117.
+67 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:57 2023]
+Job 2111: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA1573.1/MA1573.1-sites.bed, results/pwmscan/MA1573.1/MA1573.1-sites.fa
+
+[Thu Dec 21 09:42:57 2023]
+Finished job 222.
+68 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:57 2023]
+Job 227: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0066.1/MA0066.1-sites.fa; Input files updated by another job: results/pwmscan/MA0066.1/MA0066.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:42:58 2023]
+Finished job 2111.
+69 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:58 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA1573.1/MA1573.1-sites.bed.gz, results/activity/MA1573.1/MA1573.1-unibind_scored.tsv
+    output: results/activity/MA1573.1/MA1573.1-unibind_intersect.bed
+    jobid: 3779
+    reason: Input files updated by another job: results/pwmscan/MA1573.1/MA1573.1-sites.bed.gz
+    wildcards: PROFILE=MA1573.1
+    resources: tmpdir=/tmp
+
+[Thu Dec 21 09:42:59 2023]
+Finished job 3779.
+70 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:59 2023]
+rule activity_map_activity:
+    input: results/activity/MA1573.1/MA1573.1-unibind_intersect.bed
+    output: results/activity/MA1573.1/MA1573.1-map.tsv
+    jobid: 3778
+    reason: Input files updated by another job: results/activity/MA1573.1/MA1573.1-unibind_intersect.bed
+    wildcards: PROFILE=MA1573.1
+    resources: tmpdir=/tmp
+
+[Thu Dec 21 09:42:59 2023]
+Finished job 2133.
+71 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:42:59 2023]
+Job 2138: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA1576.1/MA1576.1-sites.fa; Input files updated by another job: results/pwmscan/MA1576.1/MA1576.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:43:00 2023]
+Finished job 3778.
+72 of 2913 steps (2%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:00 2023]
+rule activity_activity_stats:
+    input: results/activity/MA1573.1/MA1573.1-map.tsv, results/pwmscan/MA1573.1/MA1573.1-pvals.txt
+    output: results/activity/MA1573.1/MA1573.1-map_statistics.tsv
+    jobid: 3777
+    reason: Input files updated by another job: results/pwmscan/MA1573.1/MA1573.1-pvals.txt, results/activity/MA1573.1/MA1573.1-map.tsv
+    wildcards: PROFILE=MA1573.1
+    resources: tmpdir=/tmp
+
+[Thu Dec 21 09:43:01 2023]
+Finished job 3777.
+73 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:01 2023]
+rule activity_plot:
+    input: results/activity/MA1573.1/MA1573.1-map_statistics.tsv, results/activity/MA1573.1/MA1573.1-fileset.tsv
+    output: results/activity/MA1573.1/MA1573.1-activity.pdf
+    jobid: 4189
+    reason: Missing output files: results/activity/MA1573.1/MA1573.1-activity.pdf; Input files updated by another job: results/activity/MA1573.1/MA1573.1-map_statistics.tsv
+    wildcards: PROFILE=MA1573.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: conda_R
+[Thu Dec 21 09:43:02 2023]
+Finished job 159.
+74 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:02 2023]
+Job 164: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0050.2/MA0050.2-sites.fa; Input files updated by another job: results/pwmscan/MA0050.2/MA0050.2-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:43:04 2023]
+Finished job 2012.
+75 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:04 2023]
+Job 2006: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA1470.1/MA1470.1-sites.fa, results/pwmscan/MA1470.1/MA1470.1-sites.bed
+
+[Thu Dec 21 09:43:05 2023]
+Finished job 2006.
+76 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:05 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA1470.1/MA1470.1-sites.bed.gz, results/activity/MA1470.1/MA1470.1-unibind_scored.tsv
+    output: results/activity/MA1470.1/MA1470.1-unibind_intersect.bed
+    jobid: 3704
+    reason: Input files updated by another job: results/pwmscan/MA1470.1/MA1470.1-sites.bed.gz
+    wildcards: PROFILE=MA1470.1
+    resources: tmpdir=/tmp
+
+[Thu Dec 21 09:43:06 2023]
+Finished job 3704.
+77 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:06 2023]
+rule activity_map_activity:
+    input: results/activity/MA1470.1/MA1470.1-unibind_intersect.bed
+    output: results/activity/MA1470.1/MA1470.1-map.tsv
+    jobid: 3703
+    reason: Input files updated by another job: results/activity/MA1470.1/MA1470.1-unibind_intersect.bed
+    wildcards: PROFILE=MA1470.1
+    resources: tmpdir=/tmp
+
+[Thu Dec 21 09:43:07 2023]
+Finished job 390.
+78 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:07 2023]
+Job 395: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA0106.3/MA0106.3-sites.fa; Input files updated by another job: results/pwmscan/MA0106.3/MA0106.3-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:43:07 2023]
+Finished job 3703.
+79 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:07 2023]
+rule activity_activity_stats:
+    input: results/activity/MA1470.1/MA1470.1-map.tsv, results/pwmscan/MA1470.1/MA1470.1-pvals.txt
+    output: results/activity/MA1470.1/MA1470.1-map_statistics.tsv
+    jobid: 3702
+    reason: Input files updated by another job: results/pwmscan/MA1470.1/MA1470.1-pvals.txt, results/activity/MA1470.1/MA1470.1-map.tsv
+    wildcards: PROFILE=MA1470.1
+    resources: tmpdir=/tmp
+
+[Thu Dec 21 09:43:07 2023]
+Finished job 2126.
+80 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:07 2023]
+Job 2131: 
+        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        
+Reason: Missing output files: results/pwmscan/MA1575.1/MA1575.1-sites.fa; Input files updated by another job: results/pwmscan/MA1575.1/MA1575.1-sites.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+[Thu Dec 21 09:43:08 2023]
+Finished job 3702.
+81 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:08 2023]
+rule activity_plot:
+    input: results/activity/MA1470.1/MA1470.1-map_statistics.tsv, results/activity/MA1470.1/MA1470.1-fileset.tsv
+    output: results/activity/MA1470.1/MA1470.1-activity.pdf
+    jobid: 4174
+    reason: Missing output files: results/activity/MA1470.1/MA1470.1-activity.pdf; Input files updated by another job: results/activity/MA1470.1/MA1470.1-map_statistics.tsv
+    wildcards: PROFILE=MA1470.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: conda_R
+[Thu Dec 21 09:43:10 2023]
+Finished job 486.
+82 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:10 2023]
+Job 480: 
+        - d
+        
+Reason: Input files updated by another job: results/pwmscan/MA0138.2/MA0138.2-sites.bed, results/pwmscan/MA0138.2/MA0138.2-sites.fa
+
+[Thu Dec 21 09:43:11 2023]
+Finished job 480.
+83 of 2913 steps (3%) done
+Select jobs to execute...
+
+[Thu Dec 21 09:43:11 2023]
+rule activity_intersect_motifs:
+    input: results/pwmscan/MA0138.2/MA0138.2-sites.bed.gz, results/activity/MA0138.2/MA0138.2-unibind_scored.tsv
+    output: results/activity/MA0138.2/MA0138.2-unibind_intersect.bed
+    jobid: 2614
+    reason: Input files updated by another job: results/pwmscan/MA0138.2/MA0138.2-sites.bed.gz
+    wildcards: PROFILE=MA0138.2
+    resources: tmpdir=/tmp
+
+[Thu Dec 21 09:43:11 2023]
+Error in rule activity_plot:
+    jobid: 4189
+    input: results/activity/MA1573.1/MA1573.1-map_statistics.tsv, results/activity/MA1573.1/MA1573.1-fileset.tsv
+    output: results/activity/MA1573.1/MA1573.1-activity.pdf
+    conda-env: conda_R
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/activity.smk, line 125:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate 'conda_R'; set -euo pipefail;  Rscript --vanilla /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/.snakemake/scripts/tmpxbihby7d.plot.R' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/activity.smk", line 125, in __rule_plot
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Dec 21 09:43:11 2023]
+Finished job 2614.
+84 of 2913 steps (3%) done
+[Thu Dec 21 09:43:13 2023]
+Error in rule activity_plot:
+    jobid: 4174
+    input: results/activity/MA1470.1/MA1470.1-map_statistics.tsv, results/activity/MA1470.1/MA1470.1-fileset.tsv
+    output: results/activity/MA1470.1/MA1470.1-activity.pdf
+    conda-env: conda_R
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/activity.smk, line 125:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate 'conda_R'; set -euo pipefail;  Rscript --vanilla /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/.snakemake/scripts/tmpos6im5i8.plot.R' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/activity.smk", line 125, in __rule_plot
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Dec 21 09:43:16 2023]
+Finished job 227.
+85 of 2913 steps (3%) done
+[Thu Dec 21 09:43:18 2023]
+Finished job 999.
+86 of 2913 steps (3%) done
+[Thu Dec 21 09:43:45 2023]
+Finished job 409.
+87 of 2913 steps (3%) done
+[Thu Dec 21 09:43:47 2023]
+Finished job 2229.
+88 of 2913 steps (3%) done
+[Thu Dec 21 09:44:05 2023]
+Finished job 1256.
+89 of 2913 steps (3%) done
+[Thu Dec 21 09:44:43 2023]
+Finished job 2138.
+90 of 2913 steps (3%) done
+[Thu Dec 21 09:44:47 2023]
+Finished job 1991.
+91 of 2913 steps (3%) done
+[Thu Dec 21 09:44:47 2023]
+Finished job 171.
+92 of 2913 steps (3%) done
+[Thu Dec 21 09:45:05 2023]
+Finished job 803.
+93 of 2913 steps (3%) done
+[Thu Dec 21 09:45:30 2023]
+Finished job 2047.
+94 of 2913 steps (3%) done
+[Thu Dec 21 09:45:30 2023]
+Finished job 493.
+95 of 2913 steps (3%) done
+[Thu Dec 21 09:45:36 2023]
+Finished job 395.
+96 of 2913 steps (3%) done
+[Thu Dec 21 09:46:04 2023]
+Finished job 2131.
+97 of 2913 steps (3%) done
+[Thu Dec 21 09:46:54 2023]
+Finished job 1669.
+98 of 2913 steps (3%) done
+[Thu Dec 21 09:46:54 2023]
+Finished job 1970.
+99 of 2913 steps (3%) done
+[Thu Dec 21 09:47:00 2023]
+Finished job 1718.
+100 of 2913 steps (3%) done
+[Thu Dec 21 09:47:16 2023]
+Finished job 283.
+101 of 2913 steps (3%) done
+[Thu Dec 21 09:47:43 2023]
+Finished job 1977.
+102 of 2913 steps (4%) done
+[Thu Dec 21 09:48:42 2023]
+Finished job 1102.
+103 of 2913 steps (4%) done
+[Thu Dec 21 09:48:45 2023]
+Finished job 500.
+104 of 2913 steps (4%) done
+[Thu Dec 21 09:49:17 2023]
+Finished job 164.
+105 of 2913 steps (4%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-21T094032.343365.snakemake.log

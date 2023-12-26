@@ -1,0 +1,4 @@
+KeyboardInterrupt in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/Snakefile, line 35.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/Snakefile", line 35, in <module>
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/tempfile.py", line 545, in NamedTemporaryFile
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/tempfile.py", line 255, in _mkstemp_inner

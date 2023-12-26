@@ -1,0 +1,4764 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                   count
+----------------------------------  -------
+activity_activity_metadata                1
+activity_activity_metaplot                1
+activity_activity_stats                 326
+activity_combine_data                     1
+activity_combine_plots                    1
+activity_intersect_motifs               326
+activity_map_activity                   326
+activity_plot                           326
+activity_score_unibind                  326
+activity_unibind_sites                  326
+all                                       1
+pwmscan_genome_install_genome             1
+pwmscan_main_bed2fasta                  326
+pwmscan_main_calc_probabilities         326
+pwmscan_main_calculate_pwm              326
+pwmscan_main_compile_pwmscan              1
+pwmscan_main_compress_sites             326
+pwmscan_main_decompress_genome            1
+pwmscan_main_download_jaspar            326
+pwmscan_main_process_probabilities      326
+pwmscan_main_scan_genome                326
+unibind_download_unibind                  1
+unibind_flatten_dir                       1
+unibind_unique_pwms                       1
+unibind_unpack_unibind                    1
+total                                  4250
+
+Select jobs to execute...
+
+[Sat Dec 16 15:11:47 2023]
+Job 1358: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0746.2.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 980: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0520.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 1694: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0867.2.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 1848: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1118.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 1722: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1100.2.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 798: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0493.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 1715: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0901.2.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 1575: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0825.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 1421: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0765.2.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 2275: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1648.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 1519: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0807.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 791: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0492.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 945: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0515.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 1099: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0609.2.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 1981: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1148.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 973: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0519.1.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 7: 
+        c99 mode
+        
+Reason: Missing output files: resources/software/PWMScan/matrix_scan, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 308: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0090.3.jaspar
+
+
+[Sat Dec 16 15:11:47 2023]
+Job 434: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0117.2.jaspar
+
+
+[Sat Dec 16 15:11:48 2023]
+Job 140: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0043.3.jaspar
+
+
+[Sat Dec 16 15:11:48 2023]
+Job 14: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0003.4.jaspar
+
+
+[Sat Dec 16 15:11:48 2023]
+Job 448: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0124.2.jaspar
+
+
+[Sat Dec 16 15:11:48 2023]
+Job 462: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0132.2.jaspar
+
+
+[Sat Dec 16 15:11:48 2023]
+Job 420: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0114.4.jaspar
+
+[Sat Dec 16 15:11:48 2023]
+Finished job 7.
+1 of 4250 steps (0.0%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:11:48 2023]
+Job 581: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0162.4.jaspar
+
+[Sat Dec 16 15:11:49 2023]
+Finished job 14.
+2 of 4250 steps (0.0%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:11:49 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0003.4.jaspar
+    output: results/pwmscan/MA0003.4/MA0003.4-pwm.txt
+    jobid: 13
+    reason: Missing output files: results/pwmscan/MA0003.4/MA0003.4-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0003.4.jaspar
+    wildcards: PROFILE=MA0003.4
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:11:49 2023]
+Finished job 462.
+3 of 4250 steps (0.1%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:11:49 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0132.2.jaspar
+    output: results/pwmscan/MA0132.2/MA0132.2-pwm.txt
+    jobid: 461
+    reason: Missing output files: results/pwmscan/MA0132.2/MA0132.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0132.2.jaspar
+    wildcards: PROFILE=MA0132.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:11:49 2023]
+Finished job 581.
+4 of 4250 steps (0.1%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:11:49 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0162.4.jaspar
+    output: results/pwmscan/MA0162.4/MA0162.4-pwm.txt
+    jobid: 580
+    reason: Missing output files: results/pwmscan/MA0162.4/MA0162.4-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0162.4.jaspar
+    wildcards: PROFILE=MA0162.4
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:11:49 2023]
+Finished job 1358.
+5 of 4250 steps (0.1%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:11:49 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0746.2.jaspar
+    output: results/pwmscan/MA0746.2/MA0746.2-pwm.txt
+    jobid: 1357
+    reason: Missing output files: results/pwmscan/MA0746.2/MA0746.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0746.2.jaspar
+    wildcards: PROFILE=MA0746.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:11:49 2023]
+Finished job 980.
+6 of 4250 steps (0.1%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:11:49 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0520.1.jaspar
+    output: results/pwmscan/MA0520.1/MA0520.1-pwm.txt
+    jobid: 979
+    reason: Missing output files: results/pwmscan/MA0520.1/MA0520.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0520.1.jaspar
+    wildcards: PROFILE=MA0520.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:11:49 2023]
+Finished job 1694.
+7 of 4250 steps (0.2%) done
+[Sat Dec 16 15:11:49 2023]
+Finished job 1848.
+8 of 4250 steps (0.2%) done
+[Sat Dec 16 15:11:49 2023]
+Finished job 1722.
+9 of 4250 steps (0.2%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:11:49 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0867.2.jaspar
+    output: results/pwmscan/MA0867.2/MA0867.2-pwm.txt
+    jobid: 1693
+    reason: Missing output files: results/pwmscan/MA0867.2/MA0867.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0867.2.jaspar
+    wildcards: PROFILE=MA0867.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:11:49 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1118.1.jaspar
+    output: results/pwmscan/MA1118.1/MA1118.1-pwm.txt
+    jobid: 1847
+    reason: Missing output files: results/pwmscan/MA1118.1/MA1118.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1118.1.jaspar
+    wildcards: PROFILE=MA1118.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:49 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1100.2.jaspar
+    output: results/pwmscan/MA1100.2/MA1100.2-pwm.txt
+    jobid: 1721
+    reason: Missing output files: results/pwmscan/MA1100.2/MA1100.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1100.2.jaspar
+    wildcards: PROFILE=MA1100.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:11:50 2023]
+Finished job 798.
+10 of 4250 steps (0.2%) done
+Activating conda environment: genome
+[Sat Dec 16 15:11:50 2023]
+Finished job 1715.
+11 of 4250 steps (0.3%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 1575.
+12 of 4250 steps (0.3%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 1421.
+13 of 4250 steps (0.3%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 2275.
+14 of 4250 steps (0.3%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0901.2.jaspar
+    output: results/pwmscan/MA0901.2/MA0901.2-pwm.txt
+    jobid: 1714
+    reason: Missing output files: results/pwmscan/MA0901.2/MA0901.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0901.2.jaspar
+    wildcards: PROFILE=MA0901.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0825.1.jaspar
+    output: results/pwmscan/MA0825.1/MA0825.1-pwm.txt
+    jobid: 1574
+    reason: Missing output files: results/pwmscan/MA0825.1/MA0825.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0825.1.jaspar
+    wildcards: PROFILE=MA0825.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1648.1.jaspar
+    output: results/pwmscan/MA1648.1/MA1648.1-pwm.txt
+    jobid: 2274
+    reason: Missing output files: results/pwmscan/MA1648.1/MA1648.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1648.1.jaspar
+    wildcards: PROFILE=MA1648.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0765.2.jaspar
+    output: results/pwmscan/MA0765.2/MA0765.2-pwm.txt
+    jobid: 1420
+    reason: Missing output files: results/pwmscan/MA0765.2/MA0765.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0765.2.jaspar
+    wildcards: PROFILE=MA0765.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0493.1.jaspar
+    output: results/pwmscan/MA0493.1/MA0493.1-pwm.txt
+    jobid: 797
+    reason: Missing output files: results/pwmscan/MA0493.1/MA0493.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0493.1.jaspar
+    wildcards: PROFILE=MA0493.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:11:50 2023]
+Finished job 1519.
+15 of 4250 steps (0.4%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 791.
+16 of 4250 steps (0.4%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 945.
+17 of 4250 steps (0.4%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 1099.
+18 of 4250 steps (0.4%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 973.
+19 of 4250 steps (0.4%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 1981.
+20 of 4250 steps (0.5%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 308.
+21 of 4250 steps (0.5%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 434.
+22 of 4250 steps (1%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 140.
+23 of 4250 steps (1%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 448.
+24 of 4250 steps (1%) done
+[Sat Dec 16 15:11:50 2023]
+Finished job 420.
+25 of 4250 steps (1%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0043.3.jaspar
+    output: results/pwmscan/MA0043.3/MA0043.3-pwm.txt
+    jobid: 139
+    reason: Missing output files: results/pwmscan/MA0043.3/MA0043.3-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0043.3.jaspar
+    wildcards: PROFILE=MA0043.3
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0124.2.jaspar
+    output: results/pwmscan/MA0124.2/MA0124.2-pwm.txt
+    jobid: 447
+    reason: Missing output files: results/pwmscan/MA0124.2/MA0124.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0124.2.jaspar
+    wildcards: PROFILE=MA0124.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0114.4.jaspar
+    output: results/pwmscan/MA0114.4/MA0114.4-pwm.txt
+    jobid: 419
+    reason: Missing output files: results/pwmscan/MA0114.4/MA0114.4-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0114.4.jaspar
+    wildcards: PROFILE=MA0114.4
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0090.3.jaspar
+    output: results/pwmscan/MA0090.3/MA0090.3-pwm.txt
+    jobid: 307
+    reason: Missing output files: results/pwmscan/MA0090.3/MA0090.3-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0090.3.jaspar
+    wildcards: PROFILE=MA0090.3
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0492.1.jaspar
+    output: results/pwmscan/MA0492.1/MA0492.1-pwm.txt
+    jobid: 790
+    reason: Missing output files: results/pwmscan/MA0492.1/MA0492.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0492.1.jaspar
+    wildcards: PROFILE=MA0492.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0807.1.jaspar
+    output: results/pwmscan/MA0807.1/MA0807.1-pwm.txt
+    jobid: 1518
+    reason: Missing output files: results/pwmscan/MA0807.1/MA0807.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0807.1.jaspar
+    wildcards: PROFILE=MA0807.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0519.1.jaspar
+    output: results/pwmscan/MA0519.1/MA0519.1-pwm.txt
+    jobid: 972
+    reason: Missing output files: results/pwmscan/MA0519.1/MA0519.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0519.1.jaspar
+    wildcards: PROFILE=MA0519.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0515.1.jaspar
+    output: results/pwmscan/MA0515.1/MA0515.1-pwm.txt
+    jobid: 944
+    reason: Missing output files: results/pwmscan/MA0515.1/MA0515.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0515.1.jaspar
+    wildcards: PROFILE=MA0515.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0609.2.jaspar
+    output: results/pwmscan/MA0609.2/MA0609.2-pwm.txt
+    jobid: 1098
+    reason: Missing output files: results/pwmscan/MA0609.2/MA0609.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0609.2.jaspar
+    wildcards: PROFILE=MA0609.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:50 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1148.1.jaspar
+    output: results/pwmscan/MA1148.1/MA1148.1-pwm.txt
+    jobid: 1980
+    reason: Missing output files: results/pwmscan/MA1148.1/MA1148.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1148.1.jaspar
+    wildcards: PROFILE=MA1148.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:11:51 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0117.2.jaspar
+    output: results/pwmscan/MA0117.2/MA0117.2-pwm.txt
+    jobid: 433
+    reason: Missing output files: results/pwmscan/MA0117.2/MA0117.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0117.2.jaspar
+    wildcards: PROFILE=MA0117.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Select jobs to execute...
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:00 2023]
+Finished job 944.
+26 of 4250 steps (1%) done
+
+[Sat Dec 16 15:12:00 2023]
+Job 947: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0515.1/MA0515.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0515.1/MA0515.1-pwm.txt
+
+[Sat Dec 16 15:12:00 2023]
+Finished job 972.
+27 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 461.
+28 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1714.
+29 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1980.
+30 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 419.
+31 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1098.
+32 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 797.
+33 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1420.
+34 of 4250 steps (1%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:00 2023]
+Job 422: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0114.4/MA0114.4-pvals.raw; Input files updated by another job: results/pwmscan/MA0114.4/MA0114.4-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:00 2023]
+Job 464: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0132.2/MA0132.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0132.2/MA0132.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:00 2023]
+Job 800: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0493.1/MA0493.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0493.1/MA0493.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:00 2023]
+Job 1423: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0765.2/MA0765.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0765.2/MA0765.2-pwm.txt
+
+
+[Sat Dec 16 15:12:00 2023]
+Job 975: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0519.1/MA0519.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0519.1/MA0519.1-pwm.txt
+
+
+[Sat Dec 16 15:12:00 2023]
+Job 1101: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0609.2/MA0609.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0609.2/MA0609.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:00 2023]
+Job 1717: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0901.2/MA0901.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0901.2/MA0901.2-pwm.txt
+
+
+[Sat Dec 16 15:12:00 2023]
+Job 1983: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1148.1/MA1148.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1148.1/MA1148.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:00 2023]
+Finished job 139.
+35 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 433.
+36 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 13.
+37 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 580.
+38 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1847.
+39 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 790.
+40 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 979.
+41 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 447.
+42 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1518.
+43 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 2274.
+44 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 947.
+45 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1357.
+46 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1574.
+47 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1721.
+48 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 1693.
+49 of 4250 steps (1%) done
+[Sat Dec 16 15:12:00 2023]
+Finished job 307.
+50 of 4250 steps (1%) done
+[Sat Dec 16 15:12:01 2023]
+Finished job 464.
+51 of 4250 steps (1%) done
+[Sat Dec 16 15:12:01 2023]
+Finished job 422.
+52 of 4250 steps (1%) done
+[Sat Dec 16 15:12:01 2023]
+Finished job 800.
+53 of 4250 steps (1%) done
+[Sat Dec 16 15:12:01 2023]
+Finished job 1423.
+54 of 4250 steps (1%) done
+[Sat Dec 16 15:12:01 2023]
+Finished job 975.
+55 of 4250 steps (1%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:01 2023]
+Job 16: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0003.4/MA0003.4-pvals.raw; Input files updated by another job: results/pwmscan/MA0003.4/MA0003.4-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 310: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0090.3/MA0090.3-pvals.raw; Input files updated by another job: results/pwmscan/MA0090.3/MA0090.3-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 450: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0124.2/MA0124.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0124.2/MA0124.2-pwm.txt
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 436: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0117.2/MA0117.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0117.2/MA0117.2-pwm.txt
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 142: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0043.3/MA0043.3-pvals.raw; Input files updated by another job: results/pwmscan/MA0043.3/MA0043.3-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 799: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0493.1/MA0493.1-pvals.txt, results/pwmscan/MA0493.1/MA0493.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0493.1/MA0493.1-pvals.raw
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 974: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0519.1/MA0519.1-coeff.txt, results/pwmscan/MA0519.1/MA0519.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0519.1/MA0519.1-pvals.raw
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 1422: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0765.2/MA0765.2-coeff.txt, results/pwmscan/MA0765.2/MA0765.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0765.2/MA0765.2-pvals.raw
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 946: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0515.1/MA0515.1-pvals.txt, results/pwmscan/MA0515.1/MA0515.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0515.1/MA0515.1-pvals.raw
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 463: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0132.2/MA0132.2-coeff.txt, results/pwmscan/MA0132.2/MA0132.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0132.2/MA0132.2-pvals.raw
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 1850: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1118.1/MA1118.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1118.1/MA1118.1-pwm.txt
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 982: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0520.1/MA0520.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0520.1/MA0520.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 1724: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1100.2/MA1100.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1100.2/MA1100.2-pwm.txt
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 1696: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0867.2/MA0867.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0867.2/MA0867.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 1360: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0746.2/MA0746.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0746.2/MA0746.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 583: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0162.4/MA0162.4-pvals.raw; Input files updated by another job: results/pwmscan/MA0162.4/MA0162.4-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 1521: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0807.1/MA0807.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0807.1/MA0807.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 793: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0492.1/MA0492.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0492.1/MA0492.1-pwm.txt
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 2277: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1648.1/MA1648.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1648.1/MA1648.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 1577: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0825.1/MA0825.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0825.1/MA0825.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:01 2023]
+Job 421: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0114.4/MA0114.4-pvals.txt, results/pwmscan/MA0114.4/MA0114.4-coeff.txt; Input files updated by another job: results/pwmscan/MA0114.4/MA0114.4-pvals.raw
+
+[Sat Dec 16 15:12:02 2023]
+Finished job 1101.
+56 of 4250 steps (1%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 1717.
+57 of 4250 steps (1%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 1983.
+58 of 4250 steps (1%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 16.
+59 of 4250 steps (1%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 310.
+60 of 4250 steps (1%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 450.
+61 of 4250 steps (1%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 436.
+62 of 4250 steps (1%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 142.
+63 of 4250 steps (1%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 799.
+64 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0493.1/MA0493.1-pvals.raw.
+[Sat Dec 16 15:12:02 2023]
+Finished job 974.
+65 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0519.1/MA0519.1-pvals.raw.
+[Sat Dec 16 15:12:02 2023]
+Finished job 1422.
+66 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0765.2/MA0765.2-pvals.raw.
+[Sat Dec 16 15:12:02 2023]
+Finished job 946.
+67 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0515.1/MA0515.1-pvals.raw.
+[Sat Dec 16 15:12:02 2023]
+Finished job 463.
+68 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0132.2/MA0132.2-pvals.raw.
+[Sat Dec 16 15:12:02 2023]
+Finished job 1850.
+69 of 4250 steps (2%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 982.
+70 of 4250 steps (2%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 1724.
+71 of 4250 steps (2%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 1696.
+72 of 4250 steps (2%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 1360.
+73 of 4250 steps (2%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 583.
+74 of 4250 steps (2%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 1521.
+75 of 4250 steps (2%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 2277.
+76 of 4250 steps (2%) done
+[Sat Dec 16 15:12:02 2023]
+Finished job 793.
+77 of 4250 steps (2%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:02 2023]
+Job 819: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0496.3.jaspar
+
+
+[Sat Dec 16 15:12:02 2023]
+Job 693: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0475.2.jaspar
+
+
+[Sat Dec 16 15:12:02 2023]
+Job 2009: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1419.1.jaspar
+
+
+[Sat Dec 16 15:12:02 2023]
+Job 1393: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0758.1.jaspar
+
+
+[Sat Dec 16 15:12:02 2023]
+Job 1841: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1117.1.jaspar
+
+
+[Sat Dec 16 15:12:02 2023]
+Job 1723: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1100.2/MA1100.2-pvals.txt, results/pwmscan/MA1100.2/MA1100.2-coeff.txt; Input files updated by another job: results/pwmscan/MA1100.2/MA1100.2-pvals.raw
+
+
+[Sat Dec 16 15:12:02 2023]
+Job 1849: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1118.1/MA1118.1-pvals.txt, results/pwmscan/MA1118.1/MA1118.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1118.1/MA1118.1-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 981: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0520.1/MA0520.1-coeff.txt, results/pwmscan/MA0520.1/MA0520.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0520.1/MA0520.1-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 1695: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0867.2/MA0867.2-pvals.txt, results/pwmscan/MA0867.2/MA0867.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0867.2/MA0867.2-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 1359: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0746.2/MA0746.2-coeff.txt, results/pwmscan/MA0746.2/MA0746.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0746.2/MA0746.2-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 1716: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0901.2/MA0901.2-pvals.txt, results/pwmscan/MA0901.2/MA0901.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0901.2/MA0901.2-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 1982: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1148.1/MA1148.1-pvals.txt, results/pwmscan/MA1148.1/MA1148.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1148.1/MA1148.1-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 1520: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0807.1/MA0807.1-pvals.txt, results/pwmscan/MA0807.1/MA0807.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0807.1/MA0807.1-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 1100: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0609.2/MA0609.2-coeff.txt, results/pwmscan/MA0609.2/MA0609.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0609.2/MA0609.2-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 2276: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1648.1/MA1648.1-coeff.txt, results/pwmscan/MA1648.1/MA1648.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1648.1/MA1648.1-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 792: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0492.1/MA0492.1-coeff.txt, results/pwmscan/MA0492.1/MA0492.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0492.1/MA0492.1-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 309: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0090.3/MA0090.3-coeff.txt, results/pwmscan/MA0090.3/MA0090.3-pvals.txt; Input files updated by another job: results/pwmscan/MA0090.3/MA0090.3-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 435: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0117.2/MA0117.2-pvals.txt, results/pwmscan/MA0117.2/MA0117.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0117.2/MA0117.2-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 15: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0003.4/MA0003.4-coeff.txt, results/pwmscan/MA0003.4/MA0003.4-pvals.txt; Input files updated by another job: results/pwmscan/MA0003.4/MA0003.4-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 582: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0162.4/MA0162.4-pvals.txt, results/pwmscan/MA0162.4/MA0162.4-coeff.txt; Input files updated by another job: results/pwmscan/MA0162.4/MA0162.4-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 141: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0043.3/MA0043.3-pvals.txt, results/pwmscan/MA0043.3/MA0043.3-coeff.txt; Input files updated by another job: results/pwmscan/MA0043.3/MA0043.3-pvals.raw
+
+
+[Sat Dec 16 15:12:03 2023]
+Job 449: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0124.2/MA0124.2-pvals.txt, results/pwmscan/MA0124.2/MA0124.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0124.2/MA0124.2-pvals.raw
+
+[Sat Dec 16 15:12:03 2023]
+Finished job 1577.
+78 of 4250 steps (2%) done
+[Sat Dec 16 15:12:03 2023]
+Finished job 421.
+79 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0114.4/MA0114.4-pvals.raw.
+[Sat Dec 16 15:12:03 2023]
+Finished job 1723.
+80 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA1100.2/MA1100.2-pvals.raw.
+[Sat Dec 16 15:12:03 2023]
+Finished job 1849.
+81 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA1118.1/MA1118.1-pvals.raw.
+[Sat Dec 16 15:12:03 2023]
+Finished job 981.
+82 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0520.1/MA0520.1-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 1695.
+83 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0867.2/MA0867.2-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 1359.
+84 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0746.2/MA0746.2-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 1716.
+85 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0901.2/MA0901.2-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 1982.
+86 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA1148.1/MA1148.1-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 1520.
+87 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0807.1/MA0807.1-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 1100.
+88 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0609.2/MA0609.2-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 2276.
+89 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA1648.1/MA1648.1-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 819.
+90 of 4250 steps (2%) done
+[Sat Dec 16 15:12:04 2023]
+Finished job 309.
+91 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0090.3/MA0090.3-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 792.
+92 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0492.1/MA0492.1-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 693.
+93 of 4250 steps (2%) done
+[Sat Dec 16 15:12:04 2023]
+Finished job 2009.
+94 of 4250 steps (2%) done
+[Sat Dec 16 15:12:04 2023]
+Finished job 1393.
+95 of 4250 steps (2%) done
+[Sat Dec 16 15:12:04 2023]
+Finished job 435.
+96 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0117.2/MA0117.2-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 1841.
+97 of 4250 steps (2%) done
+[Sat Dec 16 15:12:04 2023]
+Finished job 15.
+98 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0003.4/MA0003.4-pvals.raw.
+[Sat Dec 16 15:12:04 2023]
+Finished job 582.
+99 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0162.4/MA0162.4-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:04 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0475.2.jaspar
+    output: results/pwmscan/MA0475.2/MA0475.2-pwm.txt
+    jobid: 692
+    reason: Missing output files: results/pwmscan/MA0475.2/MA0475.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0475.2.jaspar
+    wildcards: PROFILE=MA0475.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:04 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1117.1.jaspar
+    output: results/pwmscan/MA1117.1/MA1117.1-pwm.txt
+    jobid: 1840
+    reason: Missing output files: results/pwmscan/MA1117.1/MA1117.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1117.1.jaspar
+    wildcards: PROFILE=MA1117.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:04 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1419.1.jaspar
+    output: results/pwmscan/MA1419.1/MA1419.1-pwm.txt
+    jobid: 2008
+    reason: Missing output files: results/pwmscan/MA1419.1/MA1419.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1419.1.jaspar
+    wildcards: PROFILE=MA1419.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:04 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0758.1.jaspar
+    output: results/pwmscan/MA0758.1/MA0758.1-pwm.txt
+    jobid: 1392
+    reason: Missing output files: results/pwmscan/MA0758.1/MA0758.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0758.1.jaspar
+    wildcards: PROFILE=MA0758.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:04 2023]
+Job 553: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0153.2.jaspar
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:05 2023]
+Job 539: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0148.4.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0496.3.jaspar
+    output: results/pwmscan/MA0496.3/MA0496.3-pwm.txt
+    jobid: 818
+    reason: Missing output files: results/pwmscan/MA0496.3/MA0496.3-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0496.3.jaspar
+    wildcards: PROFILE=MA0496.3
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:05 2023]
+Job 735: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0482.2.jaspar
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:05 2023]
+Job 1659: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0855.1.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 889: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0506.1.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 1197: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0685.1.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 2289: 
+        - Downloads all DAMOS from UniBind database
+        
+Reason: Missing output files: resources/data/unibind/damo_hg39_all_TFBS.tar.gz
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 833: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0498.2.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 1407: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0761.2.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 1869: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1122.1.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 2023: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1470.1.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 1127: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0641.1.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 1576: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0825.1/MA0825.1-coeff.txt, results/pwmscan/MA0825.1/MA0825.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0825.1/MA0825.1-pvals.raw
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 1435: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0769.2.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 1743: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1103.2.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 77: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0024.3.jaspar
+
+
+[Sat Dec 16 15:12:05 2023]
+Job 238: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0070.1.jaspar
+
+[Sat Dec 16 15:12:05 2023]
+Finished job 141.
+100 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0043.3/MA0043.3-pvals.raw.
+[Sat Dec 16 15:12:05 2023]
+Finished job 449.
+101 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0124.2/MA0124.2-pvals.raw.
+[Sat Dec 16 15:12:06 2023]
+Finished job 553.
+102 of 4250 steps (2%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 539.
+103 of 4250 steps (2%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 1576.
+104 of 4250 steps (2%) done
+Removing temporary output results/pwmscan/MA0825.1/MA0825.1-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0148.4.jaspar
+    output: results/pwmscan/MA0148.4/MA0148.4-pwm.txt
+    jobid: 538
+    reason: Missing output files: results/pwmscan/MA0148.4/MA0148.4-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0148.4.jaspar
+    wildcards: PROFILE=MA0148.4
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0153.2.jaspar
+    output: results/pwmscan/MA0153.2/MA0153.2-pwm.txt
+    jobid: 552
+    reason: Missing output files: results/pwmscan/MA0153.2/MA0153.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0153.2.jaspar
+    wildcards: PROFILE=MA0153.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:06 2023]
+Job 1001: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0523.1.jaspar
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:06 2023]
+Job 1351: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0745.2.jaspar
+
+
+[Sat Dec 16 15:12:06 2023]
+Job 2233: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1641.1.jaspar
+
+[Sat Dec 16 15:12:06 2023]
+Finished job 735.
+105 of 4250 steps (2%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 1659.
+106 of 4250 steps (2%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 889.
+107 of 4250 steps (3%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 1197.
+108 of 4250 steps (3%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0482.2.jaspar
+    output: results/pwmscan/MA0482.2/MA0482.2-pwm.txt
+    jobid: 734
+    reason: Missing output files: results/pwmscan/MA0482.2/MA0482.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0482.2.jaspar
+    wildcards: PROFILE=MA0482.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0855.1.jaspar
+    output: results/pwmscan/MA0855.1/MA0855.1-pwm.txt
+    jobid: 1658
+    reason: Missing output files: results/pwmscan/MA0855.1/MA0855.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0855.1.jaspar
+    wildcards: PROFILE=MA0855.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0685.1.jaspar
+    output: results/pwmscan/MA0685.1/MA0685.1-pwm.txt
+    jobid: 1196
+    reason: Missing output files: results/pwmscan/MA0685.1/MA0685.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0685.1.jaspar
+    wildcards: PROFILE=MA0685.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0506.1.jaspar
+    output: results/pwmscan/MA0506.1/MA0506.1-pwm.txt
+    jobid: 888
+    reason: Missing output files: results/pwmscan/MA0506.1/MA0506.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0506.1.jaspar
+    wildcards: PROFILE=MA0506.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:06 2023]
+Finished job 833.
+109 of 4250 steps (3%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 1407.
+110 of 4250 steps (3%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 1869.
+111 of 4250 steps (3%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 1127.
+112 of 4250 steps (3%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 2023.
+113 of 4250 steps (3%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 1435.
+114 of 4250 steps (3%) done
+[Sat Dec 16 15:12:06 2023]
+Finished job 1743.
+115 of 4250 steps (3%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1122.1.jaspar
+    output: results/pwmscan/MA1122.1/MA1122.1-pwm.txt
+    jobid: 1868
+    reason: Missing output files: results/pwmscan/MA1122.1/MA1122.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1122.1.jaspar
+    wildcards: PROFILE=MA1122.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0641.1.jaspar
+    output: results/pwmscan/MA0641.1/MA0641.1-pwm.txt
+    jobid: 1126
+    reason: Missing output files: results/pwmscan/MA0641.1/MA0641.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0641.1.jaspar
+    wildcards: PROFILE=MA0641.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0498.2.jaspar
+    output: results/pwmscan/MA0498.2/MA0498.2-pwm.txt
+    jobid: 832
+    reason: Missing output files: results/pwmscan/MA0498.2/MA0498.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0498.2.jaspar
+    wildcards: PROFILE=MA0498.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0761.2.jaspar
+    output: results/pwmscan/MA0761.2/MA0761.2-pwm.txt
+    jobid: 1406
+    reason: Missing output files: results/pwmscan/MA0761.2/MA0761.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0761.2.jaspar
+    wildcards: PROFILE=MA0761.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1470.1.jaspar
+    output: results/pwmscan/MA1470.1/MA1470.1-pwm.txt
+    jobid: 2022
+    reason: Missing output files: results/pwmscan/MA1470.1/MA1470.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1470.1.jaspar
+    wildcards: PROFILE=MA1470.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:06 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0769.2.jaspar
+    output: results/pwmscan/MA0769.2/MA0769.2-pwm.txt
+    jobid: 1434
+    reason: Missing output files: results/pwmscan/MA0769.2/MA0769.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0769.2.jaspar
+    wildcards: PROFILE=MA0769.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:07 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1103.2.jaspar
+    output: results/pwmscan/MA1103.2/MA1103.2-pwm.txt
+    jobid: 1742
+    reason: Missing output files: results/pwmscan/MA1103.2/MA1103.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1103.2.jaspar
+    wildcards: PROFILE=MA1103.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:07 2023]
+Finished job 77.
+116 of 4250 steps (3%) done
+[Sat Dec 16 15:12:07 2023]
+Finished job 238.
+117 of 4250 steps (3%) done
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:07 2023]
+Finished job 1001.
+118 of 4250 steps (3%) done
+[Sat Dec 16 15:12:07 2023]
+Finished job 1351.
+119 of 4250 steps (3%) done
+[Sat Dec 16 15:12:07 2023]
+Finished job 2233.
+120 of 4250 steps (3%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:07 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0523.1.jaspar
+    output: results/pwmscan/MA0523.1/MA0523.1-pwm.txt
+    jobid: 1000
+    reason: Missing output files: results/pwmscan/MA0523.1/MA0523.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0523.1.jaspar
+    wildcards: PROFILE=MA0523.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:07 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1641.1.jaspar
+    output: results/pwmscan/MA1641.1/MA1641.1-pwm.txt
+    jobid: 2232
+    reason: Missing output files: results/pwmscan/MA1641.1/MA1641.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1641.1.jaspar
+    wildcards: PROFILE=MA1641.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:07 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0745.2.jaspar
+    output: results/pwmscan/MA0745.2/MA0745.2-pwm.txt
+    jobid: 1350
+    reason: Missing output files: results/pwmscan/MA0745.2/MA0745.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0745.2.jaspar
+    wildcards: PROFILE=MA0745.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:07 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0024.3.jaspar
+    output: results/pwmscan/MA0024.3/MA0024.3-pwm.txt
+    jobid: 76
+    reason: Missing output files: results/pwmscan/MA0024.3/MA0024.3-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0024.3.jaspar
+    wildcards: PROFILE=MA0024.3
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:07 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0070.1.jaspar
+    output: results/pwmscan/MA0070.1/MA0070.1-pwm.txt
+    jobid: 237
+    reason: Missing output files: results/pwmscan/MA0070.1/MA0070.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0070.1.jaspar
+    wildcards: PROFILE=MA0070.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+Select jobs to execute...
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:11 2023]
+Finished job 692.
+121 of 4250 steps (3%) done
+
+[Sat Dec 16 15:12:11 2023]
+Job 695: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0475.2/MA0475.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0475.2/MA0475.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:11 2023]
+Finished job 1392.
+122 of 4250 steps (3%) done
+[Sat Dec 16 15:12:11 2023]
+Finished job 734.
+123 of 4250 steps (3%) done
+[Sat Dec 16 15:12:11 2023]
+Finished job 2008.
+124 of 4250 steps (3%) done
+[Sat Dec 16 15:12:11 2023]
+Finished job 538.
+125 of 4250 steps (3%) done
+[Sat Dec 16 15:12:11 2023]
+Finished job 552.
+126 of 4250 steps (3%) done
+[Sat Dec 16 15:12:11 2023]
+Finished job 818.
+127 of 4250 steps (3%) done
+[Sat Dec 16 15:12:11 2023]
+Finished job 1840.
+128 of 4250 steps (3%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:11 2023]
+Job 555: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0153.2/MA0153.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0153.2/MA0153.2-pwm.txt
+
+
+[Sat Dec 16 15:12:11 2023]
+Job 541: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0148.4/MA0148.4-pvals.raw; Input files updated by another job: results/pwmscan/MA0148.4/MA0148.4-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:11 2023]
+Job 737: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0482.2/MA0482.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0482.2/MA0482.2-pwm.txt
+
+
+[Sat Dec 16 15:12:11 2023]
+Job 2011: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1419.1/MA1419.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1419.1/MA1419.1-pwm.txt
+
+
+[Sat Dec 16 15:12:12 2023]
+Job 1395: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0758.1/MA0758.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0758.1/MA0758.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:12 2023]
+Job 1843: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1117.1/MA1117.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1117.1/MA1117.1-pwm.txt
+
+
+[Sat Dec 16 15:12:12 2023]
+Job 821: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0496.3/MA0496.3-pvals.raw; Input files updated by another job: results/pwmscan/MA0496.3/MA0496.3-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:12 2023]
+Finished job 695.
+129 of 4250 steps (3%) done
+[Sat Dec 16 15:12:12 2023]
+Finished job 555.
+130 of 4250 steps (3%) done
+[Sat Dec 16 15:12:12 2023]
+Finished job 541.
+131 of 4250 steps (3%) done
+[Sat Dec 16 15:12:12 2023]
+Finished job 737.
+132 of 4250 steps (3%) done
+[Sat Dec 16 15:12:12 2023]
+Finished job 1658.
+133 of 4250 steps (3%) done
+[Sat Dec 16 15:12:12 2023]
+Finished job 1196.
+134 of 4250 steps (3%) done
+[Sat Dec 16 15:12:12 2023]
+Finished job 2011.
+135 of 4250 steps (3%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:12 2023]
+Job 694: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0475.2/MA0475.2-pvals.txt, results/pwmscan/MA0475.2/MA0475.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0475.2/MA0475.2-pvals.raw
+
+
+[Sat Dec 16 15:12:12 2023]
+Job 2010: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1419.1/MA1419.1-pvals.txt, results/pwmscan/MA1419.1/MA1419.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1419.1/MA1419.1-pvals.raw
+
+
+[Sat Dec 16 15:12:12 2023]
+Job 736: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0482.2/MA0482.2-coeff.txt, results/pwmscan/MA0482.2/MA0482.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0482.2/MA0482.2-pvals.raw
+
+
+[Sat Dec 16 15:12:12 2023]
+Job 540: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0148.4/MA0148.4-pvals.txt, results/pwmscan/MA0148.4/MA0148.4-coeff.txt; Input files updated by another job: results/pwmscan/MA0148.4/MA0148.4-pvals.raw
+
+
+[Sat Dec 16 15:12:12 2023]
+Job 554: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0153.2/MA0153.2-pvals.txt, results/pwmscan/MA0153.2/MA0153.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0153.2/MA0153.2-pvals.raw
+
+
+[Sat Dec 16 15:12:12 2023]
+Job 1661: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0855.1/MA0855.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0855.1/MA0855.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:12 2023]
+Job 1199: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0685.1/MA0685.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0685.1/MA0685.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:12 2023]
+Finished job 1395.
+136 of 4250 steps (3%) done
+[Sat Dec 16 15:12:12 2023]
+Finished job 1843.
+137 of 4250 steps (3%) done
+[Sat Dec 16 15:12:13 2023]
+Finished job 888.
+138 of 4250 steps (3%) done
+[Sat Dec 16 15:12:13 2023]
+Finished job 1126.
+139 of 4250 steps (3%) done
+[Sat Dec 16 15:12:13 2023]
+Finished job 832.
+140 of 4250 steps (3%) done
+[Sat Dec 16 15:12:13 2023]
+Finished job 1406.
+141 of 4250 steps (3%) done
+[Sat Dec 16 15:12:13 2023]
+Finished job 821.
+142 of 4250 steps (3%) done
+[Sat Dec 16 15:12:13 2023]
+Finished job 1868.
+143 of 4250 steps (3%) done
+[Sat Dec 16 15:12:13 2023]
+Finished job 2022.
+144 of 4250 steps (3%) done
+[Sat Dec 16 15:12:13 2023]
+Finished job 1434.
+145 of 4250 steps (3%) done
+[Sat Dec 16 15:12:13 2023]
+Finished job 694.
+146 of 4250 steps (3%) done
+Removing temporary output results/pwmscan/MA0475.2/MA0475.2-pvals.raw.
+[Sat Dec 16 15:12:13 2023]
+Finished job 736.
+147 of 4250 steps (3%) done
+Removing temporary output results/pwmscan/MA0482.2/MA0482.2-pvals.raw.
+[Sat Dec 16 15:12:13 2023]
+Finished job 2010.
+148 of 4250 steps (3%) done
+Removing temporary output results/pwmscan/MA1419.1/MA1419.1-pvals.raw.
+[Sat Dec 16 15:12:13 2023]
+Finished job 540.
+149 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0148.4/MA0148.4-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:13 2023]
+Job 1129: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0641.1/MA0641.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0641.1/MA0641.1-pwm.txt
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 1394: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0758.1/MA0758.1-coeff.txt, results/pwmscan/MA0758.1/MA0758.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0758.1/MA0758.1-pvals.raw
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 1842: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1117.1/MA1117.1-coeff.txt, results/pwmscan/MA1117.1/MA1117.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1117.1/MA1117.1-pvals.raw
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 820: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0496.3/MA0496.3-pvals.txt, results/pwmscan/MA0496.3/MA0496.3-coeff.txt; Input files updated by another job: results/pwmscan/MA0496.3/MA0496.3-pvals.raw
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 835: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0498.2/MA0498.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0498.2/MA0498.2-pwm.txt
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 1409: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0761.2/MA0761.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0761.2/MA0761.2-pwm.txt
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 1871: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1122.1/MA1122.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1122.1/MA1122.1-pwm.txt
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 2025: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1470.1/MA1470.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1470.1/MA1470.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 1437: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0769.2/MA0769.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0769.2/MA0769.2-pwm.txt
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 1267: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0729.1.jaspar
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 903: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0508.3.jaspar
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 1491: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0795.1.jaspar
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 1953: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1142.1.jaspar
+
+
+[Sat Dec 16 15:12:13 2023]
+Job 891: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0506.1/MA0506.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0506.1/MA0506.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:14 2023]
+Finished job 554.
+150 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0153.2/MA0153.2-pvals.raw.
+[Sat Dec 16 15:12:14 2023]
+Finished job 1199.
+151 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 1661.
+152 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 76.
+153 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 2232.
+154 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 237.
+155 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 1000.
+156 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 1742.
+157 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 1350.
+158 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 1129.
+159 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 1394.
+160 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0758.1/MA0758.1-pvals.raw.
+[Sat Dec 16 15:12:14 2023]
+Finished job 1842.
+161 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA1117.1/MA1117.1-pvals.raw.
+[Sat Dec 16 15:12:14 2023]
+Finished job 820.
+162 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0496.3/MA0496.3-pvals.raw.
+[Sat Dec 16 15:12:14 2023]
+Finished job 835.
+163 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 1409.
+164 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 1871.
+165 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 2025.
+166 of 4250 steps (4%) done
+[Sat Dec 16 15:12:14 2023]
+Finished job 1437.
+167 of 4250 steps (4%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:14 2023]
+Job 1003: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0523.1/MA0523.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0523.1/MA0523.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:14 2023]
+Job 1128: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0641.1/MA0641.1-pvals.txt, results/pwmscan/MA0641.1/MA0641.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0641.1/MA0641.1-pvals.raw
+
+
+[Sat Dec 16 15:12:14 2023]
+Job 834: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0498.2/MA0498.2-pvals.txt, results/pwmscan/MA0498.2/MA0498.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0498.2/MA0498.2-pvals.raw
+
+
+[Sat Dec 16 15:12:14 2023]
+Job 1408: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0761.2/MA0761.2-coeff.txt, results/pwmscan/MA0761.2/MA0761.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0761.2/MA0761.2-pvals.raw
+
+
+[Sat Dec 16 15:12:14 2023]
+Job 1870: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1122.1/MA1122.1-coeff.txt, results/pwmscan/MA1122.1/MA1122.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1122.1/MA1122.1-pvals.raw
+
+
+[Sat Dec 16 15:12:14 2023]
+Job 2024: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1470.1/MA1470.1-coeff.txt, results/pwmscan/MA1470.1/MA1470.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1470.1/MA1470.1-pvals.raw
+
+
+[Sat Dec 16 15:12:14 2023]
+Job 1436: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0769.2/MA0769.2-coeff.txt, results/pwmscan/MA0769.2/MA0769.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0769.2/MA0769.2-pvals.raw
+
+
+[Sat Dec 16 15:12:14 2023]
+Job 1745: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1103.2/MA1103.2-pvals.raw; Input files updated by another job: results/pwmscan/MA1103.2/MA1103.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:14 2023]
+Job 1198: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0685.1/MA0685.1-coeff.txt, results/pwmscan/MA0685.1/MA0685.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0685.1/MA0685.1-pvals.raw
+
+
+[Sat Dec 16 15:12:14 2023]
+Job 1660: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0855.1/MA0855.1-coeff.txt, results/pwmscan/MA0855.1/MA0855.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0855.1/MA0855.1-pvals.raw
+
+
+[Sat Dec 16 15:12:15 2023]
+Job 240: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0070.1/MA0070.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0070.1/MA0070.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:15 2023]
+Job 1813: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1113.2.jaspar
+
+
+[Sat Dec 16 15:12:15 2023]
+Job 1547: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0814.2.jaspar
+
+
+[Sat Dec 16 15:12:15 2023]
+Job 959: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0517.1.jaspar
+
+
+[Sat Dec 16 15:12:15 2023]
+Job 679: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0473.3.jaspar
+
+
+[Sat Dec 16 15:12:15 2023]
+Job 2235: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1641.1/MA1641.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1641.1/MA1641.1-pwm.txt
+
+
+[Sat Dec 16 15:12:15 2023]
+Job 79: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0024.3/MA0024.3-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0024.3/MA0024.3-pwm.txt
+
+
+[Sat Dec 16 15:12:15 2023]
+Job 1353: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0745.2/MA0745.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0745.2/MA0745.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:15 2023]
+Finished job 891.
+168 of 4250 steps (4%) done
+[Sat Dec 16 15:12:15 2023]
+Finished job 1003.
+169 of 4250 steps (4%) done
+[Sat Dec 16 15:12:15 2023]
+Finished job 1267.
+170 of 4250 steps (4%) done
+[Sat Dec 16 15:12:15 2023]
+Finished job 1128.
+171 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0641.1/MA0641.1-pvals.raw.
+[Sat Dec 16 15:12:15 2023]
+Finished job 903.
+172 of 4250 steps (4%) done
+[Sat Dec 16 15:12:15 2023]
+Finished job 1491.
+173 of 4250 steps (4%) done
+[Sat Dec 16 15:12:15 2023]
+Finished job 834.
+174 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0498.2/MA0498.2-pvals.raw.
+[Sat Dec 16 15:12:15 2023]
+Finished job 1953.
+175 of 4250 steps (4%) done
+[Sat Dec 16 15:12:15 2023]
+Finished job 1408.
+176 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0761.2/MA0761.2-pvals.raw.
+[Sat Dec 16 15:12:15 2023]
+Finished job 1870.
+177 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA1122.1/MA1122.1-pvals.raw.
+[Sat Dec 16 15:12:15 2023]
+Finished job 2024.
+178 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA1470.1/MA1470.1-pvals.raw.
+[Sat Dec 16 15:12:15 2023]
+Finished job 1436.
+179 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0769.2/MA0769.2-pvals.raw.
+[Sat Dec 16 15:12:15 2023]
+Finished job 1745.
+180 of 4250 steps (4%) done
+[Sat Dec 16 15:12:15 2023]
+Finished job 1198.
+181 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0685.1/MA0685.1-pvals.raw.
+[Sat Dec 16 15:12:15 2023]
+Finished job 240.
+182 of 4250 steps (4%) done
+[Sat Dec 16 15:12:15 2023]
+Finished job 1660.
+183 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0855.1/MA0855.1-pvals.raw.
+[Sat Dec 16 15:12:15 2023]
+Finished job 2235.
+184 of 4250 steps (4%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:15 2023]
+Job 239: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0070.1/MA0070.1-pvals.txt, results/pwmscan/MA0070.1/MA0070.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0070.1/MA0070.1-pvals.raw
+
+
+[Sat Dec 16 15:12:15 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0508.3.jaspar
+    output: results/pwmscan/MA0508.3/MA0508.3-pwm.txt
+    jobid: 902
+    reason: Missing output files: results/pwmscan/MA0508.3/MA0508.3-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0508.3.jaspar
+    wildcards: PROFILE=MA0508.3
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:15 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1142.1.jaspar
+    output: results/pwmscan/MA1142.1/MA1142.1-pwm.txt
+    jobid: 1952
+    reason: Missing output files: results/pwmscan/MA1142.1/MA1142.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1142.1.jaspar
+    wildcards: PROFILE=MA1142.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:15 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0729.1.jaspar
+    output: results/pwmscan/MA0729.1/MA0729.1-pwm.txt
+    jobid: 1266
+    reason: Missing output files: results/pwmscan/MA0729.1/MA0729.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0729.1.jaspar
+    wildcards: PROFILE=MA0729.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:15 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0795.1.jaspar
+    output: results/pwmscan/MA0795.1/MA0795.1-pwm.txt
+    jobid: 1490
+    reason: Missing output files: results/pwmscan/MA0795.1/MA0795.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0795.1.jaspar
+    wildcards: PROFILE=MA0795.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:15 2023]
+Job 1002: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0523.1/MA0523.1-pvals.txt, results/pwmscan/MA0523.1/MA0523.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0523.1/MA0523.1-pvals.raw
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:15 2023]
+Job 1744: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1103.2/MA1103.2-coeff.txt, results/pwmscan/MA1103.2/MA1103.2-pvals.txt; Input files updated by another job: results/pwmscan/MA1103.2/MA1103.2-pvals.raw
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 2234: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1641.1/MA1641.1-pvals.txt, results/pwmscan/MA1641.1/MA1641.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1641.1/MA1641.1-pvals.raw
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 890: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0506.1/MA0506.1-pvals.txt, results/pwmscan/MA0506.1/MA0506.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0506.1/MA0506.1-pvals.raw
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 1288: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0732.1.jaspar
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 2037: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1512.1.jaspar
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 2261: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1646.1.jaspar
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 1449: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0773.1.jaspar
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 1477: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0782.2.jaspar
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 1883: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1127.1.jaspar
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 1785: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1109.1.jaspar
+
+
+[Sat Dec 16 15:12:16 2023]
+Job 1015: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0525.2.jaspar
+
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:16 2023]
+Finished job 79.
+185 of 4250 steps (4%) done
+[Sat Dec 16 15:12:16 2023]
+Finished job 1353.
+Activating conda environment: genome
+186 of 4250 steps (4%) done
+[Sat Dec 16 15:12:16 2023]
+Finished job 1813.
+187 of 4250 steps (4%) done
+[Sat Dec 16 15:12:16 2023]
+Finished job 239.
+188 of 4250 steps (4%) done
+Removing temporary output results/pwmscan/MA0070.1/MA0070.1-pvals.raw.
+Activating conda environment: genome
+[Sat Dec 16 15:12:16 2023]
+Finished job 1547.
+189 of 4250 steps (4%) done
+[Sat Dec 16 15:12:17 2023]
+Finished job 959.
+190 of 4250 steps (4%) done
+[Sat Dec 16 15:12:17 2023]
+Finished job 679.
+191 of 4250 steps (4%) done
+[Sat Dec 16 15:12:17 2023]
+Finished job 1002.
+192 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA0523.1/MA0523.1-pvals.raw.
+[Sat Dec 16 15:12:17 2023]
+Finished job 1744.
+193 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA1103.2/MA1103.2-pvals.raw.
+[Sat Dec 16 15:12:17 2023]
+Finished job 2234.
+194 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA1641.1/MA1641.1-pvals.raw.
+[Sat Dec 16 15:12:17 2023]
+Finished job 890.
+195 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA0506.1/MA0506.1-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:17 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1113.2.jaspar
+    output: results/pwmscan/MA1113.2/MA1113.2-pwm.txt
+    jobid: 1812
+    reason: Missing output files: results/pwmscan/MA1113.2/MA1113.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1113.2.jaspar
+    wildcards: PROFILE=MA1113.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:17 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0473.3.jaspar
+    output: results/pwmscan/MA0473.3/MA0473.3-pwm.txt
+    jobid: 678
+    reason: Missing output files: results/pwmscan/MA0473.3/MA0473.3-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0473.3.jaspar
+    wildcards: PROFILE=MA0473.3
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:17 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0517.1.jaspar
+    output: results/pwmscan/MA0517.1/MA0517.1-pwm.txt
+    jobid: 958
+    reason: Missing output files: results/pwmscan/MA0517.1/MA0517.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0517.1.jaspar
+    wildcards: PROFILE=MA0517.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:17 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0814.2.jaspar
+    output: results/pwmscan/MA0814.2/MA0814.2-pwm.txt
+    jobid: 1546
+    reason: Missing output files: results/pwmscan/MA0814.2/MA0814.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0814.2.jaspar
+    wildcards: PROFILE=MA0814.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:17 2023]
+Job 78: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0024.3/MA0024.3-pvals.txt, results/pwmscan/MA0024.3/MA0024.3-coeff.txt; Input files updated by another job: results/pwmscan/MA0024.3/MA0024.3-pvals.raw
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:17 2023]
+Job 1352: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0745.2/MA0745.2-coeff.txt, results/pwmscan/MA0745.2/MA0745.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0745.2/MA0745.2-pvals.raw
+
+
+[Sat Dec 16 15:12:17 2023]
+Job 2205: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1636.1.jaspar
+
+
+[Sat Dec 16 15:12:17 2023]
+Job 2051: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1520.1.jaspar
+
+
+[Sat Dec 16 15:12:17 2023]
+Job 1505: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0800.1.jaspar
+
+
+[Sat Dec 16 15:12:17 2023]
+Job 1155: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0669.1.jaspar
+
+
+[Sat Dec 16 15:12:17 2023]
+Job 1309: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0737.1.jaspar
+
+[Sat Dec 16 15:12:18 2023]
+Finished job 1288.
+196 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 2261.
+197 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 1449.
+198 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 2037.
+199 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 1785.
+200 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 1477.
+201 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 1883.
+202 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 1015.
+203 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 78.
+204 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA0024.3/MA0024.3-pvals.raw.
+[Sat Dec 16 15:12:18 2023]
+Finished job 1352.
+205 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA0745.2/MA0745.2-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:18 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0782.2.jaspar
+    output: results/pwmscan/MA0782.2/MA0782.2-pwm.txt
+    jobid: 1476
+    reason: Missing output files: results/pwmscan/MA0782.2/MA0782.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0782.2.jaspar
+    wildcards: PROFILE=MA0782.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:18 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1512.1.jaspar
+    output: results/pwmscan/MA1512.1/MA1512.1-pwm.txt
+    jobid: 2036
+    reason: Missing output files: results/pwmscan/MA1512.1/MA1512.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1512.1.jaspar
+    wildcards: PROFILE=MA1512.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:18 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0773.1.jaspar
+    output: results/pwmscan/MA0773.1/MA0773.1-pwm.txt
+    jobid: 1448
+    reason: Missing output files: results/pwmscan/MA0773.1/MA0773.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0773.1.jaspar
+    wildcards: PROFILE=MA0773.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:18 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1646.1.jaspar
+    output: results/pwmscan/MA1646.1/MA1646.1-pwm.txt
+    jobid: 2260
+    reason: Missing output files: results/pwmscan/MA1646.1/MA1646.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1646.1.jaspar
+    wildcards: PROFILE=MA1646.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:18 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1109.1.jaspar
+    output: results/pwmscan/MA1109.1/MA1109.1-pwm.txt
+    jobid: 1784
+    reason: Missing output files: results/pwmscan/MA1109.1/MA1109.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1109.1.jaspar
+    wildcards: PROFILE=MA1109.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:18 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1127.1.jaspar
+    output: results/pwmscan/MA1127.1/MA1127.1-pwm.txt
+    jobid: 1882
+    reason: Missing output files: results/pwmscan/MA1127.1/MA1127.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1127.1.jaspar
+    wildcards: PROFILE=MA1127.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:18 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0525.2.jaspar
+    output: results/pwmscan/MA0525.2/MA0525.2-pwm.txt
+    jobid: 1014
+    reason: Missing output files: results/pwmscan/MA0525.2/MA0525.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0525.2.jaspar
+    wildcards: PROFILE=MA0525.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:18 2023]
+Job 1617: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0835.2.jaspar
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:18 2023]
+Job 1673: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0860.1.jaspar
+
+
+[Sat Dec 16 15:12:18 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0732.1.jaspar
+    output: results/pwmscan/MA0732.1/MA0732.1-pwm.txt
+    jobid: 1287
+    reason: Missing output files: results/pwmscan/MA0732.1/MA0732.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0732.1.jaspar
+    wildcards: PROFILE=MA0732.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:18 2023]
+Finished job 1952.
+206 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 1490.
+207 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 1266.
+208 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 902.
+209 of 4250 steps (5%) done
+[Sat Dec 16 15:12:18 2023]
+Finished job 1505.
+210 of 4250 steps (5%) done
+[Sat Dec 16 15:12:19 2023]
+Finished job 2205.
+211 of 4250 steps (5%) done
+[Sat Dec 16 15:12:19 2023]
+Finished job 1155.
+212 of 4250 steps (5%) done
+[Sat Dec 16 15:12:19 2023]
+Finished job 2051.
+213 of 4250 steps (5%) done
+[Sat Dec 16 15:12:19 2023]
+Finished job 1309.
+214 of 4250 steps (5%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:19 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0669.1.jaspar
+    output: results/pwmscan/MA0669.1/MA0669.1-pwm.txt
+    jobid: 1154
+    reason: Missing output files: results/pwmscan/MA0669.1/MA0669.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0669.1.jaspar
+    wildcards: PROFILE=MA0669.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:19 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1520.1.jaspar
+    output: results/pwmscan/MA1520.1/MA1520.1-pwm.txt
+    jobid: 2050
+    reason: Missing output files: results/pwmscan/MA1520.1/MA1520.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1520.1.jaspar
+    wildcards: PROFILE=MA1520.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:19 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1636.1.jaspar
+    output: results/pwmscan/MA1636.1/MA1636.1-pwm.txt
+    jobid: 2204
+    reason: Missing output files: results/pwmscan/MA1636.1/MA1636.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1636.1.jaspar
+    wildcards: PROFILE=MA1636.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:19 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0737.1.jaspar
+    output: results/pwmscan/MA0737.1/MA0737.1-pwm.txt
+    jobid: 1308
+    reason: Missing output files: results/pwmscan/MA0737.1/MA0737.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0737.1.jaspar
+    wildcards: PROFILE=MA0737.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:19 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0800.1.jaspar
+    output: results/pwmscan/MA0800.1/MA0800.1-pwm.txt
+    jobid: 1504
+    reason: Missing output files: results/pwmscan/MA0800.1/MA0800.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0800.1.jaspar
+    wildcards: PROFILE=MA0800.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:19 2023]
+Job 1955: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1142.1/MA1142.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1142.1/MA1142.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+Activating conda environment: genome
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:19 2023]
+Job 905: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0508.3/MA0508.3-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0508.3/MA0508.3-pwm.txt
+
+
+[Sat Dec 16 15:12:19 2023]
+Job 1493: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0795.1/MA0795.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0795.1/MA0795.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:19 2023]
+Job 1269: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0729.1/MA0729.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0729.1/MA0729.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:19 2023]
+Finished job 1617.
+215 of 4250 steps (5%) done
+[Sat Dec 16 15:12:19 2023]
+Finished job 1673.
+216 of 4250 steps (5%) done
+[Sat Dec 16 15:12:19 2023]
+Finished job 1955.
+217 of 4250 steps (5%) done
+[Sat Dec 16 15:12:19 2023]
+Finished job 905.
+218 of 4250 steps (5%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:19 2023]
+Job 904: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0508.3/MA0508.3-coeff.txt, results/pwmscan/MA0508.3/MA0508.3-pvals.txt; Input files updated by another job: results/pwmscan/MA0508.3/MA0508.3-pvals.raw
+
+
+[Sat Dec 16 15:12:20 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0835.2.jaspar
+    output: results/pwmscan/MA0835.2/MA0835.2-pwm.txt
+    jobid: 1616
+    reason: Missing output files: results/pwmscan/MA0835.2/MA0835.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0835.2.jaspar
+    wildcards: PROFILE=MA0835.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:20 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0860.1.jaspar
+    output: results/pwmscan/MA0860.1/MA0860.1-pwm.txt
+    jobid: 1672
+    reason: Missing output files: results/pwmscan/MA0860.1/MA0860.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0860.1.jaspar
+    wildcards: PROFILE=MA0860.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:20 2023]
+Job 1954: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1142.1/MA1142.1-coeff.txt, results/pwmscan/MA1142.1/MA1142.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1142.1/MA1142.1-pvals.raw
+
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:20 2023]
+Finished job 1493.
+219 of 4250 steps (5%) done
+Activating conda environment: genome
+[Sat Dec 16 15:12:20 2023]
+Finished job 1269.
+220 of 4250 steps (5%) done
+Activating conda environment: genome
+[Sat Dec 16 15:12:20 2023]
+Finished job 904.
+221 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA0508.3/MA0508.3-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:20 2023]
+Job 1492: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0795.1/MA0795.1-coeff.txt, results/pwmscan/MA0795.1/MA0795.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0795.1/MA0795.1-pvals.raw
+
+
+[Sat Dec 16 15:12:20 2023]
+Job 1729: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1101.2.jaspar
+
+
+[Sat Dec 16 15:12:20 2023]
+Job 1268: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0729.1/MA0729.1-pvals.txt, results/pwmscan/MA0729.1/MA0729.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0729.1/MA0729.1-pvals.raw
+
+[Sat Dec 16 15:12:20 2023]
+Finished job 1954.
+222 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA1142.1/MA1142.1-pvals.raw.
+[Sat Dec 16 15:12:20 2023]
+Finished job 1492.
+223 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA0795.1/MA0795.1-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:20 2023]
+Job 609: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0442.2.jaspar
+
+
+[Sat Dec 16 15:12:20 2023]
+Job 2191: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1631.1.jaspar
+
+[Sat Dec 16 15:12:20 2023]
+Finished job 1268.
+224 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA0729.1/MA0729.1-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:20 2023]
+Job 1071: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0599.1.jaspar
+
+Select jobs to execute...
+[Sat Dec 16 15:12:21 2023]
+Finished job 1729.
+225 of 4250 steps (5%) done
+
+[Sat Dec 16 15:12:21 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1101.2.jaspar
+    output: results/pwmscan/MA1101.2/MA1101.2-pwm.txt
+    jobid: 1728
+    reason: Missing output files: results/pwmscan/MA1101.2/MA1101.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1101.2.jaspar
+    wildcards: PROFILE=MA1101.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:21 2023]
+Finished job 609.
+226 of 4250 steps (5%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:21 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0442.2.jaspar
+    output: results/pwmscan/MA0442.2/MA0442.2-pwm.txt
+    jobid: 608
+    reason: Missing output files: results/pwmscan/MA0442.2/MA0442.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0442.2.jaspar
+    wildcards: PROFILE=MA0442.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:21 2023]
+Finished job 2191.
+227 of 4250 steps (5%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:21 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1631.1.jaspar
+    output: results/pwmscan/MA1631.1/MA1631.1-pwm.txt
+    jobid: 2190
+    reason: Missing output files: results/pwmscan/MA1631.1/MA1631.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1631.1.jaspar
+    wildcards: PROFILE=MA1631.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:21 2023]
+Finished job 1071.
+228 of 4250 steps (5%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:21 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0599.1.jaspar
+    output: results/pwmscan/MA0599.1/MA0599.1-pwm.txt
+    jobid: 1070
+    reason: Missing output files: results/pwmscan/MA0599.1/MA0599.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0599.1.jaspar
+    wildcards: PROFILE=MA0599.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:22 2023]
+Finished job 2036.
+229 of 4250 steps (5%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:22 2023]
+Job 2039: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1512.1/MA1512.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1512.1/MA1512.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:22 2023]
+Finished job 2039.
+230 of 4250 steps (5%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:22 2023]
+Job 2038: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1512.1/MA1512.1-pvals.txt, results/pwmscan/MA1512.1/MA1512.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1512.1/MA1512.1-pvals.raw
+
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:22 2023]
+Activating conda environment: genome
+Finished job 1546.
+231 of 4250 steps (5%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:22 2023]
+Job 1549: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0814.2/MA0814.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0814.2/MA0814.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:22 2023]
+Finished job 2038.
+232 of 4250 steps (5%) done
+Removing temporary output results/pwmscan/MA1512.1/MA1512.1-pvals.raw.
+[Sat Dec 16 15:12:22 2023]
+Finished job 958.
+233 of 4250 steps (5%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:22 2023]
+Job 2149: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1576.1.jaspar
+
+
+[Sat Dec 16 15:12:22 2023]
+Job 961: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0517.1/MA0517.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0517.1/MA0517.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:22 2023]
+Finished job 1549.
+234 of 4250 steps (6%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:22 2023]
+Job 1548: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0814.2/MA0814.2-coeff.txt, results/pwmscan/MA0814.2/MA0814.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0814.2/MA0814.2-pvals.raw
+
+[Sat Dec 16 15:12:22 2023]
+Finished job 678.
+235 of 4250 steps (6%) done
+[Sat Dec 16 15:12:22 2023]
+Finished job 961.
+236 of 4250 steps (6%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:22 2023]
+Job 960: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0517.1/MA0517.1-pvals.txt, results/pwmscan/MA0517.1/MA0517.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0517.1/MA0517.1-pvals.raw
+
+
+[Sat Dec 16 15:12:22 2023]
+Job 681: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0473.3/MA0473.3-pvals.raw; Input files updated by another job: results/pwmscan/MA0473.3/MA0473.3-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:22 2023]
+Finished job 1548.
+237 of 4250 steps (6%) done
+Removing temporary output results/pwmscan/MA0814.2/MA0814.2-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:22 2023]
+Job 1603: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0833.2.jaspar
+
+[Sat Dec 16 15:12:22 2023]
+Finished job 681.
+238 of 4250 steps (6%) done
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:22 2023]
+Finished job 960.
+239 of 4250 steps (6%) done
+Removing temporary output results/pwmscan/MA0517.1/MA0517.1-pvals.raw.
+[Sat Dec 16 15:12:22 2023]
+Finished job 1812.
+240 of 4250 steps (6%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:22 2023]
+Job 763: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0488.1.jaspar
+
+
+[Sat Dec 16 15:12:23 2023]
+Job 680: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0473.3/MA0473.3-coeff.txt, results/pwmscan/MA0473.3/MA0473.3-pvals.txt; Input files updated by another job: results/pwmscan/MA0473.3/MA0473.3-pvals.raw
+
+
+[Sat Dec 16 15:12:23 2023]
+Job 1815: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1113.2/MA1113.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1113.2/MA1113.2-pwm.txt
+
+[Sat Dec 16 15:12:23 2023]
+Finished job 1476.
+241 of 4250 steps (6%) done
+[Sat Dec 16 15:12:23 2023]
+Finished job 1448.
+242 of 4250 steps (6%) done
+[Sat Dec 16 15:12:23 2023]
+Finished job 2149.
+243 of 4250 steps (6%) done
+[Sat Dec 16 15:12:23 2023]
+Finished job 2260.
+244 of 4250 steps (6%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:23 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1576.1.jaspar
+    output: results/pwmscan/MA1576.1/MA1576.1-pwm.txt
+    jobid: 2148
+    reason: Missing output files: results/pwmscan/MA1576.1/MA1576.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1576.1.jaspar
+    wildcards: PROFILE=MA1576.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:23 2023]
+Job 2263: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1646.1/MA1646.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1646.1/MA1646.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:23 2023]
+Job 1451: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0773.1/MA0773.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0773.1/MA0773.1-pwm.txt
+
+
+[Sat Dec 16 15:12:23 2023]
+Job 1479: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0782.2/MA0782.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0782.2/MA0782.2-pwm.txt
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:23 2023]
+Finished job 1815.
+245 of 4250 steps (6%) done
+Activating conda environment: genome
+[Sat Dec 16 15:12:23 2023]
+Finished job 680.
+246 of 4250 steps (6%) done
+Removing temporary output results/pwmscan/MA0473.3/MA0473.3-pvals.raw.
+[Sat Dec 16 15:12:23 2023]
+Finished job 1784.
+247 of 4250 steps (6%) done
+[Sat Dec 16 15:12:23 2023]
+Finished job 1882.
+248 of 4250 steps (6%) done
+[Sat Dec 16 15:12:23 2023]
+Finished job 1287.
+249 of 4250 steps (6%) done
+[Sat Dec 16 15:12:23 2023]
+Finished job 1014.
+250 of 4250 steps (6%) done
+[Sat Dec 16 15:12:23 2023]
+Finished job 2263.
+251 of 4250 steps (6%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:23 2023]
+Job 2262: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1646.1/MA1646.1-coeff.txt, results/pwmscan/MA1646.1/MA1646.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1646.1/MA1646.1-pvals.raw
+
+
+[Sat Dec 16 15:12:23 2023]
+Job 1814: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1113.2/MA1113.2-coeff.txt, results/pwmscan/MA1113.2/MA1113.2-pvals.txt; Input files updated by another job: results/pwmscan/MA1113.2/MA1113.2-pvals.raw
+
+
+[Sat Dec 16 15:12:23 2023]
+Job 1290: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0732.1/MA0732.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0732.1/MA0732.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:23 2023]
+Job 917: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0510.2.jaspar
+
+
+[Sat Dec 16 15:12:23 2023]
+Job 1787: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1109.1/MA1109.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1109.1/MA1109.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:24 2023]
+Job 1885: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1127.1/MA1127.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1127.1/MA1127.1-pwm.txt
+
+
+[Sat Dec 16 15:12:24 2023]
+Job 1017: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0525.2/MA0525.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0525.2/MA0525.2-pwm.txt
+
+[Sat Dec 16 15:12:24 2023]
+Finished job 1451.
+252 of 4250 steps (6%) done
+[Sat Dec 16 15:12:24 2023]
+Finished job 1479.
+253 of 4250 steps (6%) done
+[Sat Dec 16 15:12:24 2023]
+Finished job 1603.
+254 of 4250 steps (6%) done
+[Sat Dec 16 15:12:24 2023]
+Finished job 1154.
+255 of 4250 steps (6%) done
+[Sat Dec 16 15:12:24 2023]
+Finished job 763.
+256 of 4250 steps (6%) done
+[Sat Dec 16 15:12:24 2023]
+Finished job 2262.
+257 of 4250 steps (6%) done
+Removing temporary output results/pwmscan/MA1646.1/MA1646.1-pvals.raw.
+[Sat Dec 16 15:12:24 2023]
+Finished job 1290.
+258 of 4250 steps (6%) done
+[Sat Dec 16 15:12:24 2023]
+Finished job 1814.
+259 of 4250 steps (6%) done
+Removing temporary output results/pwmscan/MA1113.2/MA1113.2-pvals.raw.
+[Sat Dec 16 15:12:24 2023]
+Finished job 2204.
+260 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 1787.
+261 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 2050.
+262 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 1885.
+263 of 4250 steps (6%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:25 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0833.2.jaspar
+    output: results/pwmscan/MA0833.2/MA0833.2-pwm.txt
+    jobid: 1602
+    reason: Missing output files: results/pwmscan/MA0833.2/MA0833.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0833.2.jaspar
+    wildcards: PROFILE=MA0833.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:25 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0488.1.jaspar
+    output: results/pwmscan/MA0488.1/MA0488.1-pwm.txt
+    jobid: 762
+    reason: Missing output files: results/pwmscan/MA0488.1/MA0488.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0488.1.jaspar
+    wildcards: PROFILE=MA0488.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:25 2023]
+Job 1478: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0782.2/MA0782.2-coeff.txt, results/pwmscan/MA0782.2/MA0782.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0782.2/MA0782.2-pvals.raw
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:25 2023]
+Job 1786: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1109.1/MA1109.1-pvals.txt, results/pwmscan/MA1109.1/MA1109.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1109.1/MA1109.1-pvals.raw
+
+
+[Sat Dec 16 15:12:25 2023]
+Job 1884: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1127.1/MA1127.1-coeff.txt, results/pwmscan/MA1127.1/MA1127.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1127.1/MA1127.1-pvals.raw
+
+
+[Sat Dec 16 15:12:25 2023]
+Job 1450: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0773.1/MA0773.1-pvals.txt, results/pwmscan/MA0773.1/MA0773.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0773.1/MA0773.1-pvals.raw
+
+
+[Sat Dec 16 15:12:25 2023]
+Job 1827: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1115.1.jaspar
+
+
+[Sat Dec 16 15:12:25 2023]
+Job 1939: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1140.2.jaspar
+
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:25 2023]
+Job 2053: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1520.1/MA1520.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1520.1/MA1520.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:25 2023]
+Job 1157: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0669.1/MA0669.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0669.1/MA0669.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:25 2023]
+Job 2207: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1636.1/MA1636.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1636.1/MA1636.1-pwm.txt
+
+
+[Sat Dec 16 15:12:25 2023]
+Job 1289: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0732.1/MA0732.1-coeff.txt, results/pwmscan/MA0732.1/MA0732.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0732.1/MA0732.1-pvals.raw
+
+[Sat Dec 16 15:12:25 2023]
+Finished job 1017.
+264 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 1308.
+265 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 1672.
+266 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 1504.
+267 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 1616.
+268 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 917.
+269 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 1478.
+270 of 4250 steps (6%) done
+Removing temporary output results/pwmscan/MA0782.2/MA0782.2-pvals.raw.
+Activating conda environment: genome
+[Sat Dec 16 15:12:25 2023]
+Finished job 1786.
+271 of 4250 steps (6%) done
+Removing temporary output results/pwmscan/MA1109.1/MA1109.1-pvals.raw.
+Activating conda environment: genome
+[Sat Dec 16 15:12:25 2023]
+Finished job 1884.
+272 of 4250 steps (6%) done
+Removing temporary output results/pwmscan/MA1127.1/MA1127.1-pvals.raw.
+[Sat Dec 16 15:12:25 2023]
+Finished job 1450.
+273 of 4250 steps (6%) done
+Removing temporary output results/pwmscan/MA0773.1/MA0773.1-pvals.raw.
+[Sat Dec 16 15:12:25 2023]
+Finished job 2053.
+274 of 4250 steps (6%) done
+[Sat Dec 16 15:12:25 2023]
+Finished job 1157.
+275 of 4250 steps (6%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:25 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0510.2.jaspar
+    output: results/pwmscan/MA0510.2/MA0510.2-pwm.txt
+    jobid: 916
+    reason: Missing output files: results/pwmscan/MA0510.2/MA0510.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0510.2.jaspar
+    wildcards: PROFILE=MA0510.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:26 2023]
+Job 1675: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0860.1/MA0860.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0860.1/MA0860.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:26 2023]
+Job 2052: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1520.1/MA1520.1-pvals.txt, results/pwmscan/MA1520.1/MA1520.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1520.1/MA1520.1-pvals.raw
+
+
+[Sat Dec 16 15:12:26 2023]
+Job 1156: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0669.1/MA0669.1-pvals.txt, results/pwmscan/MA0669.1/MA0669.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0669.1/MA0669.1-pvals.raw
+
+
+[Sat Dec 16 15:12:26 2023]
+Job 1016: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0525.2/MA0525.2-coeff.txt, results/pwmscan/MA0525.2/MA0525.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0525.2/MA0525.2-pvals.raw
+
+
+[Sat Dec 16 15:12:26 2023]
+Job 1239: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0700.2.jaspar
+
+
+[Sat Dec 16 15:12:26 2023]
+Job 777: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0490.2.jaspar
+
+
+[Sat Dec 16 15:12:26 2023]
+Job 2093: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1539.1.jaspar
+
+
+[Sat Dec 16 15:12:26 2023]
+Job 623: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0463.2.jaspar
+
+
+[Sat Dec 16 15:12:26 2023]
+Job 1619: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0835.2/MA0835.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0835.2/MA0835.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:26 2023]
+Job 1507: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0800.1/MA0800.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0800.1/MA0800.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:26 2023]
+Job 1311: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0737.1/MA0737.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0737.1/MA0737.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:27 2023]
+Finished job 2207.
+276 of 4250 steps (6%) done
+[Sat Dec 16 15:12:27 2023]
+Finished job 1289.
+277 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA0732.1/MA0732.1-pvals.raw.
+[Sat Dec 16 15:12:27 2023]
+Finished job 608.
+278 of 4250 steps (7%) done
+[Sat Dec 16 15:12:27 2023]
+Finished job 2190.
+279 of 4250 steps (7%) done
+[Sat Dec 16 15:12:27 2023]
+Finished job 1728.
+280 of 4250 steps (7%) done
+[Sat Dec 16 15:12:27 2023]
+Finished job 1070.
+281 of 4250 steps (7%) done
+[Sat Dec 16 15:12:27 2023]
+Finished job 1827.
+282 of 4250 steps (7%) done
+[Sat Dec 16 15:12:27 2023]
+Finished job 1939.
+283 of 4250 steps (7%) done
+[Sat Dec 16 15:12:27 2023]
+Finished job 1675.
+284 of 4250 steps (7%) done
+Activating conda environment: genome
+[Sat Dec 16 15:12:27 2023]
+Finished job 2052.
+285 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA1520.1/MA1520.1-pvals.raw.
+[Sat Dec 16 15:12:27 2023]
+Finished job 1156.
+286 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA0669.1/MA0669.1-pvals.raw.
+[Sat Dec 16 15:12:27 2023]
+Finished job 1016.
+287 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA0525.2/MA0525.2-pvals.raw.
+[Sat Dec 16 15:12:27 2023]
+Finished job 2148.
+288 of 4250 steps (7%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:27 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1115.1.jaspar
+    output: results/pwmscan/MA1115.1/MA1115.1-pwm.txt
+    jobid: 1826
+    reason: Missing output files: results/pwmscan/MA1115.1/MA1115.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1115.1.jaspar
+    wildcards: PROFILE=MA1115.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:27 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1140.2.jaspar
+    output: results/pwmscan/MA1140.2/MA1140.2-pwm.txt
+    jobid: 1938
+    reason: Missing output files: results/pwmscan/MA1140.2/MA1140.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1140.2.jaspar
+    wildcards: PROFILE=MA1140.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:27 2023]
+Job 2206: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1636.1/MA1636.1-coeff.txt, results/pwmscan/MA1636.1/MA1636.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1636.1/MA1636.1-pvals.raw
+
+Activating conda environment: genome
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:28 2023]
+Job 1674: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0860.1/MA0860.1-coeff.txt, results/pwmscan/MA0860.1/MA0860.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0860.1/MA0860.1-pvals.raw
+
+
+[Sat Dec 16 15:12:28 2023]
+Job 1731: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1101.2/MA1101.2-pvals.raw; Input files updated by another job: results/pwmscan/MA1101.2/MA1101.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:28 2023]
+Job 1073: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0599.1/MA0599.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0599.1/MA0599.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:28 2023]
+Job 1771: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1107.2.jaspar
+
+
+[Sat Dec 16 15:12:28 2023]
+Job 1085: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0603.1.jaspar
+
+
+[Sat Dec 16 15:12:28 2023]
+Job 1211: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0690.1.jaspar
+
+
+[Sat Dec 16 15:12:28 2023]
+Job 2107: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1553.1.jaspar
+
+
+[Sat Dec 16 15:12:28 2023]
+Job 611: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0442.2/MA0442.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0442.2/MA0442.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:28 2023]
+Job 2193: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1631.1/MA1631.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1631.1/MA1631.1-pwm.txt
+
+
+[Sat Dec 16 15:12:28 2023]
+Job 2151: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1576.1/MA1576.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1576.1/MA1576.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:28 2023]
+Finished job 762.
+289 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 1619.
+290 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 1507.
+291 of 4250 steps (7%) done
+Activating conda environment: genome
+[Sat Dec 16 15:12:28 2023]
+Finished job 1602.
+292 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 777.
+293 of 4250 steps (7%) done
+Activating conda environment: genome
+[Sat Dec 16 15:12:28 2023]
+Finished job 1239.
+294 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 2093.
+295 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 623.
+296 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 1311.
+297 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 1674.
+298 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA0860.1/MA0860.1-pvals.raw.
+[Sat Dec 16 15:12:28 2023]
+Finished job 2206.
+299 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA1636.1/MA1636.1-pvals.raw.
+[Sat Dec 16 15:12:28 2023]
+Finished job 1731.
+300 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 1073.
+301 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 611.
+302 of 4250 steps (7%) done
+[Sat Dec 16 15:12:28 2023]
+Finished job 916.
+303 of 4250 steps (7%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:28 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0700.2.jaspar
+    output: results/pwmscan/MA0700.2/MA0700.2-pwm.txt
+    jobid: 1238
+    reason: Missing output files: results/pwmscan/MA0700.2/MA0700.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0700.2.jaspar
+    wildcards: PROFILE=MA0700.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:28 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0463.2.jaspar
+    output: results/pwmscan/MA0463.2/MA0463.2-pwm.txt
+    jobid: 622
+    reason: Missing output files: results/pwmscan/MA0463.2/MA0463.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0463.2.jaspar
+    wildcards: PROFILE=MA0463.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:28 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0490.2.jaspar
+    output: results/pwmscan/MA0490.2/MA0490.2-pwm.txt
+    jobid: 776
+    reason: Missing output files: results/pwmscan/MA0490.2/MA0490.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0490.2.jaspar
+    wildcards: PROFILE=MA0490.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:28 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1539.1.jaspar
+    output: results/pwmscan/MA1539.1/MA1539.1-pwm.txt
+    jobid: 2092
+    reason: Missing output files: results/pwmscan/MA1539.1/MA1539.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1539.1.jaspar
+    wildcards: PROFILE=MA1539.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:29 2023]
+Job 1618: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0835.2/MA0835.2-pvals.txt, results/pwmscan/MA0835.2/MA0835.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0835.2/MA0835.2-pvals.raw
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:29 2023]
+Job 1506: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0800.1/MA0800.1-coeff.txt, results/pwmscan/MA0800.1/MA0800.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0800.1/MA0800.1-pvals.raw
+
+
+[Sat Dec 16 15:12:29 2023]
+Job 1310: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0737.1/MA0737.1-pvals.txt, results/pwmscan/MA0737.1/MA0737.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0737.1/MA0737.1-pvals.raw
+
+
+[Sat Dec 16 15:12:29 2023]
+Job 1730: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1101.2/MA1101.2-coeff.txt, results/pwmscan/MA1101.2/MA1101.2-pvals.txt; Input files updated by another job: results/pwmscan/MA1101.2/MA1101.2-pvals.raw
+
+
+[Sat Dec 16 15:12:29 2023]
+Job 610: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0442.2/MA0442.2-coeff.txt, results/pwmscan/MA0442.2/MA0442.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0442.2/MA0442.2-pvals.raw
+
+
+[Sat Dec 16 15:12:29 2023]
+Job 1072: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0599.1/MA0599.1-pvals.txt, results/pwmscan/MA0599.1/MA0599.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0599.1/MA0599.1-pvals.raw
+
+
+[Sat Dec 16 15:12:29 2023]
+Job 919: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0510.2/MA0510.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0510.2/MA0510.2-pwm.txt
+
+
+[Sat Dec 16 15:12:29 2023]
+Job 1225: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0692.1.jaspar
+
+
+[Sat Dec 16 15:12:29 2023]
+Job 1687: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0865.1.jaspar
+
+
+[Sat Dec 16 15:12:29 2023]
+Job 765: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0488.1/MA0488.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0488.1/MA0488.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:30 2023]
+Job 1605: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0833.2/MA0833.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0833.2/MA0833.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:30 2023]
+Finished job 2193.
+304 of 4250 steps (7%) done
+[Sat Dec 16 15:12:30 2023]
+Finished job 2151.
+305 of 4250 steps (7%) done
+[Sat Dec 16 15:12:30 2023]
+Finished job 1085.
+306 of 4250 steps (7%) done
+[Sat Dec 16 15:12:30 2023]
+Finished job 1771.
+307 of 4250 steps (7%) done
+[Sat Dec 16 15:12:30 2023]
+Finished job 2107.
+308 of 4250 steps (7%) done
+[Sat Dec 16 15:12:30 2023]
+Finished job 1211.
+309 of 4250 steps (7%) done
+[Sat Dec 16 15:12:30 2023]
+Finished job 1618.
+310 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA0835.2/MA0835.2-pvals.raw.
+[Sat Dec 16 15:12:30 2023]
+Finished job 1506.
+311 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA0800.1/MA0800.1-pvals.raw.
+[Sat Dec 16 15:12:30 2023]
+Finished job 1310.
+312 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA0737.1/MA0737.1-pvals.raw.
+[Sat Dec 16 15:12:30 2023]
+Finished job 1826.
+313 of 4250 steps (7%) done
+[Sat Dec 16 15:12:30 2023]
+Finished job 1730.
+314 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA1101.2/MA1101.2-pvals.raw.
+[Sat Dec 16 15:12:30 2023]
+Finished job 1938.
+315 of 4250 steps (7%) done
+[Sat Dec 16 15:12:30 2023]
+Finished job 610.
+316 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA0442.2/MA0442.2-pvals.raw.
+[Sat Dec 16 15:12:30 2023]
+Finished job 1072.
+317 of 4250 steps (7%) done
+Removing temporary output results/pwmscan/MA0599.1/MA0599.1-pvals.raw.
+[Sat Dec 16 15:12:30 2023]
+Finished job 919.
+318 of 4250 steps (7%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:30 2023]
+Job 385: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0105.4.jaspar
+
+
+[Sat Dec 16 15:12:30 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0690.1.jaspar
+    output: results/pwmscan/MA0690.1/MA0690.1-pwm.txt
+    jobid: 1210
+    reason: Missing output files: results/pwmscan/MA0690.1/MA0690.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0690.1.jaspar
+    wildcards: PROFILE=MA0690.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:30 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0603.1.jaspar
+    output: results/pwmscan/MA0603.1/MA0603.1-pwm.txt
+    jobid: 1084
+    reason: Missing output files: results/pwmscan/MA0603.1/MA0603.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0603.1.jaspar
+    wildcards: PROFILE=MA0603.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:30 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1107.2.jaspar
+    output: results/pwmscan/MA1107.2/MA1107.2-pwm.txt
+    jobid: 1770
+    reason: Missing output files: results/pwmscan/MA1107.2/MA1107.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1107.2.jaspar
+    wildcards: PROFILE=MA1107.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:30 2023]
+Job 2192: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1631.1/MA1631.1-coeff.txt, results/pwmscan/MA1631.1/MA1631.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1631.1/MA1631.1-pvals.raw
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:30 2023]
+Job 2150: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1576.1/MA1576.1-coeff.txt, results/pwmscan/MA1576.1/MA1576.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1576.1/MA1576.1-pvals.raw
+
+
+[Sat Dec 16 15:12:30 2023]
+Job 918: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0510.2/MA0510.2-pvals.txt, results/pwmscan/MA0510.2/MA0510.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0510.2/MA0510.2-pvals.raw
+
+
+[Sat Dec 16 15:12:31 2023]
+Job 1941: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1140.2/MA1140.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1140.2/MA1140.2-pwm.txt
+
+
+[Sat Dec 16 15:12:31 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1553.1.jaspar
+    output: results/pwmscan/MA1553.1/MA1553.1-pwm.txt
+    jobid: 2106
+    reason: Missing output files: results/pwmscan/MA1553.1/MA1553.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1553.1.jaspar
+    wildcards: PROFILE=MA1553.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:31 2023]
+Job 1904: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1132.1.jaspar
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:31 2023]
+Job 1498: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0798.2.jaspar
+
+
+[Sat Dec 16 15:12:31 2023]
+Job 2268: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1647.1.jaspar
+
+
+[Sat Dec 16 15:12:31 2023]
+Job 1141: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0660.1.jaspar
+
+
+[Sat Dec 16 15:12:31 2023]
+Job 2121: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1570.1.jaspar
+
+
+[Sat Dec 16 15:12:31 2023]
+Job 1829: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1115.1/MA1115.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1115.1/MA1115.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:31 2023]
+Finished job 765.
+319 of 4250 steps (8%) done
+[Sat Dec 16 15:12:31 2023]
+Finished job 1605.
+320 of 4250 steps (8%) done
+[Sat Dec 16 15:12:31 2023]
+Finished job 1687.
+321 of 4250 steps (8%) done
+[Sat Dec 16 15:12:31 2023]
+Finished job 1225.
+322 of 4250 steps (8%) done
+[Sat Dec 16 15:12:31 2023]
+Finished job 2192.
+323 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA1631.1/MA1631.1-pvals.raw.
+[Sat Dec 16 15:12:31 2023]
+Finished job 2150.
+324 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA1576.1/MA1576.1-pvals.raw.
+[Sat Dec 16 15:12:31 2023]
+Finished job 1941.
+325 of 4250 steps (8%) done
+[Sat Dec 16 15:12:31 2023]
+Finished job 918.
+326 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA0510.2/MA0510.2-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:31 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0692.1.jaspar
+    output: results/pwmscan/MA0692.1/MA0692.1-pwm.txt
+    jobid: 1224
+    reason: Missing output files: results/pwmscan/MA0692.1/MA0692.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0692.1.jaspar
+    wildcards: PROFILE=MA0692.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:31 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0865.1.jaspar
+    output: results/pwmscan/MA0865.1/MA0865.1-pwm.txt
+    jobid: 1686
+    reason: Missing output files: results/pwmscan/MA0865.1/MA0865.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0865.1.jaspar
+    wildcards: PROFILE=MA0865.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:31 2023]
+Job 764: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0488.1/MA0488.1-coeff.txt, results/pwmscan/MA0488.1/MA0488.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0488.1/MA0488.1-pvals.raw
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:31 2023]
+Job 1940: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1140.2/MA1140.2-pvals.txt, results/pwmscan/MA1140.2/MA1140.2-coeff.txt; Input files updated by another job: results/pwmscan/MA1140.2/MA1140.2-pvals.raw
+
+
+[Sat Dec 16 15:12:31 2023]
+Job 1604: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0833.2/MA0833.2-coeff.txt, results/pwmscan/MA0833.2/MA0833.2-pvals.txt; Input files updated by another job: results/pwmscan/MA0833.2/MA0833.2-pvals.raw
+
+
+[Sat Dec 16 15:12:31 2023]
+Job 112: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0036.3.jaspar
+
+
+[Sat Dec 16 15:12:31 2023]
+Job 1967: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1146.1.jaspar
+
+
+[Sat Dec 16 15:12:31 2023]
+Job 1043: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0592.3.jaspar
+
+[Sat Dec 16 15:12:31 2023]
+Finished job 1829.
+327 of 4250 steps (8%) done
+[Sat Dec 16 15:12:31 2023]
+Finished job 385.
+328 of 4250 steps (8%) done
+[Sat Dec 16 15:12:32 2023]
+Finished job 764.
+329 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA0488.1/MA0488.1-pvals.raw.
+[Sat Dec 16 15:12:32 2023]
+Finished job 1940.
+330 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA1140.2/MA1140.2-pvals.raw.
+[Sat Dec 16 15:12:32 2023]
+Finished job 1498.
+331 of 4250 steps (8%) done
+[Sat Dec 16 15:12:32 2023]
+Finished job 1904.
+332 of 4250 steps (8%) done
+[Sat Dec 16 15:12:32 2023]
+Finished job 1604.
+333 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA0833.2/MA0833.2-pvals.raw.
+[Sat Dec 16 15:12:32 2023]
+Finished job 2268.
+334 of 4250 steps (8%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:32 2023]
+Job 133: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0039.4.jaspar
+
+
+[Sat Dec 16 15:12:32 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1132.1.jaspar
+    output: results/pwmscan/MA1132.1/MA1132.1-pwm.txt
+    jobid: 1903
+    reason: Missing output files: results/pwmscan/MA1132.1/MA1132.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1132.1.jaspar
+    wildcards: PROFILE=MA1132.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:32 2023]
+Job 1828: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1115.1/MA1115.1-pvals.txt, results/pwmscan/MA1115.1/MA1115.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1115.1/MA1115.1-pvals.raw
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:32 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1647.1.jaspar
+    output: results/pwmscan/MA1647.1/MA1647.1-pwm.txt
+    jobid: 2267
+    reason: Missing output files: results/pwmscan/MA1647.1/MA1647.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1647.1.jaspar
+    wildcards: PROFILE=MA1647.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:32 2023]
+Job 4: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0002.2.jaspar
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:32 2023]
+Job 1960: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1144.1.jaspar
+
+
+[Sat Dec 16 15:12:32 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0105.4.jaspar
+    output: results/pwmscan/MA0105.4/MA0105.4-pwm.txt
+    jobid: 384
+    reason: Missing output files: results/pwmscan/MA0105.4/MA0105.4-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0105.4.jaspar
+    wildcards: PROFILE=MA0105.4
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:32 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0798.2.jaspar
+    output: results/pwmscan/MA0798.2/MA0798.2-pwm.txt
+    jobid: 1497
+    reason: Missing output files: results/pwmscan/MA0798.2/MA0798.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0798.2.jaspar
+    wildcards: PROFILE=MA0798.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:32 2023]
+Finished job 1141.
+335 of 4250 steps (8%) done
+Activating conda environment: genome
+[Sat Dec 16 15:12:32 2023]
+Finished job 2121.
+336 of 4250 steps (8%) done
+[Sat Dec 16 15:12:32 2023]
+Finished job 1967.
+337 of 4250 steps (8%) done
+[Sat Dec 16 15:12:32 2023]
+Finished job 112.
+338 of 4250 steps (8%) done
+[Sat Dec 16 15:12:32 2023]
+Finished job 1043.
+339 of 4250 steps (8%) done
+[Sat Dec 16 15:12:32 2023]
+Finished job 1828.
+340 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA1115.1/MA1115.1-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:32 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0592.3.jaspar
+    output: results/pwmscan/MA0592.3/MA0592.3-pwm.txt
+    jobid: 1042
+    reason: Missing output files: results/pwmscan/MA0592.3/MA0592.3-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0592.3.jaspar
+    wildcards: PROFILE=MA0592.3
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:32 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0660.1.jaspar
+    output: results/pwmscan/MA0660.1/MA0660.1-pwm.txt
+    jobid: 1140
+    reason: Missing output files: results/pwmscan/MA0660.1/MA0660.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0660.1.jaspar
+    wildcards: PROFILE=MA0660.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:33 2023]
+Activating conda environment: genome
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1570.1.jaspar
+    output: results/pwmscan/MA1570.1/MA1570.1-pwm.txt
+    jobid: 2120
+    reason: Missing output files: results/pwmscan/MA1570.1/MA1570.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1570.1.jaspar
+    wildcards: PROFILE=MA1570.1
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:33 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1146.1.jaspar
+    output: results/pwmscan/MA1146.1/MA1146.1-pwm.txt
+    jobid: 1966
+    reason: Missing output files: results/pwmscan/MA1146.1/MA1146.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1146.1.jaspar
+    wildcards: PROFILE=MA1146.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:33 2023]
+Job 938: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0513.1.jaspar
+
+Activating conda environment: genome
+
+[Sat Dec 16 15:12:33 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0036.3.jaspar
+    output: results/pwmscan/MA0036.3/MA0036.3-pwm.txt
+    jobid: 111
+    reason: Missing output files: results/pwmscan/MA0036.3/MA0036.3-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0036.3.jaspar
+    wildcards: PROFILE=MA0036.3
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:33 2023]
+Finished job 133.
+341 of 4250 steps (8%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:33 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0039.4.jaspar
+    output: results/pwmscan/MA0039.4/MA0039.4-pwm.txt
+    jobid: 132
+    reason: Missing output files: results/pwmscan/MA0039.4/MA0039.4-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0039.4.jaspar
+    wildcards: PROFILE=MA0039.4
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:33 2023]
+Finished job 4.
+342 of 4250 steps (8%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:33 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0002.2.jaspar
+    output: results/pwmscan/MA0002.2/MA0002.2-pwm.txt
+    jobid: 3
+    reason: Missing output files: results/pwmscan/MA0002.2/MA0002.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0002.2.jaspar
+    wildcards: PROFILE=MA0002.2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:33 2023]
+Finished job 1960.
+343 of 4250 steps (8%) done
+Select jobs to execute...
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:33 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1144.1.jaspar
+    output: results/pwmscan/MA1144.1/MA1144.1-pwm.txt
+    jobid: 1959
+    reason: Missing output files: results/pwmscan/MA1144.1/MA1144.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1144.1.jaspar
+    wildcards: PROFILE=MA1144.1
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:33 2023]
+Finished job 938.
+344 of 4250 steps (8%) done
+
+[Sat Dec 16 15:12:33 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0513.1.jaspar
+    output: results/pwmscan/MA0513.1/MA0513.1-pwm.txt
+    jobid: 937
+    reason: Missing output files: results/pwmscan/MA0513.1/MA0513.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0513.1.jaspar
+    wildcards: PROFILE=MA0513.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:37 2023]
+Finished job 1084.
+345 of 4250 steps (8%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:37 2023]
+Job 1087: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0603.1/MA0603.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0603.1/MA0603.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:37 2023]
+Finished job 2106.
+346 of 4250 steps (8%) done
+[Sat Dec 16 15:12:37 2023]
+Finished job 1224.
+347 of 4250 steps (8%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:37 2023]
+Job 2109: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1553.1/MA1553.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1553.1/MA1553.1-pwm.txt
+
+
+[Sat Dec 16 15:12:37 2023]
+Job 1227: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0692.1/MA0692.1-pvals.raw; Input files updated by another job: results/pwmscan/MA0692.1/MA0692.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:37 2023]
+Finished job 1087.
+348 of 4250 steps (8%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:37 2023]
+Job 1086: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0603.1/MA0603.1-pvals.txt, results/pwmscan/MA0603.1/MA0603.1-coeff.txt; Input files updated by another job: results/pwmscan/MA0603.1/MA0603.1-pvals.raw
+
+[Sat Dec 16 15:12:37 2023]
+Finished job 2109.
+349 of 4250 steps (8%) done
+[Sat Dec 16 15:12:38 2023]
+Finished job 1227.
+350 of 4250 steps (8%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:38 2023]
+Job 2108: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1553.1/MA1553.1-coeff.txt, results/pwmscan/MA1553.1/MA1553.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1553.1/MA1553.1-pvals.raw
+
+
+[Sat Dec 16 15:12:38 2023]
+Job 1226: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0692.1/MA0692.1-coeff.txt, results/pwmscan/MA0692.1/MA0692.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0692.1/MA0692.1-pvals.raw
+
+[Sat Dec 16 15:12:38 2023]
+Finished job 1086.
+351 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA0603.1/MA0603.1-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:38 2023]
+Job 1708: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0895.1.jaspar
+
+[Sat Dec 16 15:12:38 2023]
+Finished job 1226.
+352 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA0692.1/MA0692.1-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:38 2023]
+Job 42: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0009.2.jaspar
+
+[Sat Dec 16 15:12:38 2023]
+Finished job 2108.
+353 of 4250 steps (8%) done
+Removing temporary output results/pwmscan/MA1553.1/MA1553.1-pvals.raw.
+Select jobs to execute...
+
+[Sat Dec 16 15:12:38 2023]
+Job 2079: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA1537.1.jaspar
+
+Select jobs to execute...
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:38 2023]
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Finished job 1708.
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+354 of 4250 steps (8%) done
+
+[Sat Dec 16 15:12:39 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0895.1.jaspar
+    output: results/pwmscan/MA0895.1/MA0895.1-pwm.txt
+    jobid: 1707
+    reason: Missing output files: results/pwmscan/MA0895.1/MA0895.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0895.1.jaspar
+    wildcards: PROFILE=MA0895.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+[Sat Dec 16 15:12:39 2023]
+Finished job 42.
+355 of 4250 steps (8%) done
+[Sat Dec 16 15:12:39 2023]
+Finished job 2079.
+356 of 4250 steps (8%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:39 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA0009.2.jaspar
+    output: results/pwmscan/MA0009.2/MA0009.2-pwm.txt
+    jobid: 41
+    reason: Missing output files: results/pwmscan/MA0009.2/MA0009.2-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0009.2.jaspar
+    wildcards: PROFILE=MA0009.2
+    resources: tmpdir=/tmp
+
+[Sat Dec 16 15:12:39 2023]
+rule pwmscan_main_calculate_pwm:
+    input: resources/data/jaspar/MA1537.1.jaspar
+    output: results/pwmscan/MA1537.1/MA1537.1-pwm.txt
+    jobid: 2078
+    reason: Missing output files: results/pwmscan/MA1537.1/MA1537.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA1537.1.jaspar
+    wildcards: PROFILE=MA1537.1
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Select jobs to execute...
+Activating conda environment: genome
+[Sat Dec 16 15:12:39 2023]
+Finished job 1238.
+357 of 4250 steps (8%) done
+
+[Sat Dec 16 15:12:39 2023]
+Job 1241: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0700.2/MA0700.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0700.2/MA0700.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:39 2023]
+Finished job 1770.
+358 of 4250 steps (8%) done
+[Sat Dec 16 15:12:40 2023]
+Finished job 1210.
+359 of 4250 steps (8%) done
+[Sat Dec 16 15:12:40 2023]
+Finished job 1903.
+360 of 4250 steps (8%) done
+[Sat Dec 16 15:12:40 2023]
+Finished job 1686.
+361 of 4250 steps (8%) done
+[Sat Dec 16 15:12:40 2023]
+Finished job 384.
+362 of 4250 steps (9%) done
+[Sat Dec 16 15:12:40 2023]
+Finished job 2092.
+363 of 4250 steps (9%) done
+[Sat Dec 16 15:12:41 2023]
+Finished job 776.
+364 of 4250 steps (9%) done
+[Sat Dec 16 15:12:41 2023]
+Finished job 2267.
+365 of 4250 steps (9%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:41 2023]
+Job 1213: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0690.1/MA0690.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0690.1/MA0690.1-pwm.txt
+
+
+[Sat Dec 16 15:12:41 2023]
+Job 2095: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1539.1/MA1539.1-pvals.raw; Input files updated by another job: results/pwmscan/MA1539.1/MA1539.1-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:41 2023]
+Job 779: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0490.2/MA0490.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0490.2/MA0490.2-pwm.txt
+
+
+[Sat Dec 16 15:12:41 2023]
+Job 2270: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1647.1/MA1647.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1647.1/MA1647.1-pwm.txt
+
+
+[Sat Dec 16 15:12:41 2023]
+Job 1906: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1132.1/MA1132.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA1132.1/MA1132.1-pwm.txt
+
+
+[Sat Dec 16 15:12:41 2023]
+Job 387: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0105.4/MA0105.4-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0105.4/MA0105.4-pwm.txt
+
+
+[Sat Dec 16 15:12:41 2023]
+Job 1689: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0865.1/MA0865.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0865.1/MA0865.1-pwm.txt
+
+
+[Sat Dec 16 15:12:41 2023]
+Job 1773: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA1107.2/MA1107.2-pvals.raw; Input files updated by another job: results/pwmscan/MA1107.2/MA1107.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+[Sat Dec 16 15:12:41 2023]
+Finished job 1497.
+366 of 4250 steps (9%) done
+[Sat Dec 16 15:12:41 2023]
+Finished job 622.
+367 of 4250 steps (9%) done
+Activating conda environment: genome
+[Sat Dec 16 15:12:41 2023]
+Finished job 1241.
+368 of 4250 steps (9%) done
+[Sat Dec 16 15:12:41 2023]
+Finished job 1213.
+369 of 4250 steps (9%) done
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec 16 15:12:41 2023]
+Finished job 2095.
+370 of 4250 steps (9%) done
+[Sat Dec 16 15:12:41 2023]
+Finished job 779.
+371 of 4250 steps (9%) done
+[Sat Dec 16 15:12:41 2023]
+Error in rule pwmscan_main_calculate_pwm:
+    jobid: 937
+    input: resources/data/jaspar/MA0513.1.jaspar
+    output: results/pwmscan/MA0513.1/MA0513.1-pwm.txt
+    conda-env: genome
+
+[Sat Dec 16 15:12:41 2023]
+Finished job 2270.
+372 of 4250 steps (9%) done
+RuleException:
+CalledProcessError in file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk, line 73:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate 'genome'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/.snakemake/scripts/tmpc2j1v3w3.pwm.py' returned non-zero exit status 1.
+  File "https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk", line 73, in __rule_calculate_pwm
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Sat Dec 16 15:12:42 2023]
+Finished job 1906.
+373 of 4250 steps (9%) done
+Select jobs to execute...
+
+[Sat Dec 16 15:12:42 2023]
+Job 1212: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0690.1/MA0690.1-coeff.txt, results/pwmscan/MA0690.1/MA0690.1-pvals.txt; Input files updated by another job: results/pwmscan/MA0690.1/MA0690.1-pvals.raw
+
+
+[Sat Dec 16 15:12:42 2023]
+Job 2094: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1539.1/MA1539.1-pvals.txt, results/pwmscan/MA1539.1/MA1539.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1539.1/MA1539.1-pvals.raw
+
+
+[Sat Dec 16 15:12:42 2023]
+Job 778: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0490.2/MA0490.2-pvals.txt, results/pwmscan/MA0490.2/MA0490.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0490.2/MA0490.2-pvals.raw
+
+
+[Sat Dec 16 15:12:42 2023]
+Job 1240: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA0700.2/MA0700.2-pvals.txt, results/pwmscan/MA0700.2/MA0700.2-coeff.txt; Input files updated by another job: results/pwmscan/MA0700.2/MA0700.2-pvals.raw
+
+
+[Sat Dec 16 15:12:42 2023]
+Job 1500: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0798.2/MA0798.2-pvals.raw; Input files updated by another job: results/pwmscan/MA0798.2/MA0798.2-pwm.txt, resources/software/PWMScan/matrix_prob
+
+
+[Sat Dec 16 15:12:42 2023]
+Job 1905: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1132.1/MA1132.1-coeff.txt, results/pwmscan/MA1132.1/MA1132.1-pvals.txt; Input files updated by another job: results/pwmscan/MA1132.1/MA1132.1-pvals.raw
+
+
+[Sat Dec 16 15:12:42 2023]
+Job 625: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/pwmscan/MA0463.2/MA0463.2-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/pwmscan/MA0463.2/MA0463.2-pwm.txt
+
+
+[Sat Dec 16 15:12:42 2023]
+Job 2269: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/pwmscan/MA1647.1/MA1647.1-pvals.txt, results/pwmscan/MA1647.1/MA1647.1-coeff.txt; Input files updated by another job: results/pwmscan/MA1647.1/MA1647.1-pvals.raw
+
+[Sat Dec 16 15:12:42 2023]
+Finished job 387.
+374 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 1689.
+375 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 1773.
+376 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 2120.
+377 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 1959.
+378 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 1042.
+379 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 3.
+380 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 1212.
+381 of 4250 steps (9%) done
+Removing temporary output results/pwmscan/MA0690.1/MA0690.1-pvals.raw.
+[Sat Dec 16 15:12:42 2023]
+Finished job 1140.
+382 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 132.
+383 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 1966.
+384 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 111.
+385 of 4250 steps (9%) done
+[Sat Dec 16 15:12:42 2023]
+Finished job 2094.
+386 of 4250 steps (9%) done
+Removing temporary output results/pwmscan/MA1539.1/MA1539.1-pvals.raw.
+[Sat Dec 16 15:12:42 2023]
+Finished job 778.
+387 of 4250 steps (9%) done
+Removing temporary output results/pwmscan/MA0490.2/MA0490.2-pvals.raw.
+[Sat Dec 16 15:12:43 2023]
+Finished job 1240.
+388 of 4250 steps (9%) done
+Removing temporary output results/pwmscan/MA0700.2/MA0700.2-pvals.raw.
+[Sat Dec 16 15:12:43 2023]
+Finished job 1500.
+389 of 4250 steps (9%) done
+[Sat Dec 16 15:12:43 2023]
+Finished job 1905.
+390 of 4250 steps (9%) done
+Removing temporary output results/pwmscan/MA1132.1/MA1132.1-pvals.raw.
+[Sat Dec 16 15:12:43 2023]
+Finished job 625.
+391 of 4250 steps (9%) done
+[Sat Dec 16 15:12:43 2023]
+Finished job 2269.
+392 of 4250 steps (9%) done
+Removing temporary output results/pwmscan/MA1647.1/MA1647.1-pvals.raw.
+[Sat Dec 16 15:12:43 2023]
+Finished job 1707.
+393 of 4250 steps (9%) done
+[Sat Dec 16 15:12:43 2023]
+Finished job 41.
+394 of 4250 steps (9%) done
+[Sat Dec 16 15:12:43 2023]
+Finished job 2078.
+395 of 4250 steps (9%) done
+[Sat Dec 16 15:13:11 2023]
+Finished job 2289.
+396 of 4250 steps (9%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-16T151124.056158.snakemake.log
