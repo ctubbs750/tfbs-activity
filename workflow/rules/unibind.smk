@@ -188,7 +188,7 @@ rule format_targets:
     input:
         rules.combine_targets.output,
     output:
-        "resources/data/unibind/targets.txt",
+        "resources/data/unibind/targets.psv",
     log:
         stdout="workflow/logs/format_targets.stdout",
         stderr="workflow/logs/format_targets.stderr",
@@ -197,5 +197,5 @@ rule format_targets:
         """
         cat {input} |
         cut -d"." -f1-4 --output-delimiter=$'\t' |
-        vawk '{{print $1"-"$2"."$3"-"$4}}' > {output}
+        vawk '{{print $1"|"$2"."$3"|"$4}}' > {output}
         """

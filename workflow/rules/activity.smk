@@ -3,7 +3,7 @@ from pathlib import Path
 from pandas import read_csv, merge
 
 # Parameters TODO: think about how this working when doing the same in scan...
-PROFILES = [i.split("-")[1] for i in config["TFBS-SCAN"]["TARGETS"]]
+PROFILES = [i.split("|")[1] for i in config["TFBS-SCAN"]["TARGETS"]]
 
 
 # WC constraints - JASPAR matrix format
