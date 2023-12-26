@@ -34,7 +34,7 @@ ci_l <- ggplot_build(p2)[[1]]
 ci_r <- ggplot_build(p3)[[1]]
 
 # Make plot data
-plot_data <-data.frame(x = main[[1]]$x,
+plot_data <- data.frame(x = main[[1]]$x,
                   ymin = ci_l[[1]]$y,
                   ymax = ci_r[[1]]$y, 
                   mainy = main[[1]]$y)
@@ -46,7 +46,7 @@ b <- ggplot(plot_data, aes(x=x,  y=mainy, ymin = ymin, ymax = ymax)) +
     geom_ribbon(fill="grey", alpha=0.4) +
     xlab("PWM Score Percentile") + 
     ylab("Proportion Unibind Support") +
-    xlim(79.99, 90.01) +
+    xlim(79.99, 100.01) +
     ylim(0, 1) +
     theme_minimal(base_size = 20)
 
@@ -54,9 +54,6 @@ b <- ggplot(plot_data, aes(x=x,  y=mainy, ymin = ymin, ymax = ymax)) +
 b <- ggpar(b, palette="npg") + 
     theme_pubr(base_size=16, base_family="sans")
 
-# Call
 # Export
 ggarrange(b) %>%
   ggexport(filename = OUTPUT)
-
-#### overlay ####

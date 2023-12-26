@@ -3,12 +3,15 @@
 from pypdf import PdfMerger
 
 # Snakemake
-PDFS = snakemake.input[0]  # type: ignore
+PDFS = snakemake.input  # type: ignore
 OUTPUT = snakemake.output[0]  # type: ignore
 
 
 def main():
     pdfs = PDFS
+
+    print("BARK")
+    print(pdfs)
 
     merger = PdfMerger()
 

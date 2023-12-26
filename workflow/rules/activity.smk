@@ -1,7 +1,9 @@
-# Parameters
-INSTALL_DIR = config["TFBS-ACTIVITY"]["INSTALL_DIR"]
-PROCESS_DIR = config["TFBS-ACTIVITY"]["PROCESS_DIR"]
-PROFILES = config["PWM-SCAN"]["TARGETS"]
+from sys import path
+from pathlib import Path
+from pandas import read_csv, merge
+
+# Parameters TODO: think about how this working when doing the same in scan...
+PROFILES = [i.split("-")[1] for i in config["TFBS-SCAN"]["TARGETS"]]
 
 
 # WC constraints - JASPAR matrix format
@@ -11,62 +13,96 @@ wildcard_constraints:
 
 rule all:
     input:
-        PROCESS_DIR + "/activity_metaplot.pdf",
-        PROCESS_DIR + "/activity_all.pdf"
+        "results/activity/activity_metaplot.pdf",
+        "results/activity/activity_all.pdf"
+
+
+rule profile_filesets:
+    message:
+        """
+        Outputs a list of bed files covering a given TF
+        """
+    input:
+        "resources/data/unibind/damo_hg38_all_TFBS_unpacked_flat",
+    output:
+        "results/activity/{PROFILE}/{PROFILE}-fileset.tsv",
+    params:
+        profile=lambda wc: wc.PROFILE,
+    log:
+        stdout="workflow/logs/profile_filesets_{PROFILE}.stdout",
+        stderr="workflow/logs/uprofile_filesets_{PROFILE}.stderr",
+    threads: 2
+    shell:
+        """
+        find {input} -maxdepth 1 -type f -name "*{params.profile}*" > {output}
+        """
 
 
 rule unibind_sites:
     message:
         """
-        - Combines UniBind predictions into single sites file.
-        1. awk seen removes duplicate seqs
-        2. 
+        Combines UniBind predictions into single sites file.
+        1. vawk seen removes duplicate seqs across celltypes
+        2. vawk split pulls out the matching sequence
+        3. Sort by genomic coordinate
         """
     input:
-        damos=INSTALL_DIR + "/damo_hg38_all_TFBS_unpacked"
+        rules.profile_filesets.output,
     output:
-        files=PROCESS_DIR + "/{PROFILE}/{PROFILE}-fileset.tsv",
-        sites=PROCESS_DIR + "/{PROFILE}/{PROFILE}-unibind.tsv",
+        temp("results/activity/{PROFILE}/{PROFILE}-unibind.tsv"),
     params:
         profile=lambda wc: wc.PROFILE,
+    conda:
+        "../envs/tfbs-activity.yaml"
+    log:
+        stdout="workflow/logs/unibind_sites_{PROFILE}.stdout",
+        stderr="workflow/logs/unibind_sites_{PROFILE}.stderr",
+    threads: 2
     shell:
         """
-        set +o pipefail
-        files="$(ls {input.damos}/*.bed | grep -w "{params.profile}")" &&
-        for file in "${{files[@]}}"; do printf "${{file}}\n" >> {output.files}; done &&
-        cat $files |
+        cat $(cat {input}) |
         vawk '!a[$1, $2, $3]++' | 
-        #sed '/N/d' | TODO: Not sure what this does but it breaks some motifs...might be ok to just take out...
-        awk -F "\t" 'BEGIN {{ OFS = FS }} {{ split ($4, motif, "_"); print $1, $2, $3, motif[2], $5, $6}}' |
-        sort -k 1,1 -k2,2n > {output.sites}
+        vawk '{{split($4, motif, "_"); print $1, $2, $3, motif[2], $6}}' |
+        sort -k 1,1 -k2,2n > {output}
         """
+
 
 rule score_unibind:
     """
-    - Updates UniBind sites file with motif PWM score.
+    Updates UniBind sites file with motif PWM score.
     """
     input:
-        sites=rules.unibind_sites.output.sites,
-        pwm="results/pwmscan/{PROFILE}/{PROFILE}-pwm.txt",
+        bed=rules.unibind_sites.output,
+        pwm="results/tfbs-scan/{PROFILE}/{PROFILE}-pwm.txt",
     output:
-        PROCESS_DIR + "/{PROFILE}/{PROFILE}-unibind_scored.tsv",
-    params:
-        mode="score_unibind"
+        temp("results/activity/{PROFILE}/{PROFILE}-unibind_scored.tsv"),
     conda:
-        "tfbs-activity"
+        "../envs/tfbs-activity.yaml"
+    log:
+        stdout="workflow/logs/score_unibind_{PROFILE}.stdout",
+        stderr="workflow/logs/score_unibind_{PROFILE}.stderr",
+    threads: 2
     script:
-        "../scripts/score.py"
+        "../scripts/pssm.py"
 
 
 rule intersect_motifs:
     """
-    - Intersect UniBindm motifs with genome wide scan.
+    Intersect UniBind motifs with genome wide scanned motifs.
+    - Intersect -c counts overlaps.
+    - Vawk command makes overlaps binary (0/1), every so often more than one overlap.
     """
     input:
-        motifs="results/pwmscan/{PROFILE}/{PROFILE}-sites.bed.gz",
+        motifs="results/tfbs-scan/{PROFILE}/{PROFILE}-sites.bed.gz",
         unibind=rules.score_unibind.output,
     output:
-        PROCESS_DIR + "/{PROFILE}/{PROFILE}-unibind_intersect.bed",
+        temp("results/activity/{PROFILE}/{PROFILE}-unibind_intersect.bed"),
+    conda:
+        "../envs/tfbs-activity.yaml"
+    log:
+        stdout="workflow/logs/intersect_motifs_{PROFILE}.stdout",
+        stderr="workflow/logs/intersect_motifs_{PROFILE}.stderr",
+    threads: 2
     shell:
         """
         bedtools intersect -a {input.motifs} -b {input.unibind} -c |
@@ -76,13 +112,19 @@ rule intersect_motifs:
 
 rule map_activity:
     """
-    - Creates activity map between UniBind and reference motifs.
+    Creates activity map between UniBind and reference motifs.
     - Sorts on PWM score for groupby operation.
     """
     input:
         rules.intersect_motifs.output,
     output:
-        PROCESS_DIR + "/{PROFILE}/{PROFILE}-map.tsv",
+        temp("results/activity/{PROFILE}/{PROFILE}-map.tsv"),
+    conda:
+        "../envs/tfbs-activity.yaml"
+    log:
+        stdout="workflow/logs/map_activity_{PROFILE}.stdout",
+        stderr="workflow/logs/map_activity_{PROFILE}.stderr",
+    threads: 2
     shell:
         """
         sort -k5,5n {input} |
@@ -93,44 +135,59 @@ rule map_activity:
 
 rule activity_stats:
     """
-    - Updates activity map with perecnetile score for each PWM score.
+    Updates activity map with perecnetile score for each PWM score.
     - CI
     - winsorize
     """
     input:
         activity=rules.map_activity.output,
-        pvals="results/pwmscan/{PROFILE}/{PROFILE}-pvals.txt",
+        pvals="results/tfbs-scan/{PROFILE}/{PROFILE}-pvals.txt",
     output:
-        PROCESS_DIR + "/{PROFILE}/{PROFILE}-map_statistics.tsv",
+        "results/activity/{PROFILE}/{PROFILE}-map_statistics.tsv",
     params:
         profile=lambda wc: wc.PROFILE,
+    conda:
+        "../envs/tfbs-activity.yaml"
+    log:
+        stdout="workflow/logs/activity_stats_{PROFILE}.stdout",
+        stderr="workflow/logs/activity_stats_{PROFILE}.stderr",
+    threads: 2
     script:
         "../scripts/stats.py"
 
-rule plot:
+
+rule plot_activity:
     """
-    - d
+    Singular plot for each activity curve
     """
     input:
         activity=rules.activity_stats.output,
-        nchip=rules.unibind_sites.output.files,
+        nchip=rules.profile_filesets.output,
     output:
-        PROCESS_DIR + "/{PROFILE}/{PROFILE}-activity.pdf",
-    conda:
-        "conda_R"
+        "results/activity/{PROFILE}/{PROFILE}-activity.pdf",
     params:
         profile=lambda wc: wc.PROFILE,
+    conda:
+        "../envs/report.yaml"
+    log:
+        stdout="workflow/logs/plot_activity_{PROFILE}.stdout",
+        stderr="workflow/logs/plot_activity_{PROFILE}.stderr",
+    threads: 2
     script:
         "../scripts/plot.R"
 
-rule combine_data:
+rule combine_activity:
     """
-    - d
+    Combines all activity statistics into single file
     """
     input:
-        expand(PROCESS_DIR + "/{PROFILE}/{PROFILE}-map_statistics.tsv", PROFILE=PROFILES)
+        expand("results/activity/{PROFILE}/{PROFILE}-map_statistics.tsv", PROFILE=PROFILES)
     output:
-        PROCESS_DIR + "/activity_metadata.tsv",
+        "results/activity/activity_data_combined.tsv",
+    log:
+        stdout="workflow/logs/combine_activity.stdout",
+        stderr="workflow/logs/combine_activity.stderr",
+    threads: 2
     shell:
         """
         awk 'FNR==1 && NR!=1{{next;}}{{print}}' {input} > {output}
@@ -138,40 +195,55 @@ rule combine_data:
 
 rule activity_metadata:
     """
-    - d
+    Meta-analysis of activity data based off combine data. 
     """
     input:
-        rules.combine_data.output
+        rules.combine_activity.output
     output:
-        PROCESS_DIR + "/activity_metadata-summary.tsv",
+        "results/activity/activity_metadata-summary.tsv",
+    conda: 
+        "../envs/tfbs-activity.yaml"
+    log:
+        stdout="workflow/logs/activity_metadata.stdout",
+        stderr="workflow/logs/activity_metadata.stderr",
+    threads: 2
     script:
         "../scripts/metadata.py"
 
 rule activity_metaplot:
     message:
         """
-        d
+        Plotting of metadata.
         """
     input:
         metadata=rules.activity_metadata.output,
-        combined=rules.combine_data.output,
+        combined=rules.combine_activity.output,
     output:
-        metaplot=PROCESS_DIR + "/activity_metaplot.pdf"
-    conda:
-        "conda_R"
+        metaplot="results/activity/activity_metaplot.pdf"
+    conda: 
+        "../envs/report.yaml"
+    log:
+        stdout="workflow/logs/activity_metaplot.stdout",
+        stderr="workflow/logs/activity_metaplot.stderr",
+    threads: 2
     script:
         "../scripts/metaplot.R"
+        
 
 rule combine_plots:
     message:
         """
-        d
+        Combines individual plots into scrollable pdf
         """
     input:
-        expand(PROCESS_DIR + "/{PROFILE}/{PROFILE}-activity.pdf", PROFILE=PROFILES)
+        expand("results/activity/{PROFILE}/{PROFILE}-activity.pdf", PROFILE=PROFILES)
     output:
-        all_plots=PROCESS_DIR + "/activity_all.pdf"
-    conda:
-        "tfbs-activity"
+        all_plots="results/activity/activity_all.pdf"
+    conda: 
+        "../envs/tfbs-activity.yaml"
+    log:
+        stdout="workflow/logs/combine_plots.stdout",
+        stderr="workflow/logs/combine_plots.stderr",
+    threads: 2
     script:
         "../scripts/combine.py"

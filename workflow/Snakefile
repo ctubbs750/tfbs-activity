@@ -1,15 +1,18 @@
-"""Main ruleset for creating allfiles"""
+from snakemake.utils import min_version
+
+min_version("7.0")
 
 
 configfile: "config/config.yaml"
 
 
 # Define modules
-module pwmscan:
+module tfbscan:
     snakefile:
-        "https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/Snakefile"
+        "https://raw.githubusercontent.com/ctubbs750/tfbs-scan/main/workflow/Snakefile"
     config:
         config
+
 
 module unibind:
     snakefile:
@@ -17,17 +20,23 @@ module unibind:
     config:
         config
 
+
 module activity:
     snakefile:
         "rules/activity.smk"
     config:
         config
-    
+
 
 # Import modules
-use rule * from pwmscan as pwmscan_*
+use rule * from tfbscan as tfbscan_*
+
+
 use rule * from unibind as unibind_*
+
+
 use rule * from activity as activity_*
+
 
 ###
 # Main
@@ -36,7 +45,5 @@ use rule * from activity as activity_*
 
 rule all:
     input:
-        rules.pwmscan_all.input,
-        rules.unibind_all.input,
         rules.activity_all.input,
     default_target: True

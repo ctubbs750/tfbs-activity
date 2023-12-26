@@ -1,12 +1,6 @@
 """Utilities for the activity module"""
 
-from re import findall
-from subprocess import run, PIPE
-from numpy import log10
-from Bio.Seq import Seq
-from pandas import DataFrame, Series, read_csv, merge
-from Bio import motifs
-from Bio.motifs.matrix import PositionSpecificScoringMatrix
+from pandas import DataFrame, read_csv, merge
 from scipy.stats.mstats import winsorize
 from statsmodels.stats.proportion import proportion_confint
 
@@ -47,14 +41,17 @@ def main() -> None:
         activity["unibind_count"], activity["motif_count"]
     )
 
-    # Winsorize activity and SE, 0% on left tail, 35% of values on the right tale which is about 90percentile PWM score
-    activity["activity_winsor"] = winsorize(activity["activity"], limits=(0.00, 0.35))
-    activity["ci95_lbound_winsor"] = winsorize(
-        activity["ci95_lbound"], limits=(0.00, 0.35)
-    )
-    activity["ci95_rbound_winsor"] = winsorize(
-        activity["ci95_rbound"], limits=(0.00, 0.35)
-    )
+    # Winsorize activity and SE, 90% winsorization
+    winsor_limits = (0.05, 0.90)
+    activity["activity_winsor"] = winsorize(activity["activity"], limits=winsor_limits)
+
+    # doesn't make sense to winsor the bounds...like this...
+    # activity["ci95_lbound_winsor"] = winsorize(
+    #     activity["ci95_lbound"], limits=winsor_limits
+    # )
+    # activity["ci95_rbound_winsor"] = winsorize(
+    #     activity["ci95_rbound"], limits=winsor_limits
+    # )
 
     # Add TF flag
     activity["profile"] = PROFILE
