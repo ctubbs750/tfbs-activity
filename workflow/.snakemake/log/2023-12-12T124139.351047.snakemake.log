@@ -1,5 +1,0 @@
-The flag 'directory' used in rule unibind_all is only valid for outputs, not inputs.
-WorkflowError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/unibind.smk, line 53:
-Rule decompress_unibind is not defined in this workflow. Available rules: all, download_unibind
-  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/Snakefile", line 29, in <module>
-  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/unibind.smk", line 53, in <module>

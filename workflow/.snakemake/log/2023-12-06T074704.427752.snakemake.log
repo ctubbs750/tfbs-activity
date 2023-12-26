@@ -1,8 +1,0 @@
-WorkflowError in file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk, line 36:
-Failed to open source file https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/resources/software/PWMScan/matrix_prob.c
-HTTPError: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/resources/software/PWMScan/matrix_prob.c
-  File "/gpfs52/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/Snakefile", line 22, in <module>
-  File "https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/Snakefile", line 32, in <module>
-  File "https://raw.githubusercontent.com/ctubbs750/pwm-scan/main/workflow/rules/main.smk", line 36, in <module>
-  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 218, in retry_call
-  File "/home/tubbsca/.local/lib/python3.9/site-packages/reretry/api.py", line 31, in __retry_internal
