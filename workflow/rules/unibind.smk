@@ -8,7 +8,7 @@ UNIBIND_URL = config["TFBS-ACTIVITY"]["UNIBIND_URL"]
 
 rule all:
     input:
-        "resources/data/unibind/targets.txt",
+        "resources/data/unibind/targets.psv",
         "resources/data/unibind/damo_hg38_all_TFBS_unpacked_flat",
 
 

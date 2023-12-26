@@ -24,8 +24,7 @@ GENOME:
 TFBS-SCAN:
   # Target JASPAR profiles to scan against
   TARGETS:
-    - AR-MA0007.3-17
-    - ARNTL-MA0603.1-10
+    - AR|MA0007.3|17
     # - ARNT-MA0004.1-6
     # - ARNT-MA0006.1-6
     # - ARNT-MA0259.1-8

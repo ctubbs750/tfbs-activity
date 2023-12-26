@@ -21,11 +21,11 @@ module unibind:
         config
 
 
-module activity:
-    snakefile:
-        "rules/activity.smk"
-    config:
-        config
+# module activity:
+#     snakefile:
+#         "rules/activity.smk"
+#     config:
+#         config
 
 
 # Import modules
@@ -35,7 +35,7 @@ use rule * from tfbscan as tfbscan_*
 use rule * from unibind as unibind_*
 
 
-use rule * from activity as activity_*
+#use rule * from activity as activity_*
 
 
 ###
@@ -45,5 +45,6 @@ use rule * from activity as activity_*
 
 rule all:
     input:
-        rules.activity_all.input,
+        #rules.activity_all.input,
+        rules.unibind_all.input,
     default_target: True
