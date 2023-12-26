@@ -1,4 +1,0 @@
-Building DAG of jobs...
-WildcardError in rule unibind_unique_pwms in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/unibind.smk, line 68:
-Wildcards in input files cannot be determined from output files:
-'EXP_ID'

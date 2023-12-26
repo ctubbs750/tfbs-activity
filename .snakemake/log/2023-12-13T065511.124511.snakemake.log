@@ -1,3 +1,0 @@
-SyntaxError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/rules/unibind.smk, line 59:
-invalid syntax
-  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/Snakefile", line 29, in <module>

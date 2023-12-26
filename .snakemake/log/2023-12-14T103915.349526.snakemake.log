@@ -1,9 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule all in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/Snakefile, line 37:
-Missing input files for rule all:
-    affected files:
-        results/activity/MA0004.1/MA0004.1-activity.svg
-        results/activity/MA0006.1/MA0006.1-activity.svg
-        results/activity/MA0002.2/MA0002.2-activity.svg
-        results/activity/MA0007.3/MA0007.3-activity.svg
-        results/activity/MA0003.4/MA0003.4-activity.svg
