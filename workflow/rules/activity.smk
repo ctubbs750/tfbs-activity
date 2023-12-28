@@ -31,7 +31,7 @@ rule profile_filesets:
     log:
         stdout="workflow/logs/profile_filesets_{PROFILE}.stdout",
         stderr="workflow/logs/uprofile_filesets_{PROFILE}.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         find {input} -maxdepth 1 -type f -name "*{params.profile}*" > {output}
@@ -57,7 +57,7 @@ rule unibind_sites:
     log:
         stdout="workflow/logs/unibind_sites_{PROFILE}.stdout",
         stderr="workflow/logs/unibind_sites_{PROFILE}.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         cat $(cat {input}) |
@@ -71,9 +71,10 @@ rule score_unibind:
     """
     Updates UniBind sites file with motif PWM score.
     """
+    # NOTE: hard-coding of reference genome in i/o
     input:
         bed=rules.unibind_sites.output,
-        pwm="results/tfbs-scan/{PROFILE}/{PROFILE}-pwm.txt",
+        pwm="results/tfbs-scan/hg38/{PROFILE}/{PROFILE}-pwm.txt",
     output:
         temp("results/activity/{PROFILE}/{PROFILE}-unibind_scored.tsv"),
     conda:
@@ -81,7 +82,7 @@ rule score_unibind:
     log:
         stdout="workflow/logs/score_unibind_{PROFILE}.stdout",
         stderr="workflow/logs/score_unibind_{PROFILE}.stderr",
-    threads: 2
+    threads: 1
     script:
         "../scripts/pssm.py"
 
@@ -93,7 +94,7 @@ rule intersect_motifs:
     - Vawk command makes overlaps binary (0/1), every so often more than one overlap.
     """
     input:
-        motifs="results/tfbs-scan/{PROFILE}/{PROFILE}-sites.bed.gz",
+        motifs="results/tfbs-scan/hg38/{PROFILE}/{PROFILE}-sites.masked.bed.gz",
         unibind=rules.score_unibind.output,
     output:
         temp("results/activity/{PROFILE}/{PROFILE}-unibind_intersect.bed"),
@@ -102,7 +103,7 @@ rule intersect_motifs:
     log:
         stdout="workflow/logs/intersect_motifs_{PROFILE}.stdout",
         stderr="workflow/logs/intersect_motifs_{PROFILE}.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         bedtools intersect -a {input.motifs} -b {input.unibind} -c |
@@ -124,7 +125,7 @@ rule map_activity:
     log:
         stdout="workflow/logs/map_activity_{PROFILE}.stdout",
         stderr="workflow/logs/map_activity_{PROFILE}.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         sort -k5,5n {input} |
@@ -141,9 +142,9 @@ rule activity_stats:
     """
     input:
         activity=rules.map_activity.output,
-        pvals="results/tfbs-scan/{PROFILE}/{PROFILE}-pvals.txt",
+        pvals="results/tfbs-scan/hg38/{PROFILE}/{PROFILE}-pvals.txt",
     output:
-        "results/activity/{PROFILE}/{PROFILE}-map_statistics.tsv",
+        "results/activity/hg38/{PROFILE}/{PROFILE}-map_statistics.tsv",
     params:
         profile=lambda wc: wc.PROFILE,
     conda:
@@ -151,7 +152,7 @@ rule activity_stats:
     log:
         stdout="workflow/logs/activity_stats_{PROFILE}.stdout",
         stderr="workflow/logs/activity_stats_{PROFILE}.stderr",
-    threads: 2
+    threads: 1
     script:
         "../scripts/stats.py"
 
@@ -172,7 +173,7 @@ rule plot_activity:
     log:
         stdout="workflow/logs/plot_activity_{PROFILE}.stdout",
         stderr="workflow/logs/plot_activity_{PROFILE}.stderr",
-    threads: 2
+    threads: 1
     script:
         "../scripts/plot.R"
 
@@ -181,13 +182,13 @@ rule combine_activity:
     Combines all activity statistics into single file
     """
     input:
-        expand("results/activity/{PROFILE}/{PROFILE}-map_statistics.tsv", PROFILE=PROFILES)
+        expand("results/activity/hg38/{PROFILE}/{PROFILE}-map_statistics.tsv", PROFILE=PROFILES)
     output:
         "results/activity/activity_data_combined.tsv",
     log:
         stdout="workflow/logs/combine_activity.stdout",
         stderr="workflow/logs/combine_activity.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         awk 'FNR==1 && NR!=1{{next;}}{{print}}' {input} > {output}
@@ -206,7 +207,7 @@ rule activity_metadata:
     log:
         stdout="workflow/logs/activity_metadata.stdout",
         stderr="workflow/logs/activity_metadata.stderr",
-    threads: 2
+    threads: 1
     script:
         "../scripts/metadata.py"
 
@@ -225,7 +226,7 @@ rule activity_metaplot:
     log:
         stdout="workflow/logs/activity_metaplot.stdout",
         stderr="workflow/logs/activity_metaplot.stderr",
-    threads: 2
+    threads: 1
     script:
         "../scripts/metaplot.R"
         
@@ -244,6 +245,6 @@ rule combine_plots:
     log:
         stdout="workflow/logs/combine_plots.stdout",
         stderr="workflow/logs/combine_plots.stderr",
-    threads: 2
+    threads: 1
     script:
         "../scripts/combine.py"
