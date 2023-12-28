@@ -73,19 +73,30 @@ activity <- vroom(ACTIVITY, show_col_types = FALSE, col_names=TRUE)
 nchip <- nrow(vroom(NCHIP, delim="\t", col_names=TRUE, show_col_types = FALSE))
 
 # Make plots
-a <- plot_activity(dataset = activity, xvar = "percentage", mean_var = "activity",
- lbound_var = "ci95_lbound", rbound_var = "ci95_rbound", plot_xlab = "PWM Score Percentile", 
- plot_ylab = "Proportion Unibind Support", plot_title = PROFILE, num_chip = nchip)
-
-
-# b <- plot_activity(dataset = activity, xvar = "percentage", mean_var = "activity_winsor",
-#  lbound_var = "ci95_lbound", rbound_var = "ci95_rbound", plot_xlab = "PWM Score Percentile", 
-#  plot_ylab = "Proportion Unibind Support", plot_title = "WINSOR", num_chip = nchip)
-
-# Combine plots
-options(repr.plot.width=24, repr.plot.height=16)
-c <- a #+ b
+tryCatch(
+        {
+            a <- plot_activity(dataset = activity, xvar = "percentage", mean_var = "activity",
+            lbound_var = "ci95_lbound", rbound_var = "ci95_rbound", plot_xlab = "PWM Score Percentile", 
+            plot_ylab = "Proportion Unibind Support", plot_title = PROFILE, num_chip = nchip)
+            # Combine plots
+            options(repr.plot.width=24, repr.plot.height=16)
+            c <- a
+            # Export
+            ggarrange(c) %>%
+                ggexport(filename = OUTPUT)
 
 # Export
 ggarrange(c) %>%
   ggexport(filename = OUTPUT)
+        },
+            error = function(cond) {
+                a <- ggplot(activity, aes(percentage, activity)) + geom_blank()
+        },
+            warning = function(cond) {
+                message(paste("URL caused a warning:", url))
+                message("Here's the original warning message:")
+                message(conditionMessage(cond))
+                # Choose a return value in case of warning
+                NULL
+        },
+    )
