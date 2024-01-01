@@ -1,10 +1,13 @@
-from sys import path
-from pathlib import Path
-from pandas import read_csv, merge
+from snakemake.utils import min_version
 
-# Parameters
+# Configuration
+configfile: "config/config.yaml"
+
+# Parameters TODO: think about how this working when doing the same in scan...
 UNIBIND_URL = config["TFBS-ACTIVITY"]["UNIBIND_URL"]
 
+# Settings
+min_version("7.32.4")
 
 rule all:
     input:

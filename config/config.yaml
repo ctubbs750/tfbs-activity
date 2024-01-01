@@ -1,15 +1,12 @@
-# tfbs-activity parameters
 TFBS-ACTIVITY:
   # URL for UNIBIND data download
   UNIBIND_URL: https://unibind.uio.no/static/data/20220914/bulk_Robust/Homo_sapiens/damo_hg38_all_TFBS.tar.gz
 
-# PWMScan module parameters
 PWMScan:
   # Path to uncompiled programs
   MATRIX_PROB: resources/software/PWMScan/matrix_prob.c
   MATRIX_SCAN: resources/software/PWMScan/matrix_scan.c
 
-# Genome module parameters
 GENOME:
   # Genome build
   BUILDS:
@@ -40,7 +37,6 @@ GENCODE:
     hg19: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.chrom.sizes
     hg38: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.chrom.sizes
 
-# TFBS-SCAN parameters
 TFBS-SCAN:
   # Target JASPAR profiles to scan against
   TARGETS:

@@ -1,9 +1,14 @@
-from sys import path
-from pathlib import Path
-from pandas import read_csv, merge
+from snakemake.utils import min_version
+
+
+# Configuration
+configfile: "config/config.yaml"
 
 # Parameters TODO: think about how this working when doing the same in scan...
 PROFILES = [i.split("|")[1] for i in config["TFBS-SCAN"]["TARGETS"]]
+
+# Settings
+min_version("7.32.4")
 
 
 # WC constraints - JASPAR matrix format
