@@ -87,5 +87,5 @@ nchip <- nrow(vroom(NCHIP, delim="\t", col_names=TRUE, show_col_types = FALSE))
 
 # Make plots
  plot_activity(dataset = activity, xvar = "percentage", mean_var = "activity",
-            lbound_var = "ci95_lbound", rbound_var = "ci95_rbound", plot_xlab = "PWM Score Percentile", 
+            lbound_var = "ci95_lbound", rbound_var = "ci95_rbound", plot_xlab = "Percent Max PWM Score", 
             plot_ylab = "Proportion Unibind Support", plot_title = PROFILE, num_chip = nchip)
