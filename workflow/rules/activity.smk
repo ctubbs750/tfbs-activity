@@ -30,7 +30,7 @@ rule profile_filesets:
     input:
         "resources/data/unibind/damo_hg38_all_TFBS_unpacked_flat",
     output:
-        "results/activity/{PROFILE}/{PROFILE}-fileset.tsv",
+        "results/activity/hg38/{PROFILE}/{PROFILE}-fileset.tsv",
     params:
         profile=lambda wc: wc.PROFILE,
     log:
@@ -54,7 +54,7 @@ rule unibind_sites:
     input:
         rules.profile_filesets.output,
     output:
-        temp("results/activity/{PROFILE}/{PROFILE}-unibind.tsv"),
+        temp("results/activity/hg38/{PROFILE}/{PROFILE}-unibind.tsv"),
     params:
         profile=lambda wc: wc.PROFILE,
     conda:
@@ -81,7 +81,7 @@ rule score_unibind:
         bed=rules.unibind_sites.output,
         pwm="results/tfbs-scan/hg38/{PROFILE}/{PROFILE}-pwm.txt",
     output:
-        temp("results/activity/{PROFILE}/{PROFILE}-unibind_scored.tsv"),
+        temp("results/activity/hg38/{PROFILE}/{PROFILE}-unibind_scored.tsv"),
     conda:
         "../envs/tfbs-activity.yaml"
     log:
@@ -102,7 +102,7 @@ rule intersect_motifs:
         motifs="results/tfbs-scan/hg38/{PROFILE}/{PROFILE}-sites.masked.bed.gz",
         unibind=rules.score_unibind.output,
     output:
-        temp("results/activity/{PROFILE}/{PROFILE}-unibind_intersect.bed"),
+        temp("results/activity/hg38/{PROFILE}/{PROFILE}-unibind_intersect.bed"),
     conda:
         "../envs/tfbs-activity.yaml"
     log:
@@ -124,7 +124,7 @@ rule map_activity:
     input:
         rules.intersect_motifs.output,
     output:
-        temp("results/activity/{PROFILE}/{PROFILE}-map.tsv"),
+        temp("results/activity/hg38/{PROFILE}/{PROFILE}-map.tsv"),
     conda:
         "../envs/tfbs-activity.yaml"
     log:
@@ -170,7 +170,7 @@ rule plot_activity:
         activity=rules.activity_stats.output,
         nchip=rules.profile_filesets.output,
     output:
-        "results/activity/{PROFILE}/{PROFILE}-activity.pdf",
+        "results/activity/hg38/{PROFILE}/{PROFILE}-activity.pdf",
     params:
         profile=lambda wc: wc.PROFILE,
     conda:
@@ -242,7 +242,7 @@ rule combine_plots:
         Combines individual plots into scrollable pdf
         """
     input:
-        expand("results/activity/{PROFILE}/{PROFILE}-activity.pdf", PROFILE=PROFILES)
+        expand("results/activity/hg38/{PROFILE}/{PROFILE}-activity.pdf", PROFILE=PROFILES)
     output:
         all_plots="results/activity/activity_all.pdf"
     conda: 
