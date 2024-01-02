@@ -76,12 +76,11 @@ rule score_unibind:
     """
     Updates UniBind sites file with motif PWM score.
     """
-    # NOTE: hard-coding of reference genome in i/o
     input:
         bed=rules.unibind_sites.output,
         pwm="results/tfbs-scan/hg38/{PROFILE}/{PROFILE}-pwm.txt",
     output:
-        temp("results/activity/hg38/{PROFILE}/{PROFILE}-unibind_scored.tsv"),
+        "results/activity/hg38/{PROFILE}/{PROFILE}-unibind_scored.tsv",
     conda:
         "../envs/tfbs-activity.yaml"
     log:
