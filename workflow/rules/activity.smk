@@ -101,7 +101,7 @@ rule intersect_motifs:
         motifs="results/tfbs-scan/hg38/{PROFILE}/{PROFILE}-sites.masked.bed.gz",
         unibind=rules.score_unibind.output,
     output:
-        temp("results/activity/hg38/{PROFILE}/{PROFILE}-unibind_intersect.bed"),
+        "results/activity/hg38/{PROFILE}/{PROFILE}-unibind_intersect.bed",
     conda:
         "../envs/tfbs-activity.yaml"
     log:
