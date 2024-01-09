@@ -36,6 +36,8 @@ rule profile_filesets:
     log:
         stdout="workflow/logs/profile_filesets_{PROFILE}.stdout",
         stderr="workflow/logs/uprofile_filesets_{PROFILE}.stderr",
+    conda:
+        "../envs/tfbs-activity.yaml"
     threads: 1
     shell:
         """
@@ -89,6 +91,7 @@ rule score_unibind:
     threads: 1
     script:
         "../scripts/pssm.py"
+
 
 rule mask_unibind:
     """
@@ -195,6 +198,8 @@ rule combine_activity:
     log:
         stdout="workflow/logs/combine_activity.stdout",
         stderr="workflow/logs/combine_activity.stderr",
+    conda:
+        "../envs/tfbs-activity.yaml"
     threads: 1
     shell:
         """

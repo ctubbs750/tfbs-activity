@@ -30,6 +30,8 @@ rule download_unibind:
     log:
         stdout="workflow/logs/download_unibind.stdout",
         stderr="workflow/logs/download_unibind.stderr",
+    conda:
+        "../envs/tfbs-activity.yaml"
     threads: 1
     shell:
         """
@@ -49,6 +51,8 @@ rule unpack_unibind:
     log:
         stdout="workflow/logs/unpack_unibind.stdout",
         stderr="workflow/logs/unpack_unibind.stderr",
+    conda:
+        "../envs/tfbs-activity.yaml"
     threads: 1
     shell:
         """
@@ -69,6 +73,8 @@ rule flatten_dir:
     log:
         stdout="workflow/logs/flatten_dir.stdout",
         stderr="workflow/logs/flatten_dir.stderr",
+    conda:
+        "../envs/tfbs-activity.yaml"
     threads: 1
     shell:
         """
@@ -90,6 +96,8 @@ rule fetch_targets:
     log:
         stdout="workflow/logs/make_targets.stdout",
         stderr="workflow/logs/make_targets.stderr",
+    conda:
+        "../envs/tfbs-activity.yaml"
     threads: 1
     shell:
         """
@@ -136,6 +144,8 @@ rule filter_targets:
     log:
         stdout="workflow/logs/filter_targets.stdout",
         stderr="workflow/logs/filter_targets.stderr",
+    conda:
+        "../envs/tfbs-activity.yaml"
     threads: 1
     shell:
         """
@@ -183,6 +193,8 @@ rule combine_targets:
     log:
         stdout="workflow/logs/combine_targets.stdout",
         stderr="workflow/logs/combine_targets.stderr",
+    conda:
+        "../envs/tfbs-activity.yaml"
     threads: 1
     shell:
         """
@@ -202,6 +214,8 @@ rule format_targets:
     log:
         stdout="workflow/logs/format_targets.stdout",
         stderr="workflow/logs/format_targets.stderr",
+    conda:
+        "../envs/tfbs-activity.yaml"
     threads: 1
     shell:
         """
