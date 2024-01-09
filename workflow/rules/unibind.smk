@@ -1,13 +1,16 @@
 from snakemake.utils import min_version
 
+
 # Configuration
 configfile: "config/config.yaml"
 
+
 # Parameters TODO: think about how this working when doing the same in scan...
-UNIBIND_URL = config["TFBS-ACTIVITY"]["UNIBIND_URL"]
+UNIBIND_URL = config["TFBS-ACTIVITY"]["unibind_url"]
 
 # Settings
 min_version("7.32.4")
+
 
 rule all:
     input:
@@ -27,7 +30,7 @@ rule download_unibind:
     log:
         stdout="workflow/logs/download_unibind.stdout",
         stderr="workflow/logs/download_unibind.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         curl -o {output} {params.url}
@@ -46,7 +49,7 @@ rule unpack_unibind:
     log:
         stdout="workflow/logs/unpack_unibind.stdout",
         stderr="workflow/logs/unpack_unibind.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         mkdir -p {output} && tar -xzf {input} -C {output}
@@ -66,7 +69,7 @@ rule flatten_dir:
     log:
         stdout="workflow/logs/flatten_dir.stdout",
         stderr="workflow/logs/flatten_dir.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         mkdir {output} &&
@@ -87,12 +90,13 @@ rule fetch_targets:
     log:
         stdout="workflow/logs/make_targets.stdout",
         stderr="workflow/logs/make_targets.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         ls {input} | cut -d"." -f3,4-5 | sort -u > {output}
         """
-    
+
+
 rule failed_targets:
     message:
         """
@@ -107,7 +111,7 @@ rule failed_targets:
     log:
         stdout="workflow/logs/failed_targets.stdout",
         stderr="workflow/logs/failed_targets.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         coreapi get https://jaspar.elixir.no/api/v1/docs/
@@ -118,6 +122,7 @@ rule failed_targets:
         done
         """
 
+
 rule filter_targets:
     message:
         """
@@ -125,17 +130,18 @@ rule filter_targets:
         """
     input:
         target=rules.fetch_targets.output,
-        failed=rules.failed_targets.output
+        failed=rules.failed_targets.output,
     output:
         temp("resources/data/unibind/filter_targets.txt"),
     log:
         stdout="workflow/logs/filter_targets.stdout",
         stderr="workflow/logs/filter_targets.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         cat {input.target} | grep -v -f {input.failed} > {output}
         """
+
 
 rule fetch_lengths:
     message:
@@ -151,7 +157,7 @@ rule fetch_lengths:
     log:
         stdout="workflow/logs/fetch_lengths.stdout",
         stderr="workflow/logs/fetch_lengths.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         coreapi get https://jaspar.elixir.no/api/v1/docs/
@@ -162,6 +168,7 @@ rule fetch_lengths:
             coreapi action matrix read -p matrix_id=$matrix | jq '.pfm.A[]' | wc -l >> {output}
         done
         """
+
 
 rule combine_targets:
     message:
@@ -176,7 +183,7 @@ rule combine_targets:
     log:
         stdout="workflow/logs/combine_targets.stdout",
         stderr="workflow/logs/combine_targets.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         paste -d"." {input.targets} {input.lengths} > {output}
@@ -195,7 +202,7 @@ rule format_targets:
     log:
         stdout="workflow/logs/format_targets.stdout",
         stderr="workflow/logs/format_targets.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         cat {input} |
