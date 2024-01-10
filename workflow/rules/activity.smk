@@ -142,6 +142,7 @@ rule map_activity:
     """
     Creates activity map between UniBind and reference motifs.
     - Sorts on PWM score for groupby operation.
+    - Note operate on 8th column which is binzrized unibind from above.
     """
     input:
         rules.intersect_motifs.output,
@@ -156,7 +157,7 @@ rule map_activity:
     shell:
         """
         sort -k5,5n {input} |
-        bedtools groupby -i stdin -g 5 -c 7  -o sum,count |
+        bedtools groupby -i stdin -g 5 -c 8 -o sum,count |
         vawk '{{ print $1, $2, $3, $2/$3 }}' > {output}
         """
 
