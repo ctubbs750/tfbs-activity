@@ -105,12 +105,12 @@ rule mask_unibind:
     conda:
         "../envs/tfbs-activity.yaml"
     log:
-        stdout="workflow/logs/score_unibind_{PROFILE}.stdout",
-        stderr="workflow/logs/score_unibind_{PROFILE}.stderr",
+        stdout="workflow/logs/mask_unibind_{PROFILE}.stdout",
+        stderr="workflow/logs/mask_unibind_{PROFILE}.stderr",
     threads: 1
     shell:
         """
-        bedtools intersect -a {input.sites} -b {input.exclude} > output
+        bedtools intersect -a {input.sites} -b {input.exclude} > {output}
         """
 
 
