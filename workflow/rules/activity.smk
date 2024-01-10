@@ -110,7 +110,7 @@ rule mask_unibind:
     threads: 1
     shell:
         """
-        bedtools intersect -a {input.sites} -b {input.exclude} > {output}
+        bedtools intersect -a {input.sites} -b {input.exclude} -v > {output}
         """
 
 
