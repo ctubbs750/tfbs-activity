@@ -159,26 +159,20 @@ rule all:
             profile=PROFILES,
             dataset=DATASETS,
         ),
-        # expand(
-        #     ACTIVITY_CI,
-        #     zip,
-        #     tf_name=TF_NAMES,
-        #     profile=PROFILES,
-        #     dataset=DATASETS,
-        # ),
-        # expand(
-        #     ACTIVITY_PLOT,
-        #     zip,
-        #     tf_name=TF_NAMES,
-        #     profile=PROFILES,
-        #     dataset=DATASETS,
-        # ),
-        # expand(
-        #     "results/activity/indiv/{tf_name}/{profile}/summary/{profile}-meta_activity.map.tsv",
-        #     zip,
-        #     tf_name=TF_NAMES,
-        #     profile=PROFILES,
-        # ),
+        expand(
+            ACTIVITY_MAP,
+            zip,
+            tf_name=TF_NAMES,
+            profile=PROFILES,
+            dataset=DATASETS,
+        ),
+        expand(
+            ACTIVITY_PLOT,
+            zip,
+            tf_name=TF_NAMES,
+            profile=PROFILES,
+            dataset=DATASETS,
+        ),
         COMBINED_AUC,
     default_target: True
 
