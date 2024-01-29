@@ -19,7 +19,7 @@ module tfbscan:
 
 module unibind:
     snakefile:
-        "rules/unibind.smk"
+        "https://raw.githubusercontent.com/ctubbs750/unibind/main/workflow/Snakefile"
     config:
         config
 
@@ -28,7 +28,7 @@ module activity:
     snakefile:
         "rules/activity.smk"
     config:
-        config
+        config["TFBS-ACTIVITY"]
 
 
 # Import modules
@@ -48,5 +48,6 @@ use rule * from activity as activity_*
 
 rule all:
     input:
+        rules.unibind_all.input,
+        rules.tfbscan_all.input,
         rules.activity_all.input,
-    default_target: True

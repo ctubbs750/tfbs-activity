@@ -1,6 +1,0 @@
-IndexError in file https://raw.githubusercontent.com/ctubbs750/tfbs-scan/main/workflow/rules/scan.smk, line 6:
-list index out of range
-  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-activity/workflow/Snakefile", line 32, in <module>
-  File "https://raw.githubusercontent.com/ctubbs750/tfbs-scan/main/workflow/Snakefile", line 38, in <module>
-  File "https://raw.githubusercontent.com/ctubbs750/tfbs-scan/main/workflow/rules/scan.smk", line 6, in <module>
-  File "https://raw.githubusercontent.com/ctubbs750/tfbs-scan/main/workflow/rules/scan.smk", line 6, in <listcomp>
