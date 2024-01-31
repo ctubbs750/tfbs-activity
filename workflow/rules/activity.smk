@@ -30,7 +30,7 @@ GENOME_SITES = os.path.join(
     "{tf_name}",
     "{profile}",
     "{dataset}",
-    "sites.masked.genome.sorted.bed.starch",
+    "sites.masked.genome.sorted.bed",
 )
 
 
@@ -119,16 +119,6 @@ ACTIVITY_PLOT = os.path.join(
     "{dataset}",
     "activity.map.png",
 )
-
-# Meta-analyized activity over celltypes
-# META_ACTIVITY = os.path.join(
-#     OUTPUT_DIR,
-#     "indiv",
-#     "{tf_name}",
-#     "{profile}",
-#     "summary",
-#     "{profile}-meta_activity.map.tsv",
-# )
 
 # Combined AUC
 COMBINED_AUC = os.path.join(OUTPUT_DIR, "summary", "summary_aucs.tsv")
