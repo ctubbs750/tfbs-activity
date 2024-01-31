@@ -137,6 +137,11 @@ COMBINED_AUC = os.path.join(OUTPUT_DIR, "summary", "summary_aucs.tsv")
 # Params        #
 # ------------- #
 
+wildcard_constraints:
+    tf_name="\w+",
+    profile="MA\d{4}\.\d",
+    dataset="[^/]+",
+
 TF_NAMES, PROFILES, DATASETS = glob_wildcards(
     os.path.join(UNIBIND_SITES_DIR, "{tf_name}", "{profile}", "{dataset}.bed")
 )
