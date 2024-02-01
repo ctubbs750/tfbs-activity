@@ -209,8 +209,7 @@ rule intersect_motifs:
     threads: 1
     shell:
         """
-        unstarch {input.genome_sites} |
-        bedtools intersect -a stdin -b {input.unibind_sites} -c |
+        bedtools intersect -a {input.genome_sites} -b {input.unibind_sites} -c |
         vawk '{{if ($7>0) {{print $1, $2, $3, $4, $5, $6, 1}} else {{print $1, $2, $3, $4, $5, $6, 0}} }}' > {output}
         """
 
@@ -322,28 +321,7 @@ rule plot_activity:
         stderr="workflow/logs/plot_activity_{tf_name}_{profile}_{dataset}.stderr",
     script:
         "../scripts/plot/plot.R"
-
-
-# rule meta_activity:
-#     """
-#     Combines each TF-profile cell specific activity maps to meta per profile.
-#     """
-#     input:
-#         lambda wildcards: expand(
-#             "results/activity/indiv/{{tf_name}}/{{profile}}/datasets/{dataset}/activity.error.tsv",
-#             dataset=PROFILE_TO_DATASETS[wildcards.profile],
-#         ),
-#     output:
-#         "results/activity/indiv/{tf_name}/{profile}/summary/{profile}-meta_activity.map.tsv",
-#     conda:
-#         "../envs/tfbs-activity.yaml"
-#     log:
-#         stdout="workflow/logs/meta_activity_{tf_name}_{profile}.stdout",
-#         stderr="workflow/logs/meta_activity_{tf_name}_{profile}.stderr",
-#     threads: 1
-#     shell:
-#         "echo {input} > {output}"
-
+        
 
 rule combine_aucs:
     """
