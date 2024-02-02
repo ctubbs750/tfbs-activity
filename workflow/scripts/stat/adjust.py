@@ -33,9 +33,7 @@ def read_activity(
     # Return matrix, set names
     return read_csv(
         filepath,
-        header=None,
         sep="\t",
-        names=fields,
         engine="c",
         dtype=dict(
             zip(
