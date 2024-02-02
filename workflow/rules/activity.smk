@@ -286,7 +286,7 @@ rule confident_activity:
     Adjusts activity scores based off of...
     """
     input:
-        activity=rules.map_activity.output,
+        activity=rules.calculate_error.output,
     output:
         ACTIVITY_MAP,
     params:
