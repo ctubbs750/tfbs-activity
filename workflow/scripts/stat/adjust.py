@@ -54,8 +54,11 @@ def calculate_ci_width_and_rolling_avg(
     df["ci_width_roll"] = df["ci_width"].rolling(window=window_size).mean()
 
     # Find last index where rolling average of ci_width is < threshold
-    cap_index = df[df["ci_width_roll"] < threshold].index[-1]
-
+    # if the map isn't long enough to get this, return the last index
+    try:
+        cap_index = df[df["ci_width_roll"] < threshold].index[-1]
+    except IndexError:
+        cap_index = df.index[-1]
     return df, cap_index
 
 
