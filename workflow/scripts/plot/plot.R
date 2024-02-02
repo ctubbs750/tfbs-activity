@@ -141,21 +141,15 @@ plot_activity <- function(dataset, xvar, mean_var, lbound_var, rbound_var, plot_
 #     )
 # }
 
-# Main function
-main <- function() {
-
-    # Read input
-    activity <- vroom(ACTIVITY, show_col_types = FALSE, col_names=TRUE)
-
-    # Make plots
-    plot_activity(dataset = activity, xvar = "perc", mean_var = "activity",
-                lbound_var = "ci95_lbound", rbound_var = "ci95_rbound", plot_xlab = "Percent Max PWM Score", 
-                plot_ylab = "Proportion Unibind Support", plot_title = PROFILE, dataset_id = DATASET)
-}
 
 # ------------- #
 # Main          #
 # ------------- #
 
-# Call the main function
-main(ACTIVITY, PROFILE, DATASET)
+# Read input
+activity <- vroom(ACTIVITY, show_col_types = FALSE, col_names=TRUE)
+
+# Make plots
+plot_activity(dataset = activity, xvar = "perc", mean_var = "activity",
+                lbound_var = "ci95_lbound", rbound_var = "ci95_rbound", plot_xlab = "Percent Max PWM Score", 
+                plot_ylab = "Proportion Unibind Support", plot_title = PROFILE, dataset_id = DATASET)
