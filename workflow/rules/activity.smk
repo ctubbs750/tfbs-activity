@@ -120,6 +120,18 @@ ACTIVITY_PLOT = os.path.join(
     "activity.map.png",
 )
 
+# Activity auc
+ACITVITY_AUC = os.path.join(
+    OUTPUT_DIR,
+    "indiv",
+    "{tf_name}",
+    "{profile}",
+    "datasets",
+    "{dataset}",
+    "activity.map.auc.txt",
+)
+
+
 # Combined AUC
 COMBINED_AUC = os.path.join(OUTPUT_DIR, "summary", "summary_aucs.tsv")
 
@@ -310,7 +322,8 @@ rule plot_activity:
     input:
         activity=rules.confident_activity.output,
     output:
-        ACTIVITY_PLOT,
+        plt=ACTIVITY_PLOT,
+        auc=ACITVITY_AUC,
     params:
         profile=lambda wc: wc.profile,
         dataset=lambda wc: wc.dataset,

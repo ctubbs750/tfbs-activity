@@ -8,13 +8,14 @@ library(patchwork)
 library(ggpubr)
 library(ggsci)
 library(ggExtra)
-
+library(DescTools)
 
 # Snakemake
 ACTIVITY <- snakemake@input[["activity"]]
 PROFILE <- snakemake@params[["profile"]]
 DATASET <- snakemake@input[["dataset"]]
-OUTPUT <- snakemake@output[[1]]
+PLOT_OUTPUT <- snakemake@output[["plt"]]
+AUC_OUTPUT <- snakemake@output[["auc"]]
 
 # ------------- #
 # Functions     #
@@ -40,6 +41,12 @@ plot_activity <- function(dataset, xvar, mean_var, lbound_var, rbound_var, plot_
             main_data <- ggplot_build(main)[[1]]
             lbnd_data <- ggplot_build(lbnd)[[1]]
             rbnd_data <- ggplot_build(rbnd)[[1]]
+
+            # Grab auc
+            auc <- AUC(main_data[[1]]$x, main_data[[1]]$y)
+
+            # Save auc
+            write(as.character(auc), AUC_OUTPUT)
 
             # Construct into matrix
             plot_data <-data.frame(x = main_data[[1]]$x,
@@ -71,75 +78,11 @@ plot_activity <- function(dataset, xvar, mean_var, lbound_var, rbound_var, plot_
        finally = {
         message('Saving plot...')
             ggarrange(plot) %>%
-                 ggexport(filename = OUTPUT)
+                 ggexport(filename = PLOT_OUTPUT)
         }
     )    
 }
-# # Function to plot activity
-# plot_activity <- function(dataset, xvar, mean_var, lbound_var, rbound_var, plot_xlab, plot_ylab, plot_title, dataset_id, main_color = "#4DBBD5FF", ci_color = "black") {
-#     options(repr.plot.width=24, repr.plot.height=16)
-    
-#     # Main
-#     main <- ggplot(dataset, aes_string(x=xvar, y=mean_var)) +
-#         geom_smooth(colour=main_color, se=FALSE)
 
-#     # Left CI
-#     lbnd <- ggplot(dataset, aes_string(x=xvar, y=lbound_var)) + 
-#         geom_smooth(colour=ci_color, se=FALSE) 
-
-#     # Right CI
-#     rbnd <- ggplot(dataset, aes_string(x=xvar, y=rbound_var)) + 
-#         geom_smooth(colour=ci_color, se=FALSE)
-
-#     # Extract smoothed lines from CI plots
-#     main_data <- ggplot_build(main)[[1]]
-#     lbnd_data <- ggplot_build(lbnd)[[1]]
-#     rbnd_data <- ggplot_build(rbnd)[[1]]
-
-#     # Construct into matrix
-#     plot_data <-data.frame(x = main_data[[1]]$x,
-#                 ymin = lbnd_data[[1]]$y,
-#                 ymax = rbnd_data[[1]]$y, 
-#                 mainy = main_data[[1]]$y)
-
-#     # Plot together
-#     plot <- ggplot(plot_data, aes(x=x,  y=mainy, ymin = ymin, ymax = ymax)) +
-#         geom_line(colour=main_color, linewidth=1) +
-#         geom_point(alpha=0.2) + 
-#         geom_ribbon(fill="grey", alpha=0.4) +
-#         xlab(plot_xlab) + 
-#         ylab(plot_ylab) +
-#         xlim(79.99, 100.01) +
-#         ylim(0, 1) +
-#         theme_minimal(base_size = 20)
-
-#     # Pub params
-#     plot <- ggpar(plot, palette="npg", title=plot_title, subtitle=dataset_id) + 
-#         theme_pubr(base_size=16, base_family="sans")
-    
-#     return(plot)
-# }
-
-# # Function to handle errors and save plot
-# handle_plot <- function(plot_function, output_file) {
-#     tryCatch(
-#         expr = {
-#             plot <- plot_function
-#             ggarrange(plot) %>%
-#                 ggexport(filename = output_file)
-#         },
-#         error = function(e){
-#             message('Caught an error!')
-#             print(e)
-#             plot <- ggplot(activity, aes(percentage, activity)) + geom_blank()
-#             ggarrange(plot) %>%
-#                 ggexport(filename = output_file)
-#         },
-#         finally = {
-#             message('Saving plot...')
-#         }
-#     )
-# }
 
 
 # ------------- #

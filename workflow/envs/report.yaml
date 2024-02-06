@@ -1,5 +1,6 @@
 name: conda_R
 channels:
+  - r
   - bioconda
   - conda-forge
   - defaults
@@ -21,7 +22,7 @@ dependencies:
   - bwidget=1.9.14=ha770c72_1
   - bzip2=1.0.8=h7f98852_4
   - c-ares=1.19.1=hd590300_0
-  - ca-certificates=2023.7.22=hbcca054_0
+  - ca-certificates=2024.2.2=hbcca054_0
   - cairo=1.16.0=hbbf8b49_1016
   - cffi=1.15.1=py311h409f033_3
   - comm=0.1.3=pyhd8ed1ab_0
@@ -123,7 +124,7 @@ dependencies:
   - notebook=6.5.4=pyha770c72_0
   - notebook-shim=0.2.3=pyhd8ed1ab_0
   - numpy=1.26.0=py311h64a7726_0
-  - openssl=3.1.4=hd590300_0
+  - openssl=3.2.1=hd590300_0
   - overrides=7.3.1=pyhd8ed1ab_0
   - packaging=23.1=pyhd8ed1ab_0
   - pandoc=2.19.2=h32600fe_2
@@ -197,6 +198,7 @@ dependencies:
   - r-dbi=1.1.3=r43hc72bb7e_2
   - r-dbplyr=2.3.3=r43hc72bb7e_0
   - r-desc=1.4.2=r43hc72bb7e_2
+  - r-desctools=0.99.54=r43hcf54a89_0
   - r-devtools=2.4.5=r43hc72bb7e_2
   - r-diagram=1.6.5=r43ha770c72_2
   - r-diffobj=0.3.5=r43h57805ef_2
@@ -208,6 +210,8 @@ dependencies:
   - r-ellipsis=0.3.2=r43h57805ef_2
   - r-essentials=4.3=r43hd8ed1ab_2004
   - r-evaluate=0.21=r43hc72bb7e_1
+  - r-exact=3.2=r43hc72bb7e_2
+  - r-expm=0.999_9=r43hd9ac46e_0
   - r-fansi=1.0.4=r43h57805ef_1
   - r-farver=2.1.1=r43ha503ecb_2
   - r-fastmap=1.1.1=r43ha503ecb_1
@@ -232,6 +236,7 @@ dependencies:
   - r-gh=1.4.0=r43hc72bb7e_1
   - r-gistr=0.9.0=r43hc72bb7e_2
   - r-gitcreds=0.1.2=r43hc72bb7e_2
+  - r-gld=2.6.6=r43h57805ef_1
   - r-glmnet=4.1_7=r43hcf54a89_1
   - r-globals=0.16.2=r43hc72bb7e_1
   - r-glue=1.6.2=r43h57805ef_2
@@ -270,6 +275,7 @@ dependencies:
   - r-lifecycle=1.0.3=r43hc72bb7e_2
   - r-listenv=0.9.0=r43hc72bb7e_1
   - r-lme4=1.1_34=r43ha503ecb_0
+  - r-lmom=3.0=r43h61816a4_0
   - r-lobstr=1.1.2=r43ha503ecb_3
   - r-lubridate=1.9.2=r43h57805ef_2
   - r-magrittr=2.0.3=r43h57805ef_2
@@ -286,6 +292,7 @@ dependencies:
   - r-modelmetrics=1.2.2.2=r43ha503ecb_3
   - r-modelr=0.1.11=r43hc72bb7e_1
   - r-munsell=0.5.0=r43hc72bb7e_1006
+  - r-mvtnorm=1.2_4=r43hd9ac46e_0
   - r-nlme=3.1_162=r43h61816a4_1
   - r-nloptr=2.0.3=r43hcf54a89_2
   - r-nnet=7.3_19=r43h57805ef_1
@@ -305,7 +312,7 @@ dependencies:
   - r-pracma=2.4.2=r43hc72bb7e_2
   - r-praise=1.0.0=r43hc72bb7e_1007
   - r-prettyunits=1.1.1=r43hc72bb7e_3
-  - r-proc=1.18.4=r43ha503ecb_0
+  - r-proc=1.18.4=r43h884c59f_0
   - r-processx=3.8.2=r43h57805ef_0
   - r-prodlim=2023.03.31=r43ha503ecb_1
   - r-profvis=0.3.8=r43h57805ef_2
@@ -340,6 +347,7 @@ dependencies:
   - r-reshape2=1.4.4=r43ha503ecb_3
   - r-rlang=1.1.1=r43ha503ecb_1
   - r-rmarkdown=2.23=r43hc72bb7e_0
+  - r-rootsolve=1.8.2.4=r43h61816a4_0
   - r-roxygen2=7.2.3=r43ha503ecb_1
   - r-rpart=4.1.19=r43h57805ef_1
   - r-rprojroot=2.0.3=r43hc72bb7e_0
