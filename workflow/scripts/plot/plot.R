@@ -54,6 +54,7 @@ plot_activity <- function(dataset, xvar, mean_var, lbound_var, rbound_var, plot_
                         ymax = rbnd_data[[1]]$y, 
                         mainy = main_data[[1]]$y)
 
+            min(plot_data$x)
             # Plot together
             plot <- ggplot(plot_data, aes(x=x,  y=mainy, ymin = ymin, ymax = ymax)) +
                 geom_line(colour="#4DBBD5FF", linewidth=1) +
@@ -61,7 +62,7 @@ plot_activity <- function(dataset, xvar, mean_var, lbound_var, rbound_var, plot_
                 geom_ribbon(fill="grey", alpha=0.4) +
                 xlab(plot_xlab) + 
                 ylab(plot_ylab) +
-                xlim(79.99, 100.01) +
+                xlim(min(plot_data$x)-0.01, 100.01) +
                 ylim(0, 1) +
                 theme_minimal(base_size = 20)
 
